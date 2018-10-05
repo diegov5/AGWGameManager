@@ -344,10 +344,15 @@ div.gameDayButton{
     position: absolute;
     width: 301px;
     height: 0px;
-    left: 328px;
+    left: 640px;
     top: 83px;
 
     border: 3px solid #B83336;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
 }
 
 /*CODE FOR STICKMAN */
@@ -355,18 +360,17 @@ div.gameDayButton{
 /* StickMan_01 */
 div.StickMan{
     position: absolute;
-    width: 251px;
-    height: 280px;
-    left: 150px;
-    top: 351px;
-
-    background: #FFFFFF;
+    width: 183px;
+    height: 206px;
+    left: 885px;
+    top: 246px;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
 }
 
 /* CODE FOR WELCOME TEXT */
 #Welcome {
     position: absolute;
-    width: 153px;
+    width: 523px;
     height: 30px;
     left: 80px;
     top: 209px;
@@ -380,13 +384,53 @@ div.StickMan{
     color: #000000;
 }
 
+/* CODE FOR TEXT BODY */
+/* Edit Box Title */
+#textBody{
+    position: absolute;
+    width: 750px;
+    height: 212px;
+    left: 82px;
+    top: 255px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+    font-size: 17px;
+
+    color: #000000;
+}
+
+/* CODE FOR BUTTON */
+div.continueButton{
+    position: absolute;
+    width: 150px;
+    height: 60px;
+    left: 1180px;
+    top: 200px;
+}
+
+
+/* Rectangle */
+div.ContinueRectagle{
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+
+    background: #B83336;
+    border-radius: 5px;
+}
+
 /* CODE FOR CONTINUE BUTTON */
 div.continueButton{
     position: absolute;
     width: 150px;
     height: 50px;
     left: 1201px;
-    top: 745px;
+    top: 725px;
 }
 
 
@@ -427,7 +471,7 @@ div.previousButton{
     width: 150px;
     height: 50px;
     left: 85px;
-    top: 745px;
+    top: 725px;
 }
 
 
@@ -465,25 +509,215 @@ button{
     outline-style: none;
 }
 
-/* CODE FOR TEXT BODY */
-/* Edit Box Title */
-#textBody{
+/* CODE FOR SUBHEADER TEXT AND BODY */ 
+
+/* Header 1 */
+#subHeaderText{
     position: absolute;
-    width: 980px;
-    height: 212px;
+    width: 123px;
+    height: 30px;
     left: 82px;
-    top: 255px;
+    top: 467px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    font-size: 20px;
+
+    color: #000000;
+}
+
+#subheaderBody{
+    position: absolute;
+    width: 1280px;
+    height: 41px;
+    left: 82px;
+    top: 504px;
 
     font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
     line-height: 22px;
-    font-size: 17px;
+    font-size: 16px;
+
+    color: #B83336;
+}
+
+/* CODE FOR TEXT INPUT AND TITLE */
+/* Text Entry Field Filled */
+
+/* Edit Box Title */
+#editBoxTitle{
+    position: absolute;
+    width: 470px;
+    height: 26px;
+    left: 82px;
+    top: 569px;
+    bottom: 15.38%;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    font-size: 14px;
 
     color: #000000;
+}
+
+/* Edit Box Default */
+form{
+    position: absolute;
+    width: 870px;
+    height: 26px;
+    left: 200px;
+    top: 569px;
+    bottom: 15.38%;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    font-size: 14px;
+
+    color: #000000;
+}
+
+
+/* Rectangle */
+#textInputRectangle{
+    position: absolute;
+    width: 470px;
+    height: 26px;
+    left: 125px;
+    top: 569px;
+    left: 18.92%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+
+    border: 1px solid #000000;
+    box-sizing: border-box;
 }
 
 mark.red {
     color: #B83336;
     background: none;
+}
+
+mark.gray{
+    color: #737373;
+    background: none;
+}
+
+/* CODE FOR ACTIVITY LOCATION */
+/* Header 1.2 */
+div.bottomHeader{
+    position: absolute;
+    width: 123px;
+    height: 30px;
+    left: 80px;
+    top: 620px;
+}
+
+/* Header 1 */
+div.bottomHeaderText{
+    position: absolute;
+    left: 0%;
+    right: 43.9%;
+    top: 0%;
+    bottom: 26.67%;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    font-size: 18px;
+
+    color: #000000;
+}
+
+#bottomHeaderBody{
+    position: absolute;
+    width: 1280px;
+    height: 41px;
+    top: 20px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+    font-size: 16px;
+
+    color: #000000;
+}
+
+/* CODE FOR PROP LIST */
+/* Prop List */
+div.PropList{
+    position: absolute;
+    width: 283px;
+    height: 208px;
+    left: 1075px;
+    top: 255px;
+}
+
+
+/* Rectangle */
+#PropRectangle{
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+
+    background: #E5E5E5;
+}
+
+/* Edit Box Title */
+#PropTitle{
+    position: absolute;
+    width: 63px;
+    height: 18px;
+    left: 111px;
+    top: 15px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    font-size: 14px;
+    text-align: center;
+
+    color: #000000;
+}
+
+
+/* Edit Box Title */
+#PropList{
+    position: absolute;
+    width: 174px;
+    height: 120px;
+    left: 55px;
+    top: 58px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    font-size: 14px;
+    text-align: center;
+
+    color: #000000;
+}
+
+#PropLine{
+/* Line */
+
+    position: absolute;
+    width: 232px;
+    height: 0px;
+    left: 26px;
+    top: 44px;
+
+    border: 1px solid #BABABA;
 }

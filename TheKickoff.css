@@ -344,7 +344,7 @@ div.gameDayButton{
     position: absolute;
     width: 301px;
     height: 0px;
-    left: 328px;
+    left: 640px;
     top: 83px;
 
     border: 3px solid #B83336;
@@ -355,18 +355,16 @@ div.gameDayButton{
 /* StickMan_01 */
 div.StickMan{
     position: absolute;
-    width: 251px;
-    height: 280px;
-    left: 150px;
-    top: 351px;
-
-    background: #FFFFFF;
+    width: 173px;
+    height: 194px;
+    left: 1120px;
+    top: 245px;
 }
 
 /* CODE FOR WELCOME TEXT */
 #Welcome {
     position: absolute;
-    width: 153px;
+    width: 123px;
     height: 30px;
     left: 80px;
     top: 209px;
@@ -380,13 +378,53 @@ div.StickMan{
     color: #000000;
 }
 
+/* CODE FOR TEXT BODY */
+/* Edit Box Title */
+#textBody{
+    position: absolute;
+    width: 980px;
+    height: 212px;
+    left: 82px;
+    top: 255px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+    font-size: 17px;
+
+    color: #000000;
+}
+
+/* CODE FOR BUTTON */
+div.continueButton{
+    position: absolute;
+    width: 150px;
+    height: 60px;
+    left: 1180px;
+    top: 200px;
+}
+
+
+/* Rectangle */
+div.ContinueRectagle{
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+
+    background: #B83336;
+    border-radius: 5px;
+}
+
 /* CODE FOR CONTINUE BUTTON */
 div.continueButton{
     position: absolute;
     width: 150px;
     height: 50px;
     left: 1201px;
-    top: 745px;
+    top: 725px;
 }
 
 
@@ -427,7 +465,7 @@ div.previousButton{
     width: 150px;
     height: 50px;
     left: 85px;
-    top: 745px;
+    top: 725px;
 }
 
 
@@ -465,25 +503,93 @@ button{
     outline-style: none;
 }
 
-/* CODE FOR TEXT BODY */
-/* Edit Box Title */
-#textBody{
+/* CODE FOR SUBHEADER TEXT AND BODY */ 
+
+/* Header 1 */
+#subHeaderText{
     position: absolute;
-    width: 980px;
-    height: 212px;
+    width: 123px;
+    height: 30px;
     left: 82px;
-    top: 255px;
+    top: 467px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    font-size: 20px;
+
+    color: #000000;
+}
+
+#subheaderBody{
+    position: absolute;
+    width: 1280px;
+    height: 41px;
+    left: 82px;
+    top: 504px;
 
     font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
     line-height: 22px;
-    font-size: 17px;
+    font-size: 16px;
+
+    color: #B83336;
+}
+
+/* CODE FOR TEXT INPUT AND TITLE */
+/* Text Entry Field Filled */
+
+/* Edit Box Title */
+#editBoxTitle{
+    position: absolute;
+    width: 470px;
+    height: 26px;
+    left: 82px;
+    top: 569px;
+    bottom: 15.38%;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    font-size: 14px;
 
     color: #000000;
 }
 
-mark.red {
-    color: #B83336;
-    background: none;
+/* Edit Box Default */
+form{
+    position: absolute;
+    width: 870px;
+    height: 26px;
+    left: 200px;
+    top: 569px;
+    bottom: 15.38%;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    font-size: 14px;
+
+    color: #000000;
 }
+
+
+/* Rectangle */
+#textInputRectangle{
+    position: absolute;
+    width: 470px;
+    height: 26px;
+    left: 125px;
+    top: 569px;
+    left: 18.92%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+
+    border: 1px solid #000000;
+    box-sizing: border-box;
+}
+

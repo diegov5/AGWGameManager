@@ -1,7 +1,7 @@
 /* Top Nav */
 div.topnav{
     position: relative;
-    width: 1440px;
+    width: 1430px;
     height: 75px;
 
     background: #FFFFFF;
@@ -10,7 +10,7 @@ div.topnav{
 /* Rectangle */
 #rectangle{
     position: absolute;
-    width: 1440px;
+    width: 1430px;
     height: 75px;
     left: -5px;
     top: 0px;
