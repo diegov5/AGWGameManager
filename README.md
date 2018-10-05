@@ -8,7 +8,9 @@ If you want to view anything, just download EVERYTHING ONTO THE SAME FOLDER and 
   
 Let me know if you have any questions :)
   
-10/4/2018 CHANGES:  
+LAST UPDATED ON 10/5/2018
+  
+Integrated functionality for preivous and continue buttons for each page
   
 Some notes on each file:  
 Welcome: Done  
@@ -23,4 +25,4 @@ Puzzle 4: Needs puzzle functionality
 Puzzle 5: Needs puzzle functionality  
 Puzzle 6: Done  
   
-Next steps: Integrate previous and continue buttons with each page, begin scripting the puzzles
+Next steps: Begin scripting the puzzles
