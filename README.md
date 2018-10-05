@@ -18,7 +18,7 @@ Act. 1: Done
 Act. 2: Done  
 Puzzle 1: Needs puzzle functionality  
 Puzzle 2: Needs puzzle functionality  
-Puzzle 3: Needs some extra text, should be easy to get from Puzzle 6  
+Puzzle 3: Done  
 Puzzle 4: Needs puzzle functionality  
 Puzzle 5: Needs puzzle functionality  
 Puzzle 6: Done  
