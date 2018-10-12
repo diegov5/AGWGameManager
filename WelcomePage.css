@@ -384,14 +384,14 @@ div.StickMan{
 div.continueButton{
     position: absolute;
     width: 150px;
-    height: 60px;
-    left: 1180px;
+    height: 50px;
+    left: 1201px;
     top: 200px;
 }
 
 
 /* Rectangle */
-div.ContinueRectagle{
+div.ContinueRectangle{
     position: absolute;
     left: 0%;
     right: 0%;
@@ -403,7 +403,7 @@ div.ContinueRectagle{
 }
 
 /* Continue */
-#Continue{
+#ContinueText{
     position: absolute;
     left: 20.67%;
     right: 20.67%;
@@ -417,4 +417,9 @@ div.ContinueRectagle{
     font-size: 20px;
     background: #B83336;
     color: #FFFFFF;
+}
+
+button{
+    border-style: none;
+    outline-style: none;
 }
