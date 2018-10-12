@@ -487,3 +487,65 @@ mark.red {
     color: #B83336;
     background: none;
 }
+
+/* CODE FOR TEAM NAME */
+/* Edit Box Title */
+#TeamsText{
+    position: absolute;
+    width: 75px;
+    height: 12.31px;
+    left: 695px;
+    top: 349px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    font-size: 14px;
+    text-align: right;
+
+    color: #000000;
+}
+
+#TeamName{
+    position: absolute;
+    width: 104px;
+    height: 20.51px;
+    left: 675px;
+    top: 366.09px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    font-size: 24px;
+    text-align: right;
+
+    color: #000000;
+}
+
+/* CODE FOR NEW TEXT BOX BUTTON */
+div.NewBoxButton{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 695px;
+    top: 1303px;
+}
+
+#PlusButton{
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 22%;
+    bottom: 24%;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 25px;
+    text-align: center;
+
+    color: #FFFFFF;
+}

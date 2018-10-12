@@ -70,8 +70,22 @@
         Teams are the heart of every Adventure Game.<mark class="red"> Enter the names of each player taking part in your game.</mark> In ZombieWorld, there is only one team at the beginning of the game: The Humans  
     </element>
 
+    <!--START CODE FOR TEAM TEXT-->
+    <element id="TeamsText">
+        Team 1 of 1
+    </element>
+    <element id="TeamName">
+        Humans
+    </element>
+
+    <!--START CODE FOR NEW BOX BUTTON-->
+    <div class="NewBoxButton" onclick="NewTextBox()">
+        <element id="EllipseRed"></element>
+        <element id="PlusButton"> + </element>
+    </div>
+
     <!--START CODE FOR CONTINUE-->
-    <div class="continueButton">
+    <div class="continueButton" onclick="Continue()">
         <div class="ContinueRectangle">
             <button id="ContinueText">Continue</button>
         </div>    
@@ -79,7 +93,7 @@
     <!--END CODE FOR CONTINUE-->
 
     <!--START CODE FOR PREVIOUS-->
-    <div class="previousButton">
+    <div class="previousButton" onclick="Previous()">
         <div class="PreviousRectangle">
             <button id="PreviousText">Previous</button>
         </div>    
@@ -87,13 +101,20 @@
     <!--END CODE FOR PREVIOUS-->
 
 <script>
-    document.getElementById("PreviousText").onclick = function () {
+    function Previous() {
         location.href = "WelcomePage.html";
     };
 
-    document.getElementById("ContinueText").onclick = function () {
+    function Continue() {
         location.href = "TheKickoff.html";
     };
+
+    function NewTextBox() {
+        var element = document.createElement("input");
+        element.setAttribute("type", "text");
+        element.setAttribute("value", "");
+        element.setAttribute("name", "Test Name");
+    }
 </script>
 
 </body>
