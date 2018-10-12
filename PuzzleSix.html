@@ -141,7 +141,7 @@
     <!--END CODE FOR PROP LIST-->
 
     <!--START CODE FOR CONTINUE-->
-    <div class="continueButton">
+    <div class="continueButton" onclick="Continue()">
         <div class="ContinueRectangle">
             <button id="ContinueText">Continue</button>
         </div>    
@@ -149,7 +149,7 @@
     <!--END CODE FOR CONTINUE-->
 
     <!--START CODE FOR PREVIOUS-->
-    <div class="previousButton">
+    <div class="previousButton" onclick="Previous()">
         <div class="PreviousRectangle">
             <button id="PreviousText">Previous</button>
         </div>    
@@ -157,7 +157,7 @@
     <!--END CODE FOR PREVIOUS-->
 
 <script>
-    document.getElementById("PreviousText").onclick = function () {
+    function Previous() {
         location.href = "PuzzleFive.html";
     };
 

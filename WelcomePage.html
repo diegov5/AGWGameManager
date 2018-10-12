@@ -66,7 +66,7 @@
     <!--END CODE FOR WELCOME-->
 
     <!--START CODE FOR CONTINUE-->
-    <div class="continueButton">
+    <div class="continueButton" onclick="Continue()">
         <div class="ContinueRectangle">
             <button id="ContinueText">Continue</button>
         </div>    
@@ -74,7 +74,7 @@
     <!--END CODE FOR CONTINUE-->
 
 <script>
-    document.getElementById("ContinueText").onclick = function () {
+    function Continue() {
         location.href = "TeamsPage.html";
     };
 </script>
