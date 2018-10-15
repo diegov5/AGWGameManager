@@ -8,9 +8,9 @@ If you want to view anything, just download EVERYTHING ONTO THE SAME FOLDER and 
   
 Let me know if you have any questions :)
   
-LAST UPDATED ON 10/5/2018
+LAST UPDATED ON 10/12/2018
   
-Integrated functionality for preivous and continue buttons for each page
+Fixed a bug regarding continue and previous buttons only working if actual text was clicked
   
 Some notes on each file:  
 Welcome: Done  
