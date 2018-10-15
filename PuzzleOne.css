@@ -429,7 +429,7 @@ div.continueButton{
     width: 150px;
     height: 50px;
     left: 1201px;
-    top: 725px;
+    top: 1500px;
 }
 
 
@@ -470,7 +470,7 @@ div.previousButton{
     width: 150px;
     height: 50px;
     left: 85px;
-    top: 725px;
+    top: 1500px;
 }
 
 
@@ -719,4 +719,20 @@ div.PropList{
     top: 44px;
 
     border: 1px solid #BABABA;
+}
+
+/* PUZZLE INPUT BOX */
+div.PuzzleInputTitle{
+    position: absolute;
+    left: 18.09%;
+    top: 750px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    font-size: 18px;
+    text-align: right;
+
+    color: #000000;
 }
