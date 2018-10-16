@@ -424,7 +424,7 @@ div.continueButton{
     width: 150px;
     height: 50px;
     left: 1201px;
-    top: 725px;
+    top: 1125px;
 }
 
 
@@ -465,7 +465,7 @@ div.previousButton{
     width: 150px;
     height: 50px;
     left: 85px;
-    top: 725px;
+    top: 1125px;
 }
 
 
@@ -561,11 +561,10 @@ button{
 /* Edit Box Default */
 form{
     position: absolute;
-    width: 870px;
+    width: 570px;
     height: 26px;
-    left: 200px;
-    top: 569px;
-    bottom: 15.38%;
+    left: 80px;
+    top: 592px;
 
     font-family: Montserrat;
     font-style: normal;
