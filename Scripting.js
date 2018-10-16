@@ -21,6 +21,13 @@ function kickOffFormChanged() {
     kickOffLocation = sessionStorage.getItem("kickOffLocation");
 }
 
+function setDefaultKickoff(){
+    kickOffLocation = sessionStorage.getItem("kickOffLocation");
+    if (kickOffLocation != null) {
+        document.getElementById("kickOffLocation").defaultValue = kickOffLocation;
+    }
+}
+
 // END SCRIPTING FOR KICKOFF
 
 // START SCRIPTING FOR ACTIVITY ONE PAGE
@@ -30,6 +37,12 @@ function ActivityOneLocationChanged(){
     activityOneLocation = sessionStorage.getItem("activityOneLocation");
 }
 
+function setDefaultActivityOne(){
+    activityOneLocation = sessionStorage.getItem("activityOneLocation");
+    if (activityOneLocation != null) {
+        document.getElementById("ActivityOneLocation").defaultValue = activityOneLocation;
+    }
+}
 
 // END SCRIPTING FOR ACTIVITY ONE PAGE
 
@@ -40,6 +53,12 @@ function ActivityTwoLocationChanged(){
     activityTwoLocation = sessionStorage.getItem("activityTwoLocation");
 }
 
+function setDefaultActivityTwo(){
+    activityTwoLocation = sessionStorage.getItem("ActivityTwoLocation");
+    if (activityTwoLocation != null) {
+        document.getElementById("ActivityTwoLocation").defaultValue = activityTwoLocation;
+    }
+}
 
 // END SCRIPTING FOR ACTIVITY TWO PAGE
 
@@ -50,6 +69,12 @@ function ActivityThreeLocationChanged(){
     ActivityThreeLocation = sessionStorage.getItem("ActivityThreeLocation");
 }
 
+function setDefaultActivityThree(){
+    ActivityThreeLocation = sessionStorage.getItem("ActivityThreeLocation");
+    if (ActivityThreeLocation != null) {
+        document.getElementById("ActivityThreeLocation").defaultValue = ActivityThreeLocation;
+    }
+}
 
 // END SCRIPTING FOR ACTIVITY THREE PAGE
 
@@ -58,6 +83,13 @@ function ActivityThreeLocationChanged(){
 function PuzzleOneLocationChanged(){
     sessionStorage.setItem("PuzzleOneLocation", document.getElementById("PuzzleOneLocation").value);
     PuzzleOneLocation = sessionStorage.getItem("PuzzleOneLocation");
+}
+
+function setDefaultPuzzleOne(){
+    PuzzleOneLocation = sessionStorage.getItem("PuzzleOneLocation");
+    if (PuzzleOneLocation != null) {
+        document.getElementById("PuzzleOneLocation").defaultValue = PuzzleOneLocation;
+    }
 }
 
 
@@ -70,6 +102,12 @@ function PuzzleTwoLocationChanged(){
     PuzzleTwoLocation = sessionStorage.getItem("PuzzleTwoLocation");
 }
 
+function setDefaultPuzzleTwo(){
+    PuzzleTwoLocation = sessionStorage.getItem("PuzzleTwoLocation");
+    if (PuzzleTwoLocation != null) {
+        document.getElementById("PuzzleTwoLocation").defaultValue = PuzzleTwoLocation;
+    }
+}
 
 // END SCRIPTING FOR PUZZLE TWO
 
@@ -80,6 +118,12 @@ function PuzzleThreeLocationChanged(){
     PuzzleThreeLocation = sessionStorage.getItem("PuzzleThreeLocation");
 }
 
+function setDefaultPuzzleThree(){
+    PuzzleThreeLocation = sessionStorage.getItem("PuzzleThreeLocation");
+    if (PuzzleThreeLocation != null) {
+        document.getElementById("PuzzleThreeLocation").defaultValue = PuzzleThreeLocation;
+    }
+}
 
 // END SCRIPTING FOR PUZZLE THREE
 
@@ -90,6 +134,12 @@ function PuzzleFourLocationChanged(){
     PuzzleFourLocation = sessionStorage.getItem("PuzzleFourLocation");
 }
 
+function setDefaultPuzzleFour(){
+    PuzzleFourLocation = sessionStorage.getItem("PuzzleFourLocation");
+    if (PuzzleFourLocation != null) {
+        document.getElementById("PuzzleFourLocation").defaultValue = PuzzleFourLocation;
+    }
+}
 
 // END SCRIPTING FOR PUZZLE FOUR
 
@@ -100,6 +150,12 @@ function PuzzleFiveLocationChanged(){
     PuzzleFiveLocation = sessionStorage.getItem("PuzzleFiveLocation");
 }
 
+function setDefaultPuzzleFive(){
+    PuzzleFiveLocation = sessionStorage.getItem("PuzzleFiveLocation");
+    if (PuzzleFiveLocation != null) {
+        document.getElementById("PuzzleFiveLocation").defaultValue = PuzzleFiveLocation;
+    }
+}
 
 // END SCRIPTING FOR PUZZLE FIVE
 
@@ -110,6 +166,12 @@ function PuzzleSixLocationChanged(){
     PuzzleSixLocation = sessionStorage.getItem("PuzzleSixLocation");
 }
 
+function setDefaultPuzzleSix(){
+    PuzzleSixLocation = sessionStorage.getItem("PuzzleSixLocation");
+    if (PuzzleSixLocation != null) {
+        document.getElementById("PuzzleSixLocation").defaultValue = PuzzleSixLocation;
+    }
+}
 
 // END SCRIPTING FOR PUZZLE SIX
 
@@ -118,6 +180,13 @@ function PuzzleSixLocationChanged(){
 function PuzzleSevenLocationChanged(){
     sessionStorage.setItem("PuzzleSevenLocation", document.getElementById("PuzzleSevenLocation").value);
     PuzzleSevenLocation = sessionStorage.getItem("PuzzleSevenLocation");
+}
+
+function setDefaultPuzzleSeven(){
+    PuzzleSevenLocation = sessionStorage.getItem("PuzzleSevenLocation");
+    if (PuzzleSevenLocation != null) {
+        document.getElementById("PuzzleSevenLocation").defaultValue = PuzzleSevenLocation;
+    }
 }
 
 
@@ -130,6 +199,12 @@ function PuzzleEightLocationChanged(){
     PuzzleEightLocation = sessionStorage.getItem("PuzzleEightLocation");
 }
 
+function setDefaultPuzzleEight(){
+    PuzzleEightLocation = sessionStorage.getItem("PuzzleEightLocation");
+    if (PuzzleEightLocation != null) {
+        document.getElementById("PuzzleEightLocation").defaultValue = PuzzleEightLocation;
+    }
+}
 
 // END SCRIPTING FOR PUZZLE EIGHT
 
@@ -137,7 +212,7 @@ function PuzzleEightLocationChanged(){
 function setDefaultCongraulationsBoxes(){
     kickOffLocation = sessionStorage.getItem("kickOffLocation");
     activityOneLocation = sessionStorage.getItem("activityOneLocation");
-    activityTwoLocation = sessionStorage.getItem("activityTwoLocation");
+    activityTwoLocation = sessionStorage.getItem("ActivityTwoLocation");
     PuzzleOneLocation = sessionStorage.getItem("PuzzleOneLocation");
     PuzzleTwoLocation = sessionStorage.getItem("PuzzleTwoLocation");
     PuzzleThreeLocation = sessionStorage.getItem("PuzzleThreeLocation");
@@ -163,3 +238,116 @@ function setDefaultCongraulationsBoxes(){
 }
 // END SCRIPTING FOR CONGRATULATIONS PAGE
 
+function CongratskickOffFormChanged() {
+    sessionStorage.setItem("kickOffLocation", document.getElementById("CongratskickOffLocation").value);
+    kickOffLocation = sessionStorage.getItem("kickOffLocation");
+}
+
+// END SCRIPTING FOR KICKOFF
+
+// START SCRIPTING FOR ACTIVITY ONE PAGE
+
+function CongratsActivityOneLocationChanged(){
+    sessionStorage.setItem("activityOneLocation", document.getElementById("CongratsActivityOneLocation").value);
+    activityOneLocation = sessionStorage.getItem("activityOneLocation");
+}
+
+
+// END SCRIPTING FOR ACTIVITY ONE PAGE
+
+// START SCRIPTING FOR ACTIVITY TWO PAGE
+
+function CongratsActivityTwoLocationChanged(){
+    sessionStorage.setItem("ActivityTwoLocation", document.getElementById("CongratsActivityTwoLocation").value);
+    activityTwoLocation = sessionStorage.getItem("activityTwoLocation");
+}
+
+
+// END SCRIPTING FOR ACTIVITY TWO PAGE
+
+// START SCRIPTING FOR ACTIVITY THREE PAGE
+
+function CongratsActivityThreeLocationChanged(){
+    sessionStorage.setItem("ActivityThreeLocation", document.getElementById("CongratsPuzzleOneLocation").value);
+    ActivityThreeLocation = sessionStorage.getItem("ActivityThreeLocation");
+}
+
+
+// END SCRIPTING FOR ACTIVITY THREE PAGE
+
+// START SCRIPTING FOR PUZZLE ONE
+
+function CongratsPuzzleOneLocationChanged(){
+    sessionStorage.setItem("PuzzleOneLocation", document.getElementById("CongratsPuzzleTwoLocation").value);
+    PuzzleOneLocation = sessionStorage.getItem("PuzzleOneLocation");
+}
+
+
+// END SCRIPTING FOR PUZZLE ONE
+
+// START SCRIPTING FOR PUZZLE TWO
+
+function CongratsPuzzleTwoLocationChanged(){
+    sessionStorage.setItem("PuzzleTwoLocation", document.getElementById("CongratsPuzzleThreeLocation").value);
+    PuzzleTwoLocation = sessionStorage.getItem("PuzzleTwoLocation");
+}
+
+
+// END SCRIPTING FOR PUZZLE TWO
+
+// START SCRIPTING FOR PUZZLE THREE
+
+function CongratsPuzzleThreeLocationChanged(){
+    sessionStorage.setItem("PuzzleThreeLocation", document.getElementById("CongratsPuzzleFourLocation").value);
+    PuzzleThreeLocation = sessionStorage.getItem("PuzzleThreeLocation");
+}
+
+
+// END SCRIPTING FOR PUZZLE THREE
+
+// START SCRIPTING FOR PUZZLE FOUR
+
+function CongratsPuzzleFourLocationChanged(){
+    sessionStorage.setItem("PuzzleFourLocation", document.getElementById("CongratsPuzzleFiveLocation").value);
+    PuzzleFourLocation = sessionStorage.getItem("PuzzleFourLocation");
+}
+
+
+// END SCRIPTING FOR PUZZLE FOUR
+
+// START SCRIPTING FOR PUZZLE FIVE
+
+function CongratsPuzzleFiveLocationChanged(){
+    sessionStorage.setItem("PuzzleFiveLocation", document.getElementById("CongratsPuzzleSixLocation").value);
+    PuzzleFiveLocation = sessionStorage.getItem("PuzzleFiveLocation");
+}
+
+
+// END SCRIPTING FOR PUZZLE FIVE
+
+// START SCRIPTING FOR PUZZLE SIX
+
+function CongratsPuzzleSixLocationChanged(){
+    sessionStorage.setItem("PuzzleSixLocation", document.getElementById("CongratsActivityThreeLocation").value);
+    PuzzleSixLocation = sessionStorage.getItem("PuzzleSixLocation");
+}
+
+
+// END SCRIPTING FOR PUZZLE SIX
+
+// START SCRIPTING FOR PUZZLE SEVEN
+
+function CongratsPuzzleSevenLocationChanged(){
+    sessionStorage.setItem("PuzzleSevenLocation", document.getElementById("CongratsPuzzleSevenLocation").value);
+    PuzzleSevenLocation = sessionStorage.getItem("PuzzleSevenLocation");
+}
+
+
+// END SCRIPTING FOR PUZZLE SEVEN
+
+// START SCRIPTING FOR PUZZLE EIGHT
+
+function CongratsPuzzleEightLocationChanged(){
+    sessionStorage.setItem("PuzzleEightLocation", document.getElementById("CongratsPuzzleEightLocation").value);
+    PuzzleEightLocation = sessionStorage.getItem("PuzzleEightLocation");
+}
