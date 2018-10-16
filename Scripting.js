@@ -1,6 +1,5 @@
 "use strict";
 
-//var kickOffLocation;
 var kickOffLocation;
 var activityOneLocation;
 var activityTwoLocation;
