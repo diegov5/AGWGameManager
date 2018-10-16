@@ -1,23 +1,24 @@
 "use strict";
+window.sessionStorage;
 
 var kickOffLocation;
 var activityOneLocation;
 var activityTwoLocation;
-var puzzleOneLocation;
-var puzzleTwoLocation;
-var puzzleThreeLocation;
-var puzzleFourLocation; 
-var puzzleFiveLocation;
-var puzzleSixLocation;
-var activityThreeLocation;
-var puzzleSevenLocation;
-var puzzleEightLocation;
+var PuzzleOneLocation;
+var PuzzleTwoLocation;
+var PuzzleThreeLocation;
+var PuzzleFourLocation; 
+var PuzzleFiveLocation;
+var PuzzleSixLocation;
+var ActivityThreeLocation;
+var PuzzleSevenLocation;
+var PuzzleEightLocation;
 
 // START SCRIPTING FOR KICKOFF
 
 function kickOffFormChanged() {
-    kickOffLocation = document.getElementById("kickOffLocation").value;
-    console.log(kickOffLocation);
+    sessionStorage.setItem("kickOffLocation", document.getElementById("kickOffLocation").value);
+    kickOffLocation = sessionStorage.getItem("kickOffLocation");
 }
 
 // END SCRIPTING FOR KICKOFF
@@ -25,7 +26,8 @@ function kickOffFormChanged() {
 // START SCRIPTING FOR ACTIVITY ONE PAGE
 
 function ActivityOneLocationChanged(){
-    activityOneLocation = document.getElementById("ActivityOneLocation").value;
+    sessionStorage.setItem("activityOneLocation", document.getElementById("ActivityOneLocation").value);
+    activityOneLocation = sessionStorage.getItem("activityOneLocation");
 }
 
 
@@ -34,7 +36,8 @@ function ActivityOneLocationChanged(){
 // START SCRIPTING FOR ACTIVITY TWO PAGE
 
 function ActivityTwoLocationChanged(){
-    activityTwoLocation = document.getElementById("ActivityTwoLocation").value;
+    sessionStorage.setItem("ActivityTwoLocation", document.getElementById("ActivityTwoLocation").value);
+    activityTwoLocation = sessionStorage.getItem("activityTwoLocation");
 }
 
 
@@ -43,7 +46,8 @@ function ActivityTwoLocationChanged(){
 // START SCRIPTING FOR ACTIVITY THREE PAGE
 
 function ActivityThreeLocationChanged(){
-    activityThree = document.getElementById("ActivityThreeLocation").value;
+    sessionStorage.setItem("ActivityThreeLocation", document.getElementById("ActivityThreeLocation").value);
+    ActivityThreeLocation = sessionStorage.getItem("ActivityThreeLocation");
 }
 
 
@@ -52,7 +56,8 @@ function ActivityThreeLocationChanged(){
 // START SCRIPTING FOR PUZZLE ONE
 
 function PuzzleOneLocationChanged(){
-    puzzleOneLocation = document.getElementById("PuzzleOneLocation").value;
+    sessionStorage.setItem("PuzzleOneLocation", document.getElementById("PuzzleOneLocation").value);
+    PuzzleOneLocation = sessionStorage.getItem("PuzzleOneLocation");
 }
 
 
@@ -61,7 +66,8 @@ function PuzzleOneLocationChanged(){
 // START SCRIPTING FOR PUZZLE TWO
 
 function PuzzleTwoLocationChanged(){
-    puzzleTwoLocation = document.getElementById("PuzzleTwoLocation").value;
+    sessionStorage.setItem("PuzzleTwoLocation", document.getElementById("PuzzleTwoLocation").value);
+    PuzzleTwoLocation = sessionStorage.getItem("PuzzleTwoLocation");
 }
 
 
@@ -70,7 +76,8 @@ function PuzzleTwoLocationChanged(){
 // START SCRIPTING FOR PUZZLE THREE
 
 function PuzzleThreeLocationChanged(){
-    puzzleThreeLocation = document.getElementById("PuzzleThreeLocation").value;
+    sessionStorage.setItem("PuzzleThreeLocation", document.getElementById("PuzzleThreeLocation").value);
+    PuzzleThreeLocation = sessionStorage.getItem("PuzzleThreeLocation");
 }
 
 
@@ -79,7 +86,8 @@ function PuzzleThreeLocationChanged(){
 // START SCRIPTING FOR PUZZLE FOUR
 
 function PuzzleFourLocationChanged(){
-    puzzleFourLocation = document.getElementById("PuzzleFourLocation").value;
+    sessionStorage.setItem("PuzzleFourLocation", document.getElementById("PuzzleFourLocation").value);
+    PuzzleFourLocation = sessionStorage.getItem("PuzzleFourLocation");
 }
 
 
@@ -88,7 +96,8 @@ function PuzzleFourLocationChanged(){
 // START SCRIPTING FOR PUZZLE FIVE
 
 function PuzzleFiveLocationChanged(){
-    puzzleFiveLocation = document.getElementById("PuzzleFiveLocation").value;
+    sessionStorage.setItem("PuzzleFiveLocation", document.getElementById("PuzzleFiveLocation").value);
+    PuzzleFiveLocation = sessionStorage.getItem("PuzzleFiveLocation");
 }
 
 
@@ -97,7 +106,8 @@ function PuzzleFiveLocationChanged(){
 // START SCRIPTING FOR PUZZLE SIX
 
 function PuzzleSixLocationChanged(){
-    puzzleSixLocation = document.getElementById("PuzzleSixLocation").value;
+    sessionStorage.setItem("PuzzleSixLocation", document.getElementById("PuzzleSixLocation").value);
+    PuzzleSixLocation = sessionStorage.getItem("PuzzleSixLocation");
 }
 
 
@@ -106,7 +116,8 @@ function PuzzleSixLocationChanged(){
 // START SCRIPTING FOR PUZZLE SEVEN
 
 function PuzzleSevenLocationChanged(){
-    puzzleSevenLocation = document.getElementById("PuzzleSevenLocation").value;
+    sessionStorage.setItem("PuzzleSevenLocation", document.getElementById("PuzzleSevenLocation").value);
+    PuzzleSevenLocation = sessionStorage.getItem("PuzzleSevenLocation");
 }
 
 
@@ -115,33 +126,40 @@ function PuzzleSevenLocationChanged(){
 // START SCRIPTING FOR PUZZLE EIGHT
 
 function PuzzleEightLocationChanged(){
-    if (document.getElementById("PuzzleEightLocation").value != null){
-        puzzleEightLocation = document.getElementById("PuzzleEightLocation").value;
-    }
-    else if (document.getElementById("CongratsPuzzleEightLocation").value){
-        puzzleEightLocation = document.getElementById("CongratsPuzzleEightLocation").value;
-    }
-    console.log(puzzleEightLocation);
+    sessionStorage.setItem("PuzzleEightLocation", document.getElementById("PuzzleEightLocation").value);
+    PuzzleEightLocation = sessionStorage.getItem("PuzzleEightLocation");
 }
 
 
 // END SCRIPTING FOR PUZZLE EIGHT
 
 // START SCRIPTING FOR CONGRATULATIONS PAGE
+function setDefaultCongraulationsBoxes(){
+    kickOffLocation = sessionStorage.getItem("kickOffLocation");
+    activityOneLocation = sessionStorage.getItem("activityOneLocation");
+    activityTwoLocation = sessionStorage.getItem("activityTwoLocation");
+    PuzzleOneLocation = sessionStorage.getItem("PuzzleOneLocation");
+    PuzzleTwoLocation = sessionStorage.getItem("PuzzleTwoLocation");
+    PuzzleThreeLocation = sessionStorage.getItem("PuzzleThreeLocation");
+    PuzzleFourLocation = sessionStorage.getItem("PuzzleFourLocation");
+    PuzzleFiveLocation = sessionStorage.getItem("PuzzleFiveLocation");
+    PuzzleSixLocation = sessionStorage.getItem("PuzzleSixLocation");
+    ActivityThreeLocation = sessionStorage.getItem("ActivityThreeLocation");
+    PuzzleSevenLocation = sessionStorage.getItem("PuzzleSevenLocation");
+    PuzzleEightLocation = sessionStorage.getItem("PuzzleEightLocation");
 
-document.getElementById("kickOffLocation").value = kickOffLocation;
-document.getElementById("ActivityOneLocation").value = activityOneLocation;
-document.getElementById("ActivityTwoLocation").value = activityTwoLocation;
-document.getElementById("PuzzleOneLocation").value = puzzleOneLocation;
-document.getElementById("PuzzleTwoLocation").value = puzzleTwoLocation;
-document.getElementById("PuzzleThreeLocation").value = puzzleThreeLocation;
-document.getElementById("PuzzleFourLocation").value = puzzleFourLocation;
-document.getElementById("PuzzleFiveLocation").value = puzzleFiveLocation;
-document.getElementById("PuzzleSixLocation").value = puzzleSixLocation;
-document.getElementById("ActivityThreeLocation").value = activityThreeLocation;
-document.getElementById("PuzzleSevenLocation").value = puzzleSevenLocation;
-document.getElementById("PuzzleEightLocation").value = puzzleEightLocation;
-
-
+    document.getElementById("CongratskickOffLocation").defaultValue = kickOffLocation;
+    document.getElementById("CongratsActivityOneLocation").defaultValue = activityOneLocation;
+    document.getElementById("CongratsActivityTwoLocation").defaultValue = activityTwoLocation;
+    document.getElementById("CongratsPuzzleOneLocation").defaultValue = PuzzleOneLocation;
+    document.getElementById("CongratsPuzzleTwoLocation").defaultValue = PuzzleTwoLocation;
+    document.getElementById("CongratsPuzzleThreeLocation").defaultValue = PuzzleThreeLocation;
+    document.getElementById("CongratsPuzzleFourLocation").defaultValue = PuzzleFourLocation;
+    document.getElementById("CongratsPuzzleFiveLocation").defaultValue = PuzzleFiveLocation;
+    document.getElementById("CongratsPuzzleSixLocation").defaultValue = PuzzleSixLocation;
+    document.getElementById("CongratsActivityThreeLocation").defaultValue = ActivityThreeLocation;
+    document.getElementById("CongratsPuzzleSevenLocation").defaultValue = PuzzleSevenLocation;
+    document.getElementById("CongratsPuzzleEightLocation").defaultValue = PuzzleEightLocation;
+}
 // END SCRIPTING FOR CONGRATULATIONS PAGE
 

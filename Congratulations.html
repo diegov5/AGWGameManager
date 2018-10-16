@@ -4,6 +4,7 @@
 
 <head>
     <link href="Congratulations.css" rel="stylesheet" type="text/css" > 
+    <meta charset="utf-8"/>
 </head>
 
 <body>
@@ -81,18 +82,18 @@
 
     <!--START CODE FOR INPUT TEXT AND TITLE-->
     <form>
-        Kickoff Location     <input type="text" id="kickOffLocation" size="60" onkeyup="kickOffFormChanged()" onchange="kickOffFormChanged()"> <br> <br>
-        Activity 1 Location <input type="text" id="ActivityOneLocation" size="60" onkeyup="ActivityOneLocationChanged()" onchange="ActivityOneLocationChanged()"> <br> <br>
-        Activity 2 Location <input type="text" id="ActivityTwoLocation" size="60" onkeyup="ActivityTwoLocationChanged()" onchange="ActivityTwoLocationChanged()"> <br> <br>
-        Puzzle 1 Location    <input type="text" id="PuzzleOneLocation" size="60" onkeyup="ActivityThreeLocationChanged()" onchange="ActivityThreeLocationChanged()"> <br> <br>
-        Puzzle 2 Location    <input type="text" id="PuzzleTwoLocation" size="60" onkeyup="PuzzleOneLocationChanged()" onchange="PuzzleOneLocationChanged()"> <br> <br>
-        Puzzle 3 Location    <input type="text" id="PuzzleThreeLocation" size="60" onkeyup="PuzzleTwoLocationChanged()" onchange="PuzzleTwoLocationChanged()"> <br> <br>
-        Puzzle 4 Location    <input type="text" id="PuzzleFourLocation" size="60" onkeyup="PuzzleThreeLocationChanged()" onchange="PuzzleThreeLocationChanged()"> <br> <br>
-        Puzzle 5 Location    <input type="text" id="PuzzleFiveLocation" size="60" onkeyup="PuzzleFourLocationChanged()" onchange="PuzzleFourLocationChanged()"> <br> <br>
-        Puzzle 6 Location    <input type="text" id="PuzzleSixLocation" size="60" onkeyup="PuzzleFiveLocationChanged()" onchange="PuzzleFiveLocationChanged()"> <br> <br>
-        Activity 3 Location <input type="text" id="ActivityThreeLocation" size="60" onkeyup="PuzzleSixLocationChanged()" onchange="PuzzleSixLocationChanged()"> <br> <br>
-        Puzzle 7 Location    <input type="text" id="PuzzleSevenLocation" size="60" onkeyup="PuzzleSevenLocationChanged()" onchange="PuzzleSevenLocationChanged()"> <br> <br>
-        Puzzle 8 Location    <input type="text" id="PuzzleEightLocation" size="60" onkeyup="PuzzleEightLocationChanged()" onchange="PuzzleEightLocationChanged()"> <br> <br>
+        Kickoff Location     <input type="text" id="CongratskickOffLocation" size="60" onkeyup="kickOffFormChanged()" onchange="kickOffFormChanged()"> <br> <br>
+        Activity 1 Location <input type="text" id="CongratsActivityOneLocation" size="60" onkeyup="ActivityOneLocationChanged()" onchange="ActivityOneLocationChanged()"> <br> <br>
+        Activity 2 Location <input type="text" id="CongratsActivityTwoLocation" size="60" onkeyup="ActivityTwoLocationChanged()" onchange="ActivityTwoLocationChanged()"> <br> <br>
+        Puzzle 1 Location    <input type="text" id="CongratsPuzzleOneLocation" size="60" onkeyup="ActivityThreeLocationChanged()" onchange="ActivityThreeLocationChanged()"> <br> <br>
+        Puzzle 2 Location    <input type="text" id="CongratsPuzzleTwoLocation" size="60" onkeyup="PuzzleOneLocationChanged()" onchange="PuzzleOneLocationChanged()"> <br> <br>
+        Puzzle 3 Location    <input type="text" id="CongratsPuzzleThreeLocation" size="60" onkeyup="PuzzleTwoLocationChanged()" onchange="PuzzleTwoLocationChanged()"> <br> <br>
+        Puzzle 4 Location    <input type="text" id="CongratsPuzzleFourLocation" size="60" onkeyup="PuzzleThreeLocationChanged()" onchange="PuzzleThreeLocationChanged()"> <br> <br>
+        Puzzle 5 Location    <input type="text" id="CongratsPuzzleFiveLocation" size="60" onkeyup="PuzzleFourLocationChanged()" onchange="PuzzleFourLocationChanged()"> <br> <br>
+        Puzzle 6 Location    <input type="text" id="CongratsPuzzleSixLocation" size="60" onkeyup="PuzzleFiveLocationChanged()" onchange="PuzzleFiveLocationChanged()"> <br> <br>
+        Activity 3 Location <input type="text" id="CongratsActivityThreeLocation" size="60" onkeyup="PuzzleSixLocationChanged()" onchange="PuzzleSixLocationChanged()"> <br> <br>
+        Puzzle 7 Location    <input type="text" id="CongratsPuzzleSevenLocation" size="60" onkeyup="PuzzleSevenLocationChanged()" onchange="PuzzleSevenLocationChanged()"> <br> <br>
+        Puzzle 8 Location    <input type="text" id="CongratsPuzzleEightLocation" size="60" onkeyup="PuzzleEightLocationChanged()" onchange="PuzzleEightLocationChanged()"> <br> <br>
     </form> 
 
     
@@ -124,6 +125,10 @@
     };
 </script>
 <script type="text/javascript" src="Scripting.js"></script>
+
+<script>
+    window.onload = setDefaultCongraulationsBoxes();
+</script>
 </body>
 </div>
 </html>
