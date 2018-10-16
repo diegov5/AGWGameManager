@@ -8,9 +8,9 @@ If you want to view anything, just download EVERYTHING ONTO THE SAME FOLDER and 
   
 Let me know if you have any questions :)
   
-LAST UPDATED ON 10/12/2018
+LAST UPDATED ON 10/16/2018
   
-Fixed a bug regarding continue and previous buttons only working if actual text was clicked
+Added session storage for all the location variables and displayed them in the congratulations page
   
 Some notes on each file:  
 Welcome: Done  
@@ -24,5 +24,8 @@ Puzzle 3: Done
 Puzzle 4: Needs puzzle functionality  
 Puzzle 5: Needs puzzle functionality  
 Puzzle 6: Done  
+Puzzle 7: Done  
+Puzzle 8: Done  
+Congratualtions Page: Needs edit capabilities  
   
-Next steps: Begin scripting the puzzles
+Next steps: Finish full puzzle functionality
