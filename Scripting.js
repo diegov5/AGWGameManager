@@ -1,6 +1,5 @@
 "use strict";
 
-//var kickOffLocation;
 var kickOffLocation;
 var activityOneLocation;
 var activityTwoLocation;
@@ -97,7 +96,7 @@ function PuzzleFiveLocationChanged(){
 
 // START SCRIPTING FOR PUZZLE SIX
 
-function PuzzleOneLocationChanged(){
+function PuzzleSixLocationChanged(){
     puzzleSixLocation = document.getElementById("PuzzleSixLocation").value;
 }
 
