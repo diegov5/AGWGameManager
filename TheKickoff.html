@@ -3,8 +3,7 @@
 <html>
 
 <head>
-    <link href="TheKickoff.css" rel="stylesheet" type="text/css" >
-    <script src="Scripting.js"></script> 
+    <link href="TheKickoff.css" rel="stylesheet" type="text/css" > 
 </head>
 
 <body>
@@ -83,7 +82,7 @@
     <!--START CODE FOR INPUT TEXT AND TITLE-->
     <element id="editBoxTitle">Kickoff Location</element>
     <form>
-        <input type="text" name="kickoffLocation" size="60">
+        <input type="text" id="kickOffLocation" size="60" onkeyup="kickOffFormChanged()" onchange="kickOffFormChanged()">
     </form> 
 
 
@@ -112,7 +111,7 @@
         location.href = "ActivityOne.html";
     };
 </script>
-
+<script type="text/javascript" src="Scripting.js"></script>
 </body>
 </div>
 </html>

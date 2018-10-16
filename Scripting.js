@@ -1,6 +1,36 @@
-/*function actTwoToPuzOne(){
-    location.href = "PuzzleOne.html";
-}*/
+"use strict";
+
+//var kickOffLocation;
+var kickOffLocation;
+var activityOneLocation;
+var activityTwoLocation;
+
+// START SCRIPTING FOR KICKOFF
+
+function kickOffFormChanged() {
+    kickOffLocation = document.getElementById("kickOffLocation").value;
+    console.log(kickOffLocation);
+}
+
+// END SCRIPTING FOR KICKOFF
+
+// START SCRIPTING FOR ACTIVITY ONE PAGE
+
+function ActivityOneLocationChanged(){
+    activityOneLocation = document.getElementById("ActivityOneLocation").value;
+}
+
+
+// END SCRIPTING FOR ACTIVITY ONE PAGE
+
+// START SCRIPTING FOR ACTIVITY TWO PAGE
+
+function ActivityTwoLocationChanged(){
+    activityTwoLocation = document.getElementById("ActivityTwoLocation").value;
+}
+
+
+// END SCRIPTING FOR ACTIVITY TWO PAGE
 
 // START SCRIPTING FOR PUZZLE ONE
 
@@ -64,16 +94,3 @@
 
 // END SCRIPTING FOR CONGRATULATIONS PAGE
 
-// START SCRIPTING FOR ACTIVITY ONE PAGE
-
-
-
-
-// END SCRIPTING FOR ACTIVITY ONE PAGE
-
-// START SCRIPTING FOR ACTIVITY TWO PAGE
-
-
-
-
-// END SCRIPTING FOR ACTIVITY TWO PAGE
