@@ -108,10 +108,22 @@
 
     <div class="PuzzleInputTitle">
         <label for="Puzzle1Clue">Puzzle 1 Clue</label>
-        <textarea type="text" name="Puzzle1Clue" size="60" id="Puzzle1Clue" style="height:55px"> </textarea>
+        <textarea type="text" name="Puzzle1Clue" id="Puzzle1Clue" cols= "50" rows= "4"> </textarea>
     </div>
-    
+    <element id="puzzleClueHint">
+            Your clue must mention the location of Puzzle 2.
+    </element>
 
+    <element id="puzzleTitle">
+        Puzzle 1 Preview
+    </element>
+
+    <element id="puzzleDescription"> 
+        Click on the preview to see a larger view.  You can see that your clue is placed in 
+        the second paragraph.
+        <br><br>
+        Note: You’ll print Puzzle 1 later.
+    </element>
 
     <!--START CODE FOR PROP LIST-->
     <div class="PropList">
@@ -125,7 +137,12 @@
     <!--END CODE FOR PROP LIST-->
 
 
-    <!--   TODO ACTUAL PUZZLE    -->
+    <element id="bottomText">
+        Hint
+        <br><br>
+        If players are unsure how to proceed in the game after they put on their <mark class="red">Safety Suit</mark>, 
+        the <mark class="red">Game Manager</mark> or <mark class="red">Nurse</mark> can remind the player to read their <mark class="red">Safety Suit</mark> instructions.  
+    </element>
 
 
     <!--START CODE FOR CONTINUE-->

@@ -736,3 +736,57 @@ div.PuzzleInputTitle{
 
     color: #000000;
 }
+#puzzleClueHint{
+    position: absolute;
+    width: 177px;
+    height: 108px;
+    left: 800px;
+    top: 770px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+    font-size: 14px;
+
+    color: #737373;
+}
+
+#puzzleTitle{
+    position: absolute;
+    left: 16.50%;
+    top: 950px;
+    bottom: 39.18%;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    font-size: 18px;
+    text-align: right;
+
+    color: #000000;
+}  
+
+#puzzleDescription{
+    position: absolute;
+    width: 177px;
+    height: 108px;
+    left: 800px;
+    top: 950px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+    font-size: 14px;
+
+    color: #737373;
+}
+
+#bottomText{
+    position: absolute;
+    left: 85px;
+    top: 1250px;
+    font-size: 18px;
+}

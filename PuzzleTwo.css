@@ -429,7 +429,7 @@ div.continueButton{
     width: 150px;
     height: 50px;
     left: 1201px;
-    top: 725px;
+    top: 2725px;
 }
 
 
@@ -470,7 +470,7 @@ div.previousButton{
     width: 150px;
     height: 50px;
     left: 85px;
-    top: 725px;
+    top: 2725px;
 }
 
 
@@ -724,4 +724,59 @@ div.PropList{
     top: 44px;
 
     border: 1px solid #BABABA;
+}
+
+#birdBoxTitle{
+    position: absolute;
+    width: 339px;
+    height: 21px;
+    left: 20px;
+    top: 824px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    font-size: 14px;
+    text-align: right;
+
+    color: #000000;
+}
+
+#BirdName {
+    position: absolute;
+    top: 824px; 
+    left: 370px;
+}
+
+#BirdHint{
+    position: absolute;
+    width: 195px;
+    height: 101px;
+    left: 789px;
+    top: 815px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+    font-size: 14px;
+
+    color: #737373;
+}
+
+#PuzzleInstructions{
+    position: absolute;
+    width: 1258px;
+    height: 60px;
+    left: 82px;
+    top: 895px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+    font-size: 14px;
+
+    color: #000000;
 }
