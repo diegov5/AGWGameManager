@@ -429,7 +429,7 @@ div.continueButton{
     width: 150px;
     height: 50px;
     left: 1201px;
-    top: 2725px;
+    top: 2300px;
 }
 
 
@@ -470,7 +470,7 @@ div.previousButton{
     width: 150px;
     height: 50px;
     left: 85px;
-    top: 2725px;
+    top: 2300px;
 }
 
 
@@ -779,4 +779,80 @@ div.PropList{
     font-size: 14px;
 
     color: #000000;
+}
+
+#PuzzleThreeLocationTitle{
+    position: absolute;
+    width: 339px;
+    height: 21px;
+    left: 162px;
+    top: 1110px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    font-size: 14px;
+    text-align: right;
+
+    color: #000000;
+}
+
+#Puzzle3Location{
+    position: absolute;
+    width: 381px;
+    height: 33px;
+    left: 518px;
+    top: 1105px;
+
+    border: 1px solid #000000;
+    box-sizing: border-box;
+}
+
+#ExtraNotes{
+    position: absolute;
+    width: 345px;
+    height: 21px;
+    left: 466px;
+    top: 1172px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    font-size: 14px;
+
+    color: #000000;
+}
+
+#PuzzleTwoGraphics{
+    position: absolute;
+    width: 409px;
+    height: 997px;
+    left: 506px;
+    top: 1226px;
+}
+
+#HintText{
+    position: absolute;
+    width: 1323px;
+    height: 35.81px;
+    left: 85px;
+    top: 2100px;
+}
+
+#PuzzleDescription{
+    position: absolute;
+    width: 177px;
+    height: 238px;
+    left: 932px;
+    top: 1220px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+    font-size: 14px;
+
+    color: #737373;
 }

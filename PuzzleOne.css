@@ -790,3 +790,11 @@ div.PuzzleInputTitle{
     top: 1250px;
     font-size: 18px;
 }
+
+#PuzzleOneImage{
+    position: absolute;
+    width: 406px;
+    height: 338px;
+    left: 375px;
+    top: 900px;
+}
