@@ -429,7 +429,7 @@ div.continueButton{
     width: 150px;
     height: 50px;
     left: 1201px;
-    top: 825px;
+    top: 1880px;
 }
 
 
@@ -470,7 +470,7 @@ div.previousButton{
     width: 150px;
     height: 50px;
     left: 85px;
-    top: 825px;
+    top: 1880px;
 }
 
 
@@ -724,4 +724,54 @@ div.PropList{
     top: 44px;
 
     border: 1px solid #BABABA;
+}
+
+#FirstDigit{
+    position: absolute;
+    width: 34px;
+    height: 30px;
+    left: 240px;
+    top: 903px;
+
+    border: 1px solid #000000;
+    box-sizing: border-box;
+}
+
+#SecondDigit{
+    position: absolute;
+    width: 34px;
+    height: 30px;
+    left: 240px;
+    top: 949px;
+
+    border: 1px solid #000000;
+    box-sizing: border-box;
+}
+
+#ThirdDigit{
+    position: absolute;
+    width: 34px;
+    height: 30px;
+    left: 240px;
+    top: 995px;
+
+    border: 1px solid #000000;
+    box-sizing: border-box;
+}
+
+#Puzzle4Image{
+    position: absolute;
+    width: 274px;
+    height: 370px;
+    left: 550px;
+    top: 1280px;
+}
+
+#HintText{
+    position: absolute;
+    width: 723px;
+    height: 35.81px;
+    left: 87px;
+    top: 1690px;
+    font-size: 18px;
 }
