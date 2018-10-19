@@ -8,9 +8,9 @@ If you want to view anything, just download EVERYTHING ONTO THE SAME FOLDER and 
   
 Let me know if you have any questions :)
   
-LAST UPDATED ON 10/16/2018
+LAST UPDATED ON 10/19/2018
   
-Added session storage for all the location variables and displayed them in the congratulations page
+All UI elements should be polished and finalized  
   
 Some notes on each file:  
 Welcome: Done  
@@ -24,8 +24,9 @@ Puzzle 3: Done
 Puzzle 4: Needs puzzle functionality  
 Puzzle 5: Needs puzzle functionality  
 Puzzle 6: Done  
+Act. 3:  
 Puzzle 7: Done  
 Puzzle 8: Done  
-Congratualtions Page: Needs edit capabilities  
+Congratualtions Page: Done   
   
 Next steps: Finish full puzzle functionality
