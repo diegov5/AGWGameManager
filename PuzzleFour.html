@@ -123,9 +123,11 @@
         </div>
     </div>
 
-    <input type="number" id="FirstDigit" size="60">
-    <input type="number" id="SecondDigit" size="60">
-    <input type="number" id="ThirdDigit" size="60">
+    <input type="text" id="PuzzleFiveLocationClue" size="60" onkeyup="PuzzleFiveClueLocationChanged()" onchange="PuzzleFiveClueLocationChanged()">
+
+    <input type="number" id="FirstDigit" size="60" onkeyup="DigitOneChanged()" onchange="DigitOneChanged()">
+    <input type="number" id="SecondDigit" size="60" onkeyup="DigitTwoChanged()" onchange="DigitTwoChanged()">
+    <input type="number" id="ThirdDigit" size="60" onkeyup="DigitThreeChanged()" onchange="DigitThreeChanged()">
 
     <!--END CODE FOR BOTTOM HEADER AND TEXT-->
 
@@ -182,6 +184,10 @@
     };
 
     window.onload = setDefaultPuzzleFour();
+    window.onload = setDefaultDigitOne();
+    window.onload = setDefaultDigitTwo();
+    window.onload = setDefaultDigitThree();
+    window.onload = setDefaultPuzzleFiveClueLocation();
 </script>
 
 </body>

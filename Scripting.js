@@ -13,6 +13,10 @@ var PuzzleSixLocation;
 var ActivityThreeLocation;
 var PuzzleSevenLocation;
 var PuzzleEightLocation;
+var DigitOne;
+var DigitTwo;
+var DigitThree;
+var PuzzleFiveLocationClue;
 
 // START SCRIPTING FOR KICKOFF
 
@@ -140,6 +144,55 @@ function setDefaultPuzzleFour(){
         document.getElementById("PuzzleFourLocation").defaultValue = PuzzleFourLocation;
     }
 }
+
+function DigitOneChanged(){
+    sessionStorage.setItem("FirstDigit", document.getElementById("FirstDigit").value);
+    DigitOne = sessionStorage.getItem("FirstDigit");
+}
+
+function setDefaultDigitOne(){
+    DigitOne = sessionStorage.getItem("FirstDigit");
+    if (DigitOne != null) {
+        document.getElementById("FirstDigit").defaultValue = DigitOne;
+    }
+}
+
+function DigitTwoChanged(){
+    sessionStorage.setItem("SecondDigit", document.getElementById("SecondDigit").value);
+    DigitTwo = sessionStorage.getItem("SecondDigit");
+}
+
+function setDefaultDigitTwo(){
+    DigitTwo = sessionStorage.getItem("SecondDigit");
+    if (DigitTwo != null) {
+        document.getElementById("SecondDigit").defaultValue = DigitTwo;
+    }
+}
+
+function DigitThreeChanged(){
+    sessionStorage.setItem("ThirdDigit", document.getElementById("ThirdDigit").value);
+    DigitThree = sessionStorage.getItem("ThirdDigit");
+}
+
+function setDefaultDigitThree(){
+    DigitThree = sessionStorage.getItem("ThirdDigit");
+    if (DigitThree != null) {
+        document.getElementById("ThirdDigit").defaultValue = DigitThree;
+    }
+}
+
+function PuzzleFiveClueLocationChanged(){
+    sessionStorage.setItem("PuzzleFiveLocationClue", document.getElementById("PuzzleFiveLocationClue").value);
+    PuzzleFiveLocationClue = sessionStorage.getItem("PuzzleFiveLocationClue");
+}
+
+function setDefaultPuzzleFiveClueLocation(){
+    PuzzleFiveLocationClue = sessionStorage.getItem("PuzzleFiveLocationClue");
+    if (PuzzleFiveLocationClue != null) {
+        document.getElementById("PuzzleFiveLocationClue").defaultValue = PuzzleFiveLocationClue;
+    }
+}
+
 
 // END SCRIPTING FOR PUZZLE FOUR
 

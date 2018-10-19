@@ -3,7 +3,6 @@ div.topnav{
     position: relative;
     width: 1415px;
     height: 75px;
-
     background: #FFFFFF;
 }
 
@@ -774,4 +773,13 @@ div.PropList{
     left: 87px;
     top: 1690px;
     font-size: 18px;
+}
+
+#PuzzleFiveLocationClue{
+    position: absolute;
+    left: 300px;
+    top: 1170px;
+
+    border: 1px solid #000000;
+    box-sizing: border-box;
 }
