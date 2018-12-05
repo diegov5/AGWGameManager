@@ -13,6 +13,8 @@ var PuzzleSixLocation;
 var ActivityThreeLocation;
 var PuzzleSevenLocation;
 var PuzzleEightLocation;
+var GameDate;
+var GameTime;
 var DigitOne;
 var DigitTwo;
 var DigitThree;
@@ -33,6 +35,31 @@ function setDefaultKickoff(){
 }
 
 // END SCRIPTING FOR KICKOFF
+
+// START SCRIPTING FOR GAME DATE/TIME
+
+function gameDateFormChanged() {
+    sessionStorage.setItem("Date", document.getElementById("Date").value);
+    GameDate = sessionStorage.getItem("Date");
+}
+
+function gameTimeFormChanged() {
+    sessionStorage.setItem("Time", document.getElementById("Time").value);
+    GameTime = sessionStorage.getItem("Time");
+}
+
+function setDefaultValues(){
+    GameDate = sessionStorage.getItem("Date");
+    GameTime = sessionStorage.getItem("Time");
+    if (GameDate != null) {
+        document.getElementById("Date").defaultValue = GameDate;
+    }
+    if (GameTime != null) {
+        document.getElementById("Time").defaultValue = GameTime;
+    }
+}
+
+// END SCRIPTING FOR GAME DATE/TIME
 
 // START SCRIPTING FOR ACTIVITY ONE PAGE
 

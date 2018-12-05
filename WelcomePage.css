@@ -357,8 +357,8 @@ div.StickMan{
     position: absolute;
     width: 251px;
     height: 280px;
-    left: 150px;
-    top: 351px;
+    left: 612px;
+    top: 400px;
 
     background: #FFFFFF;
 }
@@ -386,7 +386,7 @@ div.continueButton{
     width: 150px;
     height: 50px;
     left: 1201px;
-    top: 200px;
+    top: 700px;
 }
 
 
@@ -422,4 +422,20 @@ div.ContinueRectangle{
 button{
     border-style: none;
     outline-style: none;
+}
+
+#WelcomeBody{
+    position: absolute;
+    width: 1280px;
+    height: 123px;
+    left: 82px;
+    top: 255px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+    font-size: 16px;
+
+    color: #000000;
 }
