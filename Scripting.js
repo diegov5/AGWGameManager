@@ -44,19 +44,24 @@ function gameDateFormChanged() {
 }
 
 function gameTimeFormChanged() {
-    sessionStorage.setItem("Time", document.getElementById("Time").value);
-    GameTime = sessionStorage.getItem("Time");
+    sessionStorage.setItem("GameTime", document.getElementById("Time").value);
+    GameTime = sessionStorage.getItem("GameTime");
 }
+//scripting for Game Day INstructions
+function setDefaultGameTime(){
+    GameTime = sessionStorage.getItem("GameTime");
+    document.getElementById("Time").defaultValue = GameTime;
 
+}
 function setDefaultValues(){
     GameDate = sessionStorage.getItem("Date");
-    GameTime = sessionStorage.getItem("Time");
+    GameTime = sessionStorage.getItem("GameTime");
     if (GameDate != null) {
         document.getElementById("Date").defaultValue = GameDate;
     }
-    if (GameTime != null) {
-        document.getElementById("Time").defaultValue = GameTime;
-    }
+    
+        document.getElementById("sTime").value = "10:00";
+    
 }
 
 // END SCRIPTING FOR GAME DATE/TIME
@@ -317,6 +322,7 @@ function setDefaultCongraulationsBoxes(){
     document.getElementById("CongratsPuzzleEightLocation").defaultValue = PuzzleEightLocation;
 }
 // END SCRIPTING FOR CONGRATULATIONS PAGE
+
 
 function CongratskickOffFormChanged() {
     sessionStorage.setItem("kickOffLocation", document.getElementById("CongratskickOffLocation").value);

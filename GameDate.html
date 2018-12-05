@@ -99,7 +99,7 @@
     <!--START CODE FOR INPUT TEXT AND TITLE-->
     <element id="editBoxTitleTime">Start Time:</element>
     <form>
-        <input type="time" id="Time" size="60" onkeyup="gameTimeFormChanged()" onchange="gameTimeFormChanged()">
+        <input type="time" id="Time" size="60" oninput="gameTimeFormChanged()" onchange="gameTimeFormChanged()">
     </form> 
 
 
@@ -129,7 +129,7 @@
     function Continue() {
         location.href = "TheKickoff.html";
     };
-    window.onload = setDefaultValues();
+    window.onload = setDefaultGameTime();
 </script>
 
 </body>

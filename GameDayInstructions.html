@@ -75,7 +75,8 @@
     <element id="subheaderBody">
         <b>Game Day and Time</b>
         <br><br>
-        You’ve indicated that you’ll be playing your game on <b>December 14th at 10:00AM</b>.  
+        You’ve indicated that you’ll be playing your game on <b>December 14th at <element><id="sTime">12:00</element> </b>
+            
         <br><br>
         Based on your game date and time, we’ve created this handy instruction list
          to help you get ready for the game and set it up on game day.
@@ -132,10 +133,6 @@
     <!--END CODE FOR SUBHEADER & BODY-->
 
 
-
-    
-
-
     <!--START CODE FOR CONTINUE-->
     <div class="continueButton" onclick="Continue()">
         <div class="ContinueRectangle">
@@ -160,11 +157,12 @@
     function Continue() {
         location.href = "DuringTheGame.html";
     };
+    window.onload = setDefaultValues();
 </script>
 <script type="text/javascript" src="Scripting.js"></script>
 
 <script>
-    window.onload = setDefaultCongraulationsBoxes();
+    window.onload = setDefaultValues();
 </script>
 </body>
 </div>
