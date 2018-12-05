@@ -85,7 +85,7 @@
 
     <!--START CODE FOR INPUT TEXT AND TITLE-->
     <element id="editBoxTitle">Game Date:</element>
-    <input type="date" id="Date" size="60" onkeyup="gameDateFormChanged()" onchange="gameDateFormChanged()">
+    <input type="date" id="Date" size="60" oninput="gameDateFormChanged()" onchange="gameDateFormChanged()">
 
 
     <element id="subHeaderStartTime">
@@ -129,9 +129,11 @@
     function Continue() {
         location.href = "TheKickoff.html";
     };
-    window.onload = setDefaultGameTime();
 </script>
-
+<script type="text/javascript" src="Scripting.js"></script>
+<script>
+window.onload = setDefaultDateAndTime();
+</script>
 </body>
 </div>
 </html>

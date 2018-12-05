@@ -39,30 +39,85 @@ function setDefaultKickoff(){
 // START SCRIPTING FOR GAME DATE/TIME
 
 function gameDateFormChanged() {
-    sessionStorage.setItem("Date", document.getElementById("Date").value);
-    GameDate = sessionStorage.getItem("Date");
+    sessionStorage.setItem("GameDate", document.getElementById("Date").value);
+    GameDate = sessionStorage.getItem("GameDate");
 }
 
 function gameTimeFormChanged() {
     sessionStorage.setItem("GameTime", document.getElementById("Time").value);
     GameTime = sessionStorage.getItem("GameTime");
 }
-//scripting for Game Day INstructions
-function setDefaultGameTime(){
-    GameTime = sessionStorage.getItem("GameTime");
-    document.getElementById("Time").defaultValue = GameTime;
 
-}
-function setDefaultValues(){
-    GameDate = sessionStorage.getItem("Date");
-    GameTime = sessionStorage.getItem("GameTime");
+function setDefaultDateAndTime(){
+    GameDate = sessionStorage.getItem("GameDate");
     if (GameDate != null) {
         document.getElementById("Date").defaultValue = GameDate;
     }
-    
-        document.getElementById("sTime").value = "10:00";
-    
+    GameTime = sessionStorage.getItem("GameTime");
+    if (GameTime != null) {
+        document.getElementById("Time").defaultValue = GameTime;
+    }
 }
+function setDefaultValues(){
+    GameDate = sessionStorage.getItem("GameDate");
+    GameTime = sessionStorage.getItem("GameTime");
+    if (GameDate != null) {
+        document.getElementById("sDate").innerHTML = formatDate(GameDate);
+    }
+    if (GameTime != null) {
+        document.getElementById("sTime").innerHTML = GameTime;
+
+        //var setup = TimeObject.stepDown(120);
+        var time = convertTime(120);
+        document.getElementById("time0").innerHTML = time[0] + ":" + time[1];
+        var time = convertTime(110);
+        document.getElementById("time1").innerHTML = time[0] + ":" + time[1];
+        var time = convertTime(100);
+        document.getElementById("time2").innerHTML = time[0] + ":" + time[1];
+        var time = convertTime(70);
+        document.getElementById("time3").innerHTML = time[0] + ":" + time[1];
+        var time = convertTime(60);
+        document.getElementById("time4").innerHTML = time[0] + ":" + time[1];
+        var time = convertTime(50);
+        document.getElementById("time5").innerHTML = time[0] + ":" + time[1];
+        var time = convertTime(30);
+        document.getElementById("time6").innerHTML = time[0] + ":" + time[1];
+        document.getElementById("time7").innerHTML = GameTime;
+    }
+}
+//subtracts time from start time (in mins)
+function convertTime(mins){
+    var hours_i = parseInt(GameTime.substring(0, 2));
+    var mins_i = parseInt(GameTime.substring(3));
+    var hours = Math.floor(mins / 60);
+    mins = mins - hours * 60;
+    mins_i = mins_i - mins;
+    if( mins_i < 0)
+    {
+        hours++;
+        mins_i = 60 + mins_i
+    }
+    hours_i = hours_i - hours;
+    if(hours_i <= 0)
+        hours_i = 12 + hours_i;
+    var h = "0" + hours_i;
+    var m = "0" + mins_i;
+    return [h.substring(h.length-2), m.substring(m.length-2)];
+}
+function formatDate(date) {
+    var monthNames = [
+      "January", "February", "March",
+      "April", "May", "June", "July",
+      "August", "September", "October",
+      "November", "December"
+    ];
+  
+    var monthIndex = parseInt(date.substring(5,7));
+    var  day = date.substring(8);
+    var year = date.substring(0,4);
+  
+    return monthNames[monthIndex-1] + ' ' + day + ', ' + year;
+  }
 
 // END SCRIPTING FOR GAME DATE/TIME
 
