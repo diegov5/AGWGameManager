@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link href="DuringTheGame.css" rel="stylesheet" type="text/css" > 
+    <meta charset="utf-8"/>
+</head>
+
+<body>
+
+    <!--CODE FOR THE NAV BAR-->
+    <div class="topnav">
+
+        <element id="rectangle"></div>
+
+        <div class="roundButton">
+            <element id="EllipseName"></element>
+            <element id="JO">JO</element>
+        </div>
+       
+        <div class="group">
+            <div class="vector"><img src="AGWFlagLogoWhite.png" alt="flag logo"></div>
+        </div>
+
+        <h1>GAME MANAGER</h1>
+    </div>
+    <!--END CODE FOR THE NAV BAR-->
+
+
+    <!--CODE FOR PROGRESS BAR-->
+    <div class="progress1">
+        <div class="welcomeRoundButton">
+            <element id="Ellipse"></element>
+            <element id="Number1">1</element>
+        </div>
+        <div class="teamsRoundButton">
+            <element id="Ellipse"></element>
+            <element id="Number2">2</element>
+            
+        </div>
+        <div class="theGameButton">
+            <element id="Ellipse"></element>
+            <element id="Number3">3</element>
+        </div>
+        <div class="gameDayButton">
+            <element id="EllipseRed"></element>
+            <element id="Number4">4</element>
+        </div>
+        <element id="WelcomeText">Welcome</element>
+        <element id="TeamText">Teams</element>
+        <element id="TheGameText">The Game</element>
+        <element id="GameDayText">Game Day</element>
+        <element id="LongLine"></element>
+        <element id="RedHighlight"></element>
+    </div>
+    <!--END CODE FOR PROGRESS BAR-->
+
+    <!--START CODE FOR STICKMAN-->
+    <div class="StickMan">
+        <img src="StickMan_04.png" alt="stick man hands up">
+    </div>
+    <!-- END CODE FOR STICKMAN-->
+
+    <!--START CODE FOR WELCOME-->
+    <element id="Welcome">During the Game</element>
+    <!--END CODE FOR WELCOME-->
+
+    <!--START CODE FOR TEXT BODY-->
+    <element id="textBody">
+        As the game is played, you’ll have two important roles:
+        <br><br>
+        1) You can help anyone who has a question or concern during the game.
+        <br><br>
+        2) You will be looking for humans who are moving slowly through the puzzles or who are not wearing enough of their safety suit to protect them from the virus.   At each puzzle, you can scan one or more humans and send them to the Hospital to meet the Nurse.   Remember that if a Human touches the Bin in Puzzle 2, they must be scanned and sent to the Hospital because the Bin contains biohazardous material.
+        <br><br>
+        As the game progresses to complete Puzzles 2 thru 5, your goal is to send half of the Humans to the Hospital.  Note: you may send more or less Humans depending on if you want to give an advantage to one side.
+    </element>
+
+    <!--START CODE FOR CONTINUE-->
+    <div class="continueButton" onclick="Continue()">
+        <div class="ContinueRectangle">
+            <button id="ContinueText">Continue</button>
+        </div>    
+    </div>
+    <!--END CODE FOR CONTINUE-->
+
+    <!--START CODE FOR PREVIOUS-->
+    <div class="previousButton" onclick="Previous()">
+        <div class="PreviousRectangle">
+            <button id="PreviousText">Previous</button>
+        </div>    
+    </div>
+    <!--END CODE FOR PREVIOUS-->
+
+<script>
+    function Previous() {
+        location.href = "GameDayInstructions.html";
+    };
+
+    function Continue() {
+        location.href = "AfterTheGame.html";
+    };
+</script>
+<script type="text/javascript" src="Scripting.js"></script>
+
+<script>
+    window.onload = setDefaultCongraulationsBoxes();
+</script>
+</body>
+</div>
+</html>

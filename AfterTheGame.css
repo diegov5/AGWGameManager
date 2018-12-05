@@ -99,7 +99,7 @@ h1{
 /* Vector */
 img{
     position: absolute;
-    width: 200.79px;
+    width: 130.79px;
     height: auto;
     left: 20.02px;
     top: 15px;
@@ -342,9 +342,9 @@ div.gameDayButton{
 /* Red Line */
 #RedHighlight{
     position: absolute;
-    width: 301px;
+    width: 342px;
     height: 0px;
-    left: 640px;
+    left: 950px;
     top: 83px;
 
     border: 3px solid #B83336;
@@ -364,7 +364,7 @@ div.StickMan{
 /* CODE FOR WELCOME TEXT */
 #Welcome {
     position: absolute;
-    width: 423px;
+    width: 323px;
     height: 30px;
     left: 80px;
     top: 209px;
@@ -424,7 +424,7 @@ div.continueButton{
     width: 150px;
     height: 50px;
     left: 1201px;
-    top: 1125px;
+    top: 600px;
 }
 
 
@@ -465,7 +465,7 @@ div.previousButton{
     width: 150px;
     height: 50px;
     left: 85px;
-    top: 1125px;
+    top: 600px;
 }
 
 
@@ -526,15 +526,13 @@ button{
     width: 1280px;
     height: 41px;
     left: 82px;
-    top: 504px;
+    top: 404px;
 
     font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
     line-height: 22px;
     font-size: 16px;
-
-    color: #B83336;
 }
 
 /* CODE FOR TEXT INPUT AND TITLE */
@@ -558,22 +556,6 @@ button{
     color: #000000;
 }
 
-/* Edit Box Default */
-form{
-    position: absolute;
-    width: 570px;
-    height: 26px;
-    left: 80px;
-    top: 592px;
-
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    font-size: 14px;
-
-    color: #000000;
-}
 
 
 /* Rectangle */
@@ -591,4 +573,3 @@ form{
     border: 1px solid #000000;
     box-sizing: border-box;
 }
-

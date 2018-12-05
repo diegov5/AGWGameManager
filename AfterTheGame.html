@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link href="DuringTheGame.css" rel="stylesheet" type="text/css" > 
+    <meta charset="utf-8"/>
+</head>
+
+<body>
+
+    <!--CODE FOR THE NAV BAR-->
+    <div class="topnav">
+
+        <element id="rectangle"></div>
+
+        <div class="roundButton">
+            <element id="EllipseName"></element>
+            <element id="JO">JO</element>
+        </div>
+       
+        <div class="group">
+            <div class="vector"><img src="AGWFlagLogoWhite.png" alt="flag logo"></div>
+        </div>
+
+        <h1>GAME MANAGER</h1>
+    </div>
+    <!--END CODE FOR THE NAV BAR-->
+
+
+    <!--CODE FOR PROGRESS BAR-->
+    <div class="progress1">
+        <div class="welcomeRoundButton">
+            <element id="Ellipse"></element>
+            <element id="Number1">1</element>
+        </div>
+        <div class="teamsRoundButton">
+            <element id="Ellipse"></element>
+            <element id="Number2">2</element>
+            
+        </div>
+        <div class="theGameButton">
+            <element id="Ellipse"></element>
+            <element id="Number3">3</element>
+        </div>
+        <div class="gameDayButton">
+            <element id="EllipseRed"></element>
+            <element id="Number4">4</element>
+        </div>
+        <element id="WelcomeText">Welcome</element>
+        <element id="TeamText">Teams</element>
+        <element id="TheGameText">The Game</element>
+        <element id="GameDayText">Game Day</element>
+        <element id="LongLine"></element>
+        <element id="RedHighlight"></element>
+    </div>
+    <!--END CODE FOR PROGRESS BAR-->
+
+    <!--START CODE FOR STICKMAN-->
+    <div class="StickMan">
+        <img src="StickMan_04.png" alt="stick man hands up">
+    </div>
+    <!-- END CODE FOR STICKMAN-->
+
+    <!--START CODE FOR WELCOME-->
+    <element id="Welcome">After the Game</element>
+    <!--END CODE FOR WELCOME-->
+
+    <!--START CODE FOR TEXT BODY-->
+    <element id="textBody">
+        The game is over if one of two things happen:
+        <br><br>
+        1) All surviving humans make it to the extraction point with five signal flags
+        <br>
+        or
+        <br>
+        2) The Zombies have captured all of the humans.
+        <br><br>
+        When the game finishes, be sure to gather everyone together to celebrate the game, share stories and take photos.
+        <br><br>
+        Afterwards, remember to retrieve all of the game puzzles and the equipment at the Hospital and Armory.
+        <br><br>
+        Congratulations for completing the your Adventure Game!
+    </element>
+
+    <!--START CODE FOR CONTINUE-->
+    <div class="continueButton" onclick="Continue()">
+        <div class="ContinueRectangle">
+            <button id="ContinueText">Continue</button>
+        </div>    
+    </div>
+    <!--END CODE FOR CONTINUE-->
+
+    <!--START CODE FOR PREVIOUS-->
+    <div class="previousButton" onclick="Previous()">
+        <div class="PreviousRectangle">
+            <button id="PreviousText">Previous</button>
+        </div>    
+    </div>
+    <!--END CODE FOR PREVIOUS-->
+
+<script>
+    function Previous() {
+        location.href = "DuringTheGame.html";
+    };
+
+    function Continue() {
+        location.href = "AfterTheGame.html";
+    };
+</script>
+<script type="text/javascript" src="Scripting.js"></script>
+
+<script>
+    window.onload = setDefaultCongraulationsBoxes();
+</script>
+</body>
+</div>
+</html>
