@@ -22,10 +22,46 @@ var PuzzleFiveLocationClue;
 
 //Start send Email
 function sendMail(){
+    kickOffLocation = sessionStorage.getItem("kickOffLocation");
+    activityOneLocation = sessionStorage.getItem("activityOneLocation");
+    activityTwoLocation = sessionStorage.getItem("ActivityTwoLocation");
+    PuzzleOneLocation = sessionStorage.getItem("PuzzleOneLocation");
+    PuzzleTwoLocation = sessionStorage.getItem("PuzzleTwoLocation");
+    PuzzleThreeLocation = sessionStorage.getItem("PuzzleThreeLocation");
+    PuzzleFourLocation = sessionStorage.getItem("PuzzleFourLocation");
+    DigitOne = sessionStorage.getItem("DigitOne");
+    DigitTwo = sessionStorage.getItem("DigitTwo");
+    DigitThree = sessionStorage.getItem("DigitThree");
+    PuzzleFiveLocation = sessionStorage.getItem("PuzzleFiveLocation");
+    PuzzleSixLocation = sessionStorage.getItem("PuzzleSixLocation");
+    ActivityThreeLocation = sessionStorage.getItem("ActivityThreeLocation");
+    PuzzleSevenLocation = sessionStorage.getItem("PuzzleSevenLocation");
+    PuzzleEightLocation = sessionStorage.getItem("PuzzleEightLocation");
+
     var emailTo = "ThomasMcDonald1998@Gmail.com";
     var emailCC = "Valdez.Diego5@Gmail.com";
-    var emailSub = "Adventure Game Works: Clues and Hints";
-    var emailBody = "Clues:";
+    var emailSub = "Adventure Game Works: Clues and Locations";
+    var emailBody = "Clues and Locations (These will be sent to our team so that we can create your custom game puzzles):\n";
+    emailBody += "\nKickOff Location: " + kickOffLocation;
+    emailBody += "\nActivity 1 Location: " + activityOneLocation;
+    emailBody += "\nActivity 2 Location: " + activityTwoLocation;
+    emailBody += "\nPuzzle 1 Clue: ";//need it?ornaw?
+    emailBody += "\nPuzzle 1 Location: " + PuzzleOneLocation;
+    emailBody += "\nPuzzle 2 Location: " + PuzzleTwoLocation;
+    emailBody += "\nPuzzle 2 Bird Name: ";//might need location to? or we should get rid of it on puzzle2
+    emailBody += "\nPuzzle 3 Location: " + PuzzleThreeLocation;
+    emailBody += "\nPuzzle 4 Location: " + PuzzleFourLocation;
+    emailBody += "\nCombination Code: " + DigitOne + ", " + DigitTwo + ", "+ DigitThree + ",";
+    emailBody += "\nPuzzle 5 Clue: " ;//need to initialize
+    emailBody += "\nPuzzle 5 Location: " + PuzzleFiveLocation;
+    emailBody += "\nPuzzle 6 Clue: ";//need?
+    emailBody += "\nPuzzle 6 Location: " + PuzzleSixLocation;//might need clue
+    emailBody += "\nActivity 3 Location: " + ActivityThreeLocation;
+    emailBody += "\nPuzzle 7 Location: " + PuzzleSevenLocation;
+    emailBody += "\nPuzzle 8 Location: " + PuzzleEightLocation +"\n\n";
+    emailBody += "Our team will personally take care of all the puzzle customizations for you! We will try to finish them and email them back to you as soon as possible."
+    emailBody = encodeURIComponent(emailBody);
+
     location.href = "mailto:"+emailTo+'?cc='+emailCC+'&subject='+emailSub+'&body='+emailBody;
 }
 // START SCRIPTING FOR KICKOFF
@@ -417,7 +453,7 @@ function CongratsActivityTwoLocationChanged(){
 // START SCRIPTING FOR ACTIVITY THREE PAGE
 
 function CongratsActivityThreeLocationChanged(){
-    sessionStorage.setItem("ActivityThreeLocation", document.getElementById("CongratsPuzzleOneLocation").value);
+    sessionStorage.setItem("ActivityThreeLocation", document.getElementById("CongratsActivityThreeLocation").value);
     ActivityThreeLocation = sessionStorage.getItem("ActivityThreeLocation");
 }
 
@@ -427,7 +463,7 @@ function CongratsActivityThreeLocationChanged(){
 // START SCRIPTING FOR PUZZLE ONE
 
 function CongratsPuzzleOneLocationChanged(){
-    sessionStorage.setItem("PuzzleOneLocation", document.getElementById("CongratsPuzzleTwoLocation").value);
+    sessionStorage.setItem("PuzzleOneLocation", document.getElementById("CongratsPuzzleOneLocation").value);
     PuzzleOneLocation = sessionStorage.getItem("PuzzleOneLocation");
 }
 
@@ -437,7 +473,7 @@ function CongratsPuzzleOneLocationChanged(){
 // START SCRIPTING FOR PUZZLE TWO
 
 function CongratsPuzzleTwoLocationChanged(){
-    sessionStorage.setItem("PuzzleTwoLocation", document.getElementById("CongratsPuzzleThreeLocation").value);
+    sessionStorage.setItem("PuzzleTwoLocation", document.getElementById("CongratsPuzzleTwoLocation").value);
     PuzzleTwoLocation = sessionStorage.getItem("PuzzleTwoLocation");
 }
 
@@ -447,7 +483,7 @@ function CongratsPuzzleTwoLocationChanged(){
 // START SCRIPTING FOR PUZZLE THREE
 
 function CongratsPuzzleThreeLocationChanged(){
-    sessionStorage.setItem("PuzzleThreeLocation", document.getElementById("CongratsPuzzleFourLocation").value);
+    sessionStorage.setItem("PuzzleThreeLocation", document.getElementById("CongratsPuzzleThreeLocation").value);
     PuzzleThreeLocation = sessionStorage.getItem("PuzzleThreeLocation");
 }
 
@@ -457,7 +493,7 @@ function CongratsPuzzleThreeLocationChanged(){
 // START SCRIPTING FOR PUZZLE FOUR
 
 function CongratsPuzzleFourLocationChanged(){
-    sessionStorage.setItem("PuzzleFourLocation", document.getElementById("CongratsPuzzleFiveLocation").value);
+    sessionStorage.setItem("PuzzleFourLocation", document.getElementById("CongratsPuzzleFourLocation").value);
     PuzzleFourLocation = sessionStorage.getItem("PuzzleFourLocation");
 }
 
@@ -467,7 +503,7 @@ function CongratsPuzzleFourLocationChanged(){
 // START SCRIPTING FOR PUZZLE FIVE
 
 function CongratsPuzzleFiveLocationChanged(){
-    sessionStorage.setItem("PuzzleFiveLocation", document.getElementById("CongratsPuzzleSixLocation").value);
+    sessionStorage.setItem("PuzzleFiveLocation", document.getElementById("CongratsPuzzleFiveLocation").value);
     PuzzleFiveLocation = sessionStorage.getItem("PuzzleFiveLocation");
 }
 
@@ -477,7 +513,7 @@ function CongratsPuzzleFiveLocationChanged(){
 // START SCRIPTING FOR PUZZLE SIX
 
 function CongratsPuzzleSixLocationChanged(){
-    sessionStorage.setItem("PuzzleSixLocation", document.getElementById("CongratsActivityThreeLocation").value);
+    sessionStorage.setItem("PuzzleSixLocation", document.getElementById("CongratsPuzzleSixLocation").value);
     PuzzleSixLocation = sessionStorage.getItem("PuzzleSixLocation");
 }
 
