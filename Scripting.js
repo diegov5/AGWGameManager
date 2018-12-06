@@ -23,7 +23,7 @@ var PuzzleFiveLocationClue;
 //Start send Email
 function sendMail(){
     var emailTo = "ThomasMcDonald1998@Gmail.com";
-    var emailCC = "Valdez.Diego5@Gmail.com";
+    var emailCC = "Diegov0824@hotmail.com";
     var emailSub = "Adventure Game Works: Clues and Hints";
     var emailBody = "Clues:";
     location.href = "mailto:"+emailTo+'?cc='+emailCC+'&subject='+emailSub+'&body='+emailBody;
