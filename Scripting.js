@@ -20,6 +20,14 @@ var DigitTwo;
 var DigitThree;
 var PuzzleFiveLocationClue;
 
+//Start send Email
+function sendMail(){
+    var emailTo = "ThomasMcDonald1998@Gmail.com";
+    var emailCC = "Valdez.Diego5@Gmail.com";
+    var emailSub = "Adventure Game Works: Clues and Hints";
+    var emailBody = "Clues:";
+    location.href = "mailto:"+emailTo+'?cc='+emailCC+'&subject='+emailSub+'&body='+emailBody;
+}
 // START SCRIPTING FOR KICKOFF
 
 function kickOffFormChanged() {
