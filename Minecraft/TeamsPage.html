@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link href="TeamsPage.css" rel="stylesheet" type="text/css" >
+    <script src="Scripting.js"></script> 
+    <meta charset="utf-8"/>
+</head>
+
+<body>
+
+    <!--CODE FOR THE NAV BAR-->
+    <div class="topnav">
+
+        <element id="rectangle"></div>
+
+        <div class="roundButton">
+            <element id="EllipseName"></element>
+            <element id="JO">JO</element>
+        </div>
+       
+        <div class="group">
+            <div class="vector"><img src="AGWFlagLogoWhite.png" alt="flag logo"></div>
+        </div>
+
+        <h1>GAME MANAGER</h1>
+    </div>
+    <!--END CODE FOR THE NAV BAR-->
+
+
+    <!--CODE FOR PROGRESS BAR-->
+    <div class="progress1">
+        <div class="welcomeRoundButton">
+            <element id="Ellipse"></element>
+            <element id="Number1">1</element>
+        </div>
+        <div class="teamsRoundButton">
+            <element id="EllipseRed"></element>
+            <element id="Number2">2</element>
+            
+        </div>
+        <div class="theGameButton">
+            <element id="Ellipse"></element>
+            <element id="Number3">3</element>
+        </div>
+        <div class="gameDayButton">
+            <element id="Ellipse"></element>
+            <element id="Number4">4</element>
+        </div>
+        <element id="WelcomeText">Welcome</element>
+        <element id="TeamText">Teams</element>
+        <element id="TheGameText">The Game</element>
+        <element id="GameDayText">Game Day</element>
+        <element id="LongLine"></element>
+        <element id="RedHighlight"></element>
+    </div>
+    <!--END CODE FOR PROGRESS BAR-->
+
+    <!--START CODE FOR STICKMAN-->
+    <div class="StickMan">
+        <img src="StickMan_03.png" alt="stick men shaking hands">
+    </div>
+    <!--END CODE FOR STICKMAN-->
+
+    <!--START CODE FOR WELCOME-->
+    <element id="Welcome">Team Manager</element>
+    <!--END CODE FOR WELCOME-->
+
+    <!--START CODE FOR TEXT BODY-->
+    <element id="textBody">
+        Teams are the heart of every Adventure Game.<mark class="red"> Enter the names of each player taking part in your game.</mark> In ZombieWorld, there is only one team at the beginning of the game: The Humans.  
+    </element>
+
+    <!--START CODE FOR TEAM TEXT-->
+    <element id="TeamsText">
+        Team 1 of 1
+    </element>
+    <element id="TeamName">
+        Humans
+    </element>
+
+    <!--START CODE FOR NEW BOX BUTTON-->
+    <div class="NewBoxButton" onclick="NewTextBox()">
+        <element id="EllipseRed"></element>
+        <element id="PlusButton"> + </element>
+    </div>
+
+    <!--START CODE FOR CONTINUE-->
+    <div class="continueButton" onclick="Continue()">
+        <div class="ContinueRectangle">
+            <button id="ContinueText">Continue</button>
+        </div>    
+    </div>
+    <!--END CODE FOR CONTINUE-->
+
+    <!--START CODE FOR PREVIOUS-->
+    <div class="previousButton" onclick="Previous()">
+        <div class="PreviousRectangle">
+            <button id="PreviousText">Previous</button>
+        </div>    
+    </div>
+    <!--END CODE FOR PREVIOUS-->
+
+<script>
+    function Previous() {
+        location.href = "WelcomePage.html";
+    };
+
+    function Continue() {
+        location.href = "GameDate.html";
+    };
+
+    function NewTextBox() {
+        var element = document.createElement("input");
+        element.setAttribute("type", "text");
+        element.setAttribute("value", "");
+        element.setAttribute("name", "Test Name");
+    }
+</script>
+
+</body>
+</div>
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link href="PuzzleFive.css" rel="stylesheet" type="text/css" >
+    <script src="Scripting.js"></script> 
+    <meta charset="utf-8"/>
+</head>
+
+<body>
+
+    <!--CODE FOR THE NAV BAR-->
+    <div class="topnav">
+
+        <element id="rectangle"></div>
+
+        <div class="roundButton">
+            <element id="EllipseName"></element>
+            <element id="JO">JO</element>
+        </div>
+       
+        <div class="group">
+            <div class="vector"><img src="AGWFlagLogoWhite.png" alt="flag logo"></div>
+        </div>
+
+        <h1>GAME MANAGER</h1>
+    </div>
+    <!--END CODE FOR THE NAV BAR-->
+
+
+    <!--CODE FOR PROGRESS BAR-->
+    <div class="progress1">
+        <div class="welcomeRoundButton">
+            <element id="Ellipse"></element>
+            <element id="Number1">1</element>
+        </div>
+        <div class="teamsRoundButton">
+            <element id="Ellipse"></element>
+            <element id="Number2">2</element>
+            
+        </div>
+        <div class="theGameButton">
+            <element id="EllipseRed"></element>
+            <element id="Number3">3</element>
+        </div>
+        <div class="gameDayButton">
+            <element id="Ellipse"></element>
+            <element id="Number4">4</element>
+        </div>
+        <element id="WelcomeText">Welcome</element>
+        <element id="TeamText">Teams</element>
+        <element id="TheGameText">The Game</element>
+        <element id="GameDayText">Game Day</element>
+        <element id="LongLine"></element>
+        <element id="RedHighlight"></element>
+    </div>
+    <!--END CODE FOR PROGRESS BAR-->
+
+    <!--START CODE FOR STICKMAN-->
+    <div class="StickMan">
+        <img src="StickMan_04.png" alt="stick man hands up">
+    </div>
+    <!--END CODE FOR STICKMAN-->
+
+    <!--START CODE FOR WELCOME-->
+    <element id="Welcome">Puzzle 5: Microscope Slides</element>
+    <!--END CODE FOR WELCOME-->
+
+    <!--START CODE FOR TEXT BODY-->
+    <element id="textBody">
+        A box of <mark class="red">Microscope Slides</mark> has been found!  Apparently the <mark class="red">Scientist</mark> had been doing more than just observing 
+        birds to understand the spread of the <mark class="red">Zombie Virus</mark>.  The Scientist has also left a <mark class="red">Small Safe</mark> containing an <mark class="red">Experimental Vaccine Syringe</mark>.
+    </element>
+
+    <!--START CODE FOR SUBHEADER & BODY-->
+    <element id="subHeaderText">
+        Location
+    </element>
+    <element id="subheaderBody">
+        <mark class="red">Enter the location of Puzzle 5:</mark> <mark class="gray"><br>(Pro Tip: This location should be the same location used in the clue in Puzzle 4)</mark>
+    </element>
+    <!--END CODE FOR SUBHEADER & BODY-->
+
+    <!--START CODE FOR INPUT TEXT AND TITLE-->
+    <element id="editBoxTitle">Puzzle 5 Location</element>
+    <form>
+        <input type="text" id ="PuzzleFiveLocation" size="60" onkeyup="PuzzleFiveLocationChanged()" onchange="PuzzleFiveLocationChanged()">
+    </form> 
+    <!--END CODE FOR INPUT TEXT AND TITLE-->
+
+    <!--START CODE FOR BOTTOM HEADER AND TEXT-->
+    <div class="bottomHeader">
+        <div class="bottomHeaderText">
+            Puzzle
+            <element id="bottomHeaderBody">
+                <br>
+                <mark class="red">Set Up The Safe:</mark> <br><br>    
+                You'll need to set the combination of the safe to use the combination you entered as a clue in Puzzle 4.  
+                <br><br>
+                1. Set the combination to 0-0-0 and turn the knob clockwise to open. <br>
+                2. On the inside of the safe cover, move the lever from A to B. <br>
+                3. Set the combination to 1-2-3 (This is the combination you entered in the Puzzle 4 clue) <br>
+                4. With the cover still open, turn the knob counter-clockwise to the lock position. <br>
+                5. On the inside of the safe cover, move the lever from B to A.<br>
+                <br>
+                Your new combination is now set and ready to hold the Experimental Vaccine Syringe.<br>
+                <br>
+                1. Open the safe cover.<br>
+                2. Place one Experimental Vaccine Syringe in the safe.<br>
+                3. Option: Place anything else you wish in the safe.<br>
+                4. Close the safe cover.<br>
+                5. Mix up the combination on the outside cover.
+                <br><br>
+                Place the <mark class="red">Small Safe</mark>:
+                <br><br>
+                On <mark class="red">Game Day</mark>, you’ll place the <mark class="red">Small Safe</mark> somewhere at the Puzzle 5 Location.  
+                You can optionally use the <mark class="red">Security Cable</mark> to secure the case to a fixed object.
+                <br><br>
+                <mark class="red">Set Up The Laboratory Note Card Puzzle: </mark>
+                <br><br>
+                Players can use the <mark class="red">Laboratory Note Card</mark> to write down the <mark class="red">Subject Names</mark> of the <mark class="red">Microscope Slides</mark>.  
+                The <mark class="red">Scientist</mark> has carefully listed the order of the subjects he was studying. After the 
+                corresponding <mark class="red">Subject Name</mark> is written for each <mark class="red">Slide Number</mark>, the clue begins to emerge.  
+                The first letter of each <mark class="red">Subject Name</mark> spells the clue leading to <mark class="red">Puzzle 6</mark>.
+                <br><br>
+                Your clue can be between 1 and 25 characters long to form a word or a short phrase.  Punctuation like apostrophes, hyphens and periods are ignored.
+                <br><br>
+                Your clue can be simple and obvious like “The Shed” or it can be more challenging as a riddle “Where the yard tools live”.
+                <br><br>
+                <mark class="red">Enter the clue leading to the location of Puzzle 6:</mark>
+                <element id="Puzzle6LocationClue">
+                    Puzzle 6 Location Clue
+                </element>
+                <input type="text" id="Puzzle6LocationBox">
+            </element>
+        </div>
+       
+    </div>
+    <!--END CODE FOR BOTTOM HEADER AND TEXT-->
+
+    <img src="Puzzle_Five_Graphics.PNG" alt="PuzzleImage" id="Puzzle5Graphic">
+
+    <element id="FarBottomText">
+        Hint
+        <br><br>
+        1. The Scientist didn’t have time to write down the name of the subjects he was testing.
+        <br><br>
+        2. Those first characters might be the most important.
+        <br><br>
+        3. The safe can be opened with three numbers found at an earlier location.
+    </element>
+
+    <!--START CODE FOR PROP LIST-->
+    <div class="PropList">
+        <element id="PropRectangle"></element>
+        <element id="PropTitle">Prop List</element>
+        <element id="PropLine"></element>
+        <element id="PropList">
+                Box of Microscope Slides
+                <br><br>
+                Small Safe 
+                <br><br>
+                Experimental Vaccine Syringe
+        </element>
+    </div>
+    <!--END CODE FOR PROP LIST-->
+
+
+    <!--   TODO ACTUAL PUZZLE    -->
+
+
+    <!--START CODE FOR CONTINUE-->
+    <div class="continueButton" onclick="Continue()">
+        <div class="ContinueRectangle">
+            <button id="ContinueText">Continue</button>
+        </div>    
+    </div>
+    <!--END CODE FOR CONTINUE-->
+
+    <!--START CODE FOR PREVIOUS-->
+    <div class="previousButton" onclick="Previous()">
+        <div class="PreviousRectangle">
+            <button id="PreviousText">Previous</button>
+        </div>    
+    </div>
+    <!--END CODE FOR PREVIOUS-->
+
+<script>
+    function Previous() {
+        location.href = "PuzzleFour.html";
+    };
+
+    function Continue() {
+        location.href = "PuzzleSix.html";
+    };
+
+    window.onload = setDefaultPuzzleFive();
+</script>
+
+</body>
+</div>
+</html>

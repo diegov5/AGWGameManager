@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link href="PuzzleFour.css" rel="stylesheet" type="text/css" >
+    <script src="Scripting.js"></script>
+    <meta charset="utf-8"/> 
+</head>
+
+<body>
+
+    <!--CODE FOR THE NAV BAR-->
+    <div class="topnav">
+
+        <element id="rectangle"></div>
+
+        <div class="roundButton">
+            <element id="EllipseName"></element>
+            <element id="JO">JO</element>
+        </div>
+       
+        <div class="group">
+            <div class="vector"><img src="AGWFlagLogoWhite.png" alt="flag logo"></div>
+        </div>
+
+        <h1>GAME MANAGER</h1>
+    </div>
+    <!--END CODE FOR THE NAV BAR-->
+
+
+    <!--CODE FOR PROGRESS BAR-->
+    <div class="progress1">
+        <div class="welcomeRoundButton">
+            <element id="Ellipse"></element>
+            <element id="Number1">1</element>
+        </div>
+        <div class="teamsRoundButton">
+            <element id="Ellipse"></element>
+            <element id="Number2">2</element>
+            
+        </div>
+        <div class="theGameButton">
+            <element id="EllipseRed"></element>
+            <element id="Number3">3</element>
+        </div>
+        <div class="gameDayButton">
+            <element id="Ellipse"></element>
+            <element id="Number4">4</element>
+        </div>
+        <element id="WelcomeText">Welcome</element>
+        <element id="TeamText">Teams</element>
+        <element id="TheGameText">The Game</element>
+        <element id="GameDayText">Game Day</element>
+        <element id="LongLine"></element>
+        <element id="RedHighlight"></element>
+    </div>
+    <!--END CODE FOR PROGRESS BAR-->
+
+    <!--START CODE FOR STICKMAN-->
+    <div class="StickMan">
+        <img src="StickMan_04.png" alt="stick man hands up">
+    </div>
+    <!--END CODE FOR STICKMAN-->
+
+    <!--START CODE FOR WELCOME-->
+    <element id="Welcome">Puzzle 4: Coffee and News</element>
+    <!--END CODE FOR WELCOME-->
+
+    <!--START CODE FOR TEXT BODY-->
+    <element id="textBody">
+        We find ourselves at a spot where the <mark class="red">Scientist</mark> used to take breaks and enjoy a cup of coffee while reading the local news.
+          You can even see the coffee rings he left on the newspaper.  The newspaper consists of five pages.  Two of the pages have 
+          a series of coffee rings left on them by the <mark class="red">Scientist</mark>.
+    </element>
+
+    <!--START CODE FOR SUBHEADER & BODY-->
+    <element id="subHeaderText">
+        Location
+    </element>
+    <element id="subheaderBody">
+        <mark class="red">Enter the location of Puzzle 4:</mark> <mark class="gray"><br>(Pro Tip: This location should be the same location that the Scope pointed to from Puzzle 3)</mark>
+    </element>
+    <!--END CODE FOR SUBHEADER & BODY-->
+
+    <!--START CODE FOR INPUT TEXT AND TITLE-->
+    <element id="editBoxTitle">Puzzle 4 Location</element>
+    <form>
+        <input type="text" id="PuzzleFourLocation" size="60" onkeyup="PuzzleFourLocationChanged()" onchange="PuzzleFourLocationChanged()">
+    </form> 
+    <!--END CODE FOR INPUT TEXT AND TITLE-->
+
+    <!--START CODE FOR BOTTOM HEADER AND TEXT-->
+    <div class="bottomHeader">
+        <div class="bottomHeaderText">
+            Puzzle
+            <element id="bottomHeaderBody">
+                    Puzzle 4 presents two clues to solve!
+                    <br><br>
+                    First, you're going to create a combination code for the Small Safe used later in Puzzle 5.   Your combination code will become a clue on the newspaper page containing the lottery results.
+                    <br><br>
+                    Second, you'll create a clue that leads players to the location of Puzzle 5.  This clue will be incorporated into a newspaper page.  Your Puzzle 5 clue can be  a short sentence containing one to seven words.   
+                    <br><br><br>
+                    <mark class="red">Select a Combination Lock Code:</mark>
+                    <br><br>
+                    Pick a 3-digit combination code for the <mark class="red">Small Safe</mark>.  You'll use this code to program the safe lock and 
+                    it will appear as a clue in Puzzle 4.
+                    <br><br>
+                    First Digit 
+                    <br><br>
+                    Second Digit
+                    <br><br>
+                    Third Digit
+                    <br><br><br>
+                    Your combination code will become a clue on the newspaper page containing the lottery results.
+                    <br><br><br>
+                    <mark class="red">Enter the clue leading to the location of Puzzle 5:</mark>
+                    <br><br>
+                    Puzzle 5 Location Clue
+                    <br><br>
+                    Your Puzzle 5 Location clue will be incorporated on the newspaper page containing the lottery results.
+            </element>
+        </div>
+    </div>
+
+    <input type="text" id="PuzzleFiveLocationClue" size="60" onkeyup="PuzzleFiveClueLocationChanged()" onchange="PuzzleFiveClueLocationChanged()">
+
+    <input type="number" id="FirstDigit" size="60" onkeyup="DigitOneChanged()" onchange="DigitOneChanged()">
+    <input type="number" id="SecondDigit" size="60" onkeyup="DigitTwoChanged()" onchange="DigitTwoChanged()">
+    <input type="number" id="ThirdDigit" size="60" onkeyup="DigitThreeChanged()" onchange="DigitThreeChanged()">
+
+    <!--END CODE FOR BOTTOM HEADER AND TEXT-->
+
+    <!--START CODE FOR PROP LIST-->
+    <div class="PropList">
+        <element id="PropRectangle"></element>
+        <element id="PropTitle">Prop List</element>
+        <element id="PropLine"></element>
+        <element id="PropList">
+                (1) Coffee Mug
+                <br><br>
+                (5) Newspaper Pages 
+        </element>
+    </div>
+    <!--END CODE FOR PROP LIST-->
+
+
+    <img src="Puzzle_Four_Graphics.PNG" alt="puzzle 4" id="Puzzle4Image">
+
+    <element id="HintText">
+        Hint
+        <br><br>
+        1. There’s a lot to read in this newspaper.  How can you identify the most imporant words and numbers?
+        <br><br>
+        2. Those coffee rings might lead the way.
+        <br><br>
+        3. There are two clues in the newspaper.  One for now.  One for later.
+    </element>
+
+
+    <!--START CODE FOR CONTINUE-->
+    <div class="continueButton" onclick="Continue()">
+        <div class="ContinueRectangle">
+            <button id="ContinueText">Continue</button>
+        </div>    
+    </div>
+    <!--END CODE FOR CONTINUE-->
+
+    <!--START CODE FOR PREVIOUS-->
+    <div class="previousButton" onclick="Previous()">
+        <div class="PreviousRectangle">
+            <button id="PreviousText">Previous</button>
+        </div>    
+    </div>
+    <!--END CODE FOR PREVIOUS-->
+
+<script>
+    function Previous() {
+        location.href = "PuzzleThree.html";
+    };
+
+    function Continue() {
+        location.href = "PuzzleFive.html";
+    };
+
+    window.onload = setDefaultPuzzleFour();
+    window.onload = setDefaultDigitOne();
+    window.onload = setDefaultDigitTwo();
+    window.onload = setDefaultDigitThree();
+    window.onload = setDefaultPuzzleFiveClueLocation();
+</script>
+
+</body>
+</div>
+</html>

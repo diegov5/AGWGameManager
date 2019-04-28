@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link href="PuzzleEight.css" rel="stylesheet" type="text/css" >
+    <script src="Scripting.js"></script> 
+    <meta charset="utf-8"/>
+</head>
+
+<body>
+
+    <!--CODE FOR THE NAV BAR-->
+    <div class="topnav">
+
+        <element id="rectangle"></div>
+
+        <div class="roundButton">
+            <element id="EllipseName"></element>
+            <element id="JO">JO</element>
+        </div>
+       
+        <div class="group">
+            <div class="vector"><img src="AGWFlagLogoWhite.png" alt="flag logo"></div>
+        </div>
+
+        <h1>GAME MANAGER</h1>
+    </div>
+    <!--END CODE FOR THE NAV BAR-->
+
+
+    <!--CODE FOR PROGRESS BAR-->
+    <div class="progress1">
+        <div class="welcomeRoundButton">
+            <element id="Ellipse"></element>
+            <element id="Number1">1</element>
+        </div>
+        <div class="teamsRoundButton">
+            <element id="Ellipse"></element>
+            <element id="Number2">2</element>
+            
+        </div>
+        <div class="theGameButton">
+            <element id="EllipseRed"></element>
+            <element id="Number3">3</element>
+        </div>
+        <div class="gameDayButton">
+            <element id="Ellipse"></element>
+            <element id="Number4">4</element>
+        </div>
+        <element id="WelcomeText">Welcome</element>
+        <element id="TeamText">Teams</element>
+        <element id="TheGameText">The Game</element>
+        <element id="GameDayText">Game Day</element>
+        <element id="LongLine"></element>
+        <element id="RedHighlight"></element>
+    </div>
+    <!--END CODE FOR PROGRESS BAR-->
+
+    <!--START CODE FOR STICKMAN-->
+    <div class="StickMan">
+        <img src="StickMan_04.png" alt="stick man hands up">
+    </div>
+    <!--END CODE FOR STICKMAN-->
+
+    <!--START CODE FOR WELCOME-->
+    <element id="Welcome">Puzzle 8: Extraction Point</element>
+    <!--END CODE FOR WELCOME-->
+
+    <!--START CODE FOR TEXT BODY-->
+    <element id="textBody">
+        Once the humans have found the five <mark class="red">Signal Flags</mark>, they must make their way to the <mark class="red">Extraction Point</mark> where the <mark class="red">Army Helicopter</mark> 
+        can be signaled by waving the <mark class="red">Signal Flags</mark>.  
+        <br><br>
+        The game will be over once all five <mark class="red">Signal Flags</mark> are delivered to the <mark class="red">Extraction Point</mark> and all surviving humans either reach the 
+        <mark class="red">Extraction Point</mark> or are caught by the <mark class="red">Zombie Horde</mark>!
+    </element>
+
+    <!--START CODE FOR SUBHEADER & BODY-->
+    <element id="subHeaderText">
+        Location
+    </element>
+    <element id="subheaderBody">
+            <mark class="red">Enter the location of Puzzle 8:</mark>
+            <mark class="gray"><br>(Pro Tip:  Puzzle 8 should be located in an area near Puzzle 7)</mark>
+            <br>
+    </element>
+    <!--END CODE FOR SUBHEADER & BODY-->
+
+    <!--START CODE FOR INPUT TEXT AND TITLE-->
+    <element id="editBoxTitle">Puzzle 8 Location</element>
+    <form>
+        <input type="text" id ="PuzzleEightLocation" size="60" onkeyup="PuzzleEightLocationChanged()" onchange="PuzzleEightLocationChanged()">
+    </form> 
+    <!--END CODE FOR INPUT TEXT AND TITLE-->
+
+    <!--START CODE FOR BOTTOM HEADER AND TEXT-->
+    <div class="bottomHeader">
+        <div class="bottomHeaderText">
+            Puzzle
+            <element id="bottomHeaderBody">
+                    After the humans have gathered the five <mark class="red">Signal Flags</mark>, they must locate the <mark class="red">Extraction Point</mark> 
+                    and reach the <mark class="red">Signal Flare</mark>. The <mark class="red">Signal Flare</mark> is a <mark class="red">Safe Zone</mark> 
+                    and will protect them from Zombies in a 5' radius from the flare.  
+                    <br><br><br><br>
+                    Hint
+                    <br><br>
+                    1. Look for a bright flashing light - that’s the Signal Flare!
+                    <br>
+                    2. If you’re being pursued by a Zombie, remember that the Signal Flare can protect you if you are within 5' of the flare.
+            </element>
+        </div>
+       
+    </div>
+    <!--END CODE FOR BOTTOM HEADER AND TEXT-->
+
+    <!--START CODE FOR PROP LIST-->
+    <div class="PropList">
+        <element id="PropRectangle"></element>
+        <element id="PropTitle">Prop List</element>
+        <element id="PropLine"></element>
+        <element id="PropList">
+                (1) Signal Flare
+        </element>
+    </div>
+    <!--END CODE FOR PROP LIST-->
+
+
+    <!--   TODO ACTUAL PUZZLE    -->
+
+
+    <!--START CODE FOR CONTINUE-->
+    <div class="continueButton" onclick="Continue()">
+        <div class="ContinueRectangle">
+            <button id="ContinueText">Continue</button>
+        </div>    
+    </div>
+    <!--END CODE FOR CONTINUE-->
+
+    <!--START CODE FOR PREVIOUS-->
+    <div class="previousButton" onclick="Previous()">
+        <div class="PreviousRectangle">
+            <button id="PreviousText">Previous</button>
+        </div>    
+    </div>
+    <!--END CODE FOR PREVIOUS-->
+
+<script>
+    function Previous() {
+        location.href = "PuzzleSeven.html";
+    };
+
+    function Continue() {
+        location.href = "Congratulations.html";
+    };
+
+    window.onload = setDefaultPuzzleEight();
+</script>
+
+</body>
+</div>
+</html>

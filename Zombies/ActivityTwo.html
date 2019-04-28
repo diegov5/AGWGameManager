@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link href="ActivityTwo.css" rel="stylesheet" type="text/css" >
+    <script src="Scripting.js"></script> 
+    <meta charset="utf-8"/>
+</head>
+
+<body>
+
+    <!--CODE FOR THE NAV BAR-->
+    <div class="topnav">
+
+        <element id="rectangle"></div>
+
+        <div class="roundButton">
+            <element id="EllipseName"></element>
+            <element id="JO">JO</element>
+        </div>
+       
+        <div class="group">
+            <div class="vector"><img src="AGWFlagLogoWhite.png" alt="flag logo"></div>
+        </div>
+
+        <h1>GAME MANAGER</h1>
+    </div>
+    <!--END CODE FOR THE NAV BAR-->
+
+
+    <!--CODE FOR PROGRESS BAR-->
+    <div class="progress1">
+        <div class="welcomeRoundButton">
+            <element id="Ellipse"></element>
+            <element id="Number1">1</element>
+        </div>
+        <div class="teamsRoundButton">
+            <element id="Ellipse"></element>
+            <element id="Number2">2</element>
+            
+        </div>
+        <div class="theGameButton">
+            <element id="EllipseRed"></element>
+            <element id="Number3">3</element>
+        </div>
+        <div class="gameDayButton">
+            <element id="Ellipse"></element>
+            <element id="Number4">4</element>
+        </div>
+        <element id="WelcomeText">Welcome</element>
+        <element id="TeamText">Teams</element>
+        <element id="TheGameText">The Game</element>
+        <element id="GameDayText">Game Day</element>
+        <element id="LongLine"></element>
+        <element id="RedHighlight"></element>
+    </div>
+    <!--END CODE FOR PROGRESS BAR-->
+
+    <!--START CODE FOR STICKMAN-->
+    <div class="StickMan">
+        <img src="StickMan_04.png" alt="stick man hands up">
+    </div>
+    <!--END CODE FOR STICKMAN-->
+
+    <!--START CODE FOR WELCOME-->
+    <element id="Welcome">Activity 2: The Hospital</element>
+    <!--END CODE FOR WELCOME-->
+
+    <!--START CODE FOR TEXT BODY-->
+    <element id="textBody">
+            After the <mark class="red"> Best Zombie Hunter Contest</mark>, you'll deliver your <mark class="red">"Bad News" 
+            Speech</mark> where you reveal that the Zombie Outbreak virus has reached your refuge and to make matters worse,
+             there was a break-in at <mark class="red">The Armory</mark> where you had stored <mark class="red">Zombie Guns</mark> and <mark class="red">Experimental Vaccines</mark>.
+                Next, it's time to introduce the players to the <mark class="red">Hospital</mark> and to the <mark class="red">Nurse</mark> that works there (optional supporting character). 
+    </element>
+
+    <!--START CODE FOR SUBHEADER & BODY-->
+    <element id="subHeaderText">
+        Location
+    </element>
+    <element id="subheaderBody">
+            <mark class="red"> Enter the location of the Hospital: </mark> <mark class="gray"><br>(Pro Tip: the Hospital should be close to the Kickoff and the Armory)</mark>
+    </element>
+    <!--END CODE FOR SUBHEADER & BODY-->
+
+    <!--START CODE FOR INPUT TEXT AND TITLE-->
+    <element id="editBoxTitle">Activity 2 Location</element>
+    <form>
+        <input type="text" id="ActivityTwoLocation" size="60" onkeyup="ActivityTwoLocationChanged()" onchange="ActivityTwoLocationChanged()">
+    </form> 
+    <!--END CODE FOR INPUT TEXT AND TITLE-->
+
+    <!--START CODE FOR BOTTOM HEADER AND TEXT-->
+    <div class="bottomHeader">
+        <div class="bottomHeaderText">
+            Activity
+            <element id="bottomHeaderBody">The players enter the <mark class="red">Hospital</mark> where they receive their <mark class="red">Safety Suit</mark>.  <mark class="red">The Nurse</mark> instructs the players to pick up all of their gear and how to put it on.</element>
+        </div>
+       
+    </div>
+    <!--END CODE FOR BOTTOM HEADER AND TEXT-->
+
+    <!--START CODE FOR PROP LIST-->
+    <div class="PropList">
+        <element id="PropRectangle"></element>
+        <element id="PropTitle">Prop List</element>
+        <element id="PropLine"></element>
+        <element id="PropList">
+                Protective Clothing <br><br>
+
+                (1) Hospital Sign <br><br>
+                
+                (1) Hospital Costume <br><br>
+                
+                (1) The End is Near Sign <br><br>
+                
+                (3) Zombie Makeup <br><br>
+                
+                (20) Zombie Shirt <br><br>
+                
+                Mirror (Optional)
+        </element>
+    </div>
+    <!--END CODE FOR PROP LIST-->
+
+    <!--START CODE FOR CONTINUE-->
+    <div class="continueButton" onclick="Continue()">
+        <div class="ContinueRectangle">
+            <button id="ContinueText">Continue</button>
+        </div>    
+    </div>
+    <!--END CODE FOR CONTINUE-->
+
+    <!--START CODE FOR PREVIOUS-->
+    <div class="previousButton" onclick="Previous()">
+        <div class="PreviousRectangle">
+            <button id="PreviousText">Previous</button>
+        </div>    
+    </div>
+    <!--END CODE FOR PREVIOUS-->
+
+<script>
+    function Previous() {
+        location.href = "ActivityOne.html";
+    };
+
+    function Continue() {
+        location.href = "PuzzleOne.html";
+    };
+
+    window.onload = setDefaultActivityTwo();
+</script>
+
+</body>
+</div>
+</html>

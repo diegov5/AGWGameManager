@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link href="PuzzleThree.css" rel="stylesheet" type="text/css" >
+    <script src="Scripting.js"></script> 
+    <meta charset="utf-8"/>
+</head>
+
+<body>
+
+    <!--CODE FOR THE NAV BAR-->
+    <div class="topnav">
+
+        <element id="rectangle"></div>
+
+        <div class="roundButton">
+            <element id="EllipseName"></element>
+            <element id="JO">JO</element>
+        </div>
+       
+        <div class="group">
+            <div class="vector"><img src="AGWFlagLogoWhite.png" alt="flag logo"></div>
+        </div>
+
+        <h1>GAME MANAGER</h1>
+    </div>
+    <!--END CODE FOR THE NAV BAR-->
+
+
+    <!--CODE FOR PROGRESS BAR-->
+    <div class="progress1">
+        <div class="welcomeRoundButton">
+            <element id="Ellipse"></element>
+            <element id="Number1">1</element>
+        </div>
+        <div class="teamsRoundButton">
+            <element id="Ellipse"></element>
+            <element id="Number2">2</element>
+            
+        </div>
+        <div class="theGameButton">
+            <element id="EllipseRed"></element>
+            <element id="Number3">3</element>
+        </div>
+        <div class="gameDayButton">
+            <element id="Ellipse"></element>
+            <element id="Number4">4</element>
+        </div>
+        <element id="WelcomeText">Welcome</element>
+        <element id="TeamText">Teams</element>
+        <element id="TheGameText">The Game</element>
+        <element id="GameDayText">Game Day</element>
+        <element id="LongLine"></element>
+        <element id="RedHighlight"></element>
+    </div>
+    <!--END CODE FOR PROGRESS BAR-->
+
+    <!--START CODE FOR STICKMAN-->
+    <div class="StickMan">
+        <img src="StickMan_04.png" alt="stick man hands up">
+    </div>
+    <!--END CODE FOR STICKMAN-->
+
+    <!--START CODE FOR WELCOME-->
+    <element id="Welcome">Puzzle 3: Bird Watching</element>
+    <!--END CODE FOR WELCOME-->
+
+    <!--START CODE FOR TEXT BODY-->
+    <element id="textBody">
+            The <mark class="red">Scientist</mark> left his Bird Watching <mark class="red">Scope</mark> at the location of Puzzle 3. 
+            The view from the Scope will lead players to the location of <mark class="red">Puzzle 4</mark>.
+    </element>
+
+    <!--START CODE FOR SUBHEADER & BODY-->
+    <element id="subHeaderText">
+        Location
+    </element>
+    <element id="subheaderBody">
+            <mark class="red">Enter the location of Puzzle 3:</mark> <mark class="gray"><br>(Pro Tip: This location should be the same location used in the clue in Puzzle 2.)</mark>
+    </element>
+    <!--END CODE FOR SUBHEADER & BODY-->
+
+    <!--START CODE FOR INPUT TEXT AND TITLE-->
+    <element id="editBoxTitle">Puzzle 3 Location</element>
+    <form>
+        <input type="text" id="PuzzleThreeLocation" size="60" onkeyup="PuzzleThreeLocationChanged()" onchange="PuzzleThreeLocationChanged()">
+    </form> 
+    <!--END CODE FOR INPUT TEXT AND TITLE-->
+
+    <!--START CODE FOR BOTTOM HEADER AND TEXT-->
+    <div class="bottomHeader">
+        <div class="bottomHeaderText">
+            Puzzle
+            <element id="bottomHeaderBody">
+                The Bird Watching <mark class="red">Scope</mark> points to the location of Puzzle 4.   The <mark class="red">Scope</mark> has 4x optical magnification and can show a building or object from 100's of yards away.
+                <br><br>
+                Pick a location for Puzzle 4 that is a fair distance away from Puzzle 3 that the <mark class="red">Scope</mark> can easily point at and where there’s a good solution to mount the <mark class="red">Scope</mark>.
+                <br><br>
+                You can use the <mark class="red">Bungie Cord</mark> to lash the <mark class="red">Scope</mark> to an existing pole, sign or suitable object.  You'll want the <mark class="red">Scope</mark> to be very secure so that it cannot be moved easily.
+                <br><br>
+                Optionally, you can build your own mounting solution and install it at the Puzzle 3 location.
+                <br><br><br>
+                    <mark class="red">Mount the Scope</mark>:
+                    <br><br>
+                    Determine how and where you'll want to mount the <mark class="red">Scope</mark> at the location of Puzzle 3.  On <mark class="red">Game Day</mark>, you'll install the <mark class="red">Scope</mark> and make sure it's properly pointing to the location
+                    of <mark class="red">Puzzle 4</mark>.
+                    <br><br><br><br>
+                    <span class="bigger">Hint</span>
+                    <br>
+                    1. Don't put your eye right up against a <mark class="red">Scope</mark>.  Instead, look through the scope from 1-2" away.
+                    <br><br>
+                    2. The bird's are long gone but the <mark class="red">Scope</mark> probably still points to something of interest!
+            </element>
+        </div>
+       
+    </div>
+    <!--END CODE FOR BOTTOM HEADER AND TEXT-->
+
+    <!--START CODE FOR PROP LIST-->
+    <div class="PropList">
+        <element id="PropRectangle"></element>
+        <element id="PropTitle">Prop List</element>
+        <element id="PropLine"></element>
+        <element id="PropList">
+                (1) Scope
+                <br><br>
+                (1) Bungie Cord
+                <br><br>
+                Mounting Pole (Optional) 
+        </element>
+    </div>
+    <!--END CODE FOR PROP LIST-->
+
+
+    <!--   TODO ACTUAL PUZZLE    -->
+
+
+    <!--START CODE FOR CONTINUE-->
+    <div class="continueButton" onclick="Continue()">
+        <div class="ContinueRectangle">
+            <button id="ContinueText">Continue</button>
+        </div>    
+    </div>
+    <!--END CODE FOR CONTINUE-->
+
+    <!--START CODE FOR PREVIOUS-->
+    <div class="previousButton" onclick="Previous()">
+        <div class="PreviousRectangle">
+            <button id="PreviousText">Previous</button>
+        </div>    
+    </div>
+    <!--END CODE FOR PREVIOUS-->
+
+<script>
+    function Previous() {
+        location.href = "PuzzleTwo.html";
+    };
+
+    function Continue() {
+        location.href = "PuzzleFour.html";
+    };
+
+    window.onload = setDefaultPuzzleThree();
+</script>
+
+</body>
+</div>
+</html>

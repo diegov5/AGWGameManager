@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link href="PuzzleSix.css" rel="stylesheet" type="text/css" >
+    <script src="Scripting.js"></script> 
+    <meta charset="utf-8"/>
+</head>
+
+<body>
+
+    <!--CODE FOR THE NAV BAR-->
+    <div class="topnav">
+
+        <element id="rectangle"></div>
+
+        <div class="roundButton">
+            <element id="EllipseName"></element>
+            <element id="JO">JO</element>
+        </div>
+       
+        <div class="group">
+            <div class="vector"><img src="AGWFlagLogoWhite.png" alt="flag logo"></div>
+        </div>
+
+        <h1>GAME MANAGER</h1>
+    </div>
+    <!--END CODE FOR THE NAV BAR-->
+
+
+    <!--CODE FOR PROGRESS BAR-->
+    <div class="progress1">
+        <div class="welcomeRoundButton">
+            <element id="Ellipse"></element>
+            <element id="Number1">1</element>
+        </div>
+        <div class="teamsRoundButton">
+            <element id="Ellipse"></element>
+            <element id="Number2">2</element>
+            
+        </div>
+        <div class="theGameButton">
+            <element id="EllipseRed"></element>
+            <element id="Number3">3</element>
+        </div>
+        <div class="gameDayButton">
+            <element id="Ellipse"></element>
+            <element id="Number4">4</element>
+        </div>
+        <element id="WelcomeText">Welcome</element>
+        <element id="TeamText">Teams</element>
+        <element id="TheGameText">The Game</element>
+        <element id="GameDayText">Game Day</element>
+        <element id="LongLine"></element>
+        <element id="RedHighlight"></element>
+    </div>
+    <!--END CODE FOR PROGRESS BAR-->
+
+    <!--START CODE FOR STICKMAN-->
+    <div class="StickMan">
+        <img src="StickMan_04.png" alt="stick man hands up">
+    </div>
+    <!--END CODE FOR STICKMAN-->
+
+    <!--START CODE FOR WELCOME-->
+    <element id="Welcome">Puzzle 6: Panic Button</element>
+    <!--END CODE FOR WELCOME-->
+
+    <!--START CODE FOR TEXT BODY-->
+    <element id="textBody">
+            You've suddenly discovered that the <mark class="red">Nurse</mark> has become a <mark class="red">Zombie Leader</mark> and has infected all players sent to the <mark class="red">Hospital</mark>.
+              You've decided that it is imperative to gather the remaining survivors and evacuate the area.
+            <br><br>
+            To warn any survivoring humans and to tell them about your plan, you've recorded a message and placed a <mark class="red">Panic Button</mark> at the Puzzle 6 location. 
+    </element>
+
+    <!--START CODE FOR SUBHEADER & BODY-->
+    <element id="subHeaderText">
+        Location
+    </element>
+    <element id="subheaderBody">
+        <mark class="red">Enter the location of Puzzle 6:</mark> <mark class="gray"><br>(Pro Tip:  Puzzle 6 will lead players back to the Armory)</mark>
+    </element>
+    <!--END CODE FOR SUBHEADER & BODY-->
+
+    <!--START CODE FOR INPUT TEXT AND TITLE-->
+    <element id="editBoxTitle">Puzzle 6 Location</element>
+    <form>
+        <input type="text" id="PuzzleSixLocation" size="60" onkeyup="PuzzleSixLocationChanged()" onchange="PuzzleSixLocationChanged()">
+    </form> 
+    <!--END CODE FOR INPUT TEXT AND TITLE-->
+
+    <!--START CODE FOR BOTTOM HEADER AND TEXT-->
+    <div class="bottomHeader">
+        <div class="bottomHeaderText">
+            Puzzle
+            <element id="bottomHeaderBody">
+                    Humans must locate the <mark class="red">Panic Button</mark>, press it and listen to your recorded message.  You will have up to 20 seconds for your message.
+                      A typical message will indicate the situation and where surviving humans should meet.  For example:
+
+                    “If you're hearing this, I have located the body of the Scientist and that's the good news.  The bad news is that the Nurse
+                     has turned into a Zombie Leader and infected others.  I need all surviving humans to meet me at the Armory as soon as possible while avoiding any roaming Zombies.  Good luck!”
+                    <br><br><br>
+                    <mark class="red">Record Your Message:</mark>
+                    <br><br>
+                    You'll use the Talking Button to record your message and use for Puzzle 6.
+                    <br><br>
+                    1. Insert (2) AAA Batteries into the Talking Button. <br>
+                    2. Switch the underside button to "REC". <br>
+                    3. Press and hold the red button until you hear a single beep. <br>
+                    4. Continue to hold the button <br>
+                    5. Say your message.  Remember - you're really stressed out about the Zombies so make sure there is urgency and angst in your voice! <br>
+                    6. Release the button and you will hear two beeps. <br>
+                    7. Switch the underside button to "PLAY" <br>
+                    8. Press the red button to hear your important message. <br>
+                    9. Optional: if you wish to re-record your message, repeats the steps 2-7 above.
+                    <br><br><br>
+                    Place the <mark class="red">Panic Buton</mark>:
+                    <br><br>
+                    On <mark class="red">Game Day</mark>, you'll place the <mark class="red">Panic Button</mark> somewhere at the Puzzle 6 Location.
+                    <br><br><br><br>
+                    <span class="bigger">Hint</span>
+                    <br>
+                    1. Push the button and listen carefully!
+            </element>
+        </div>
+       
+    </div>
+    <!--END CODE FOR BOTTOM HEADER AND TEXT-->
+
+    <!--START CODE FOR PROP LIST-->
+    <div class="PropList">
+        <element id="PropRectangle"></element>
+        <element id="PropTitle">Prop List</element>
+        <element id="PropLine"></element>
+        <element id="PropList">
+                (1) Talking Button
+                <br><br>
+                Table or Box (Optional)
+        </element>
+    </div>
+    <!--END CODE FOR PROP LIST-->
+
+    <!--START CODE FOR CONTINUE-->
+    <div class="continueButton" onclick="Continue()">
+        <div class="ContinueRectangle">
+            <button id="ContinueText">Continue</button>
+        </div>    
+    </div>
+    <!--END CODE FOR CONTINUE-->
+
+    <!--START CODE FOR PREVIOUS-->
+    <div class="previousButton" onclick="Previous()">
+        <div class="PreviousRectangle">
+            <button id="PreviousText">Previous</button>
+        </div>    
+    </div>
+    <!--END CODE FOR PREVIOUS-->
+
+<script>
+    function Previous() {
+        location.href = "PuzzleFive.html";
+    };
+
+    function Continue() {
+        location.href = "ActivityThree.html";
+    };
+
+    window.onload = setDefaultPuzzleSix();
+</script>
+
+</body>
+</div>
+</html>

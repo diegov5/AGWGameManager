@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link href="Congratulations.css" rel="stylesheet" type="text/css" > 
+    <meta charset="utf-8"/>
+</head>
+
+<body>
+
+    <!--CODE FOR THE NAV BAR-->
+    <div class="topnav">
+
+        <element id="rectangle"></div>
+
+        <div class="roundButton">
+            <element id="EllipseName"></element>
+            <element id="JO">JO</element>
+        </div>
+       
+        <div class="group">
+            <div class="vector"><img src="AGWFlagLogoWhite.png" alt="flag logo"></div>
+        </div>
+
+        <h1>GAME MANAGER</h1>
+    </div>
+    <!--END CODE FOR THE NAV BAR-->
+
+
+    <!--CODE FOR PROGRESS BAR-->
+    <div class="progress1">
+        <div class="welcomeRoundButton">
+            <element id="Ellipse"></element>
+            <element id="Number1">1</element>
+        </div>
+        <div class="teamsRoundButton">
+            <element id="Ellipse"></element>
+            <element id="Number2">2</element>
+            
+        </div>
+        <div class="theGameButton">
+            <element id="EllipseRed"></element>
+            <element id="Number3">3</element>
+        </div>
+        <div class="gameDayButton">
+            <element id="Ellipse"></element>
+            <element id="Number4">4</element>
+        </div>
+        <element id="WelcomeText">Welcome</element>
+        <element id="TeamText">Teams</element>
+        <element id="TheGameText">The Game</element>
+        <element id="GameDayText">Game Day</element>
+        <element id="LongLine"></element>
+        <element id="RedHighlight"></element>
+    </div>
+    <!--END CODE FOR PROGRESS BAR-->
+
+    <!--START CODE FOR STICKMAN-->
+    <div class="StickMan">
+        <img src="StickMan_02.png" alt="stick man hands up">
+    </div>
+    <!--END CODE FOR STICKMAN-->
+
+    <!--START CODE FOR WELCOME-->
+    <element id="Welcome">Puzzle and Activity Location Summary</element>
+    <!--END CODE FOR WELCOME-->
+
+    <!--START CODE FOR TEXT BODY-->
+    <element id="textBody">
+            You've just completed setting up and customizing the locations of your game's Kickoff, Activities and Puzzles!  
+            Here's a summary of every location in your game so that you can review everything together.
+            <br><br>
+            If you want to change a location description, click the 'edit' button and you'll be taken to the appropriate page.
+    </element>
+
+    <!--START CODE FOR SUBHEADER & BODY-->
+    <element id="subHeaderText">
+        Puzzle and Activity Locations
+    </element>
+    <!--END CODE FOR SUBHEADER & BODY-->
+
+    <!--START CODE FOR INPUT TEXT AND TITLE-->
+    <form>
+        <a href="TheKickoff.html">Kickoff Location</a>    &nbsp; &nbsp; &nbsp; &nbsp; <input type="text" id="CongratskickOffLocation" size="60" onkeyup="CongratskickOffFormChanged()" onchange="CongratskickOffFormChanged()"> <br> <br>
+        <a href="ActivityOne.html">Activity 1 Location</a> &nbsp; &nbsp;               <input type="text" id="CongratsActivityOneLocation" size="60" onkeyup="CongratsActivityOneLocationChanged()" onchange="CongratsActivityOneLocationChanged()"> <br> <br>
+        <a href="ActivityTwo.html">Activity 2 Location</a> &nbsp; &nbsp;               <input type="text" id="CongratsActivityTwoLocation" size="60" onkeyup="CongratsActivityTwoLocationChanged()" onchange="CongratsActivityTwoLocationChanged()"> <br> <br>
+        <a href="PuzzleOne.html">Puzzle 1 Location  </a> &nbsp; &nbsp; &nbsp;  <input type="text" id="CongratsPuzzleOneLocation" size="60" onkeyup="CongratsPuzzleOneLocationChanged()" onchange="CongratsPuzzleOneLocationChanged()"> <br> <br>
+        <a href="PuzzleTwo.html">Puzzle 2 Location  </a> &nbsp; &nbsp; &nbsp;  <input type="text" id="CongratsPuzzleTwoLocation" size="60" onkeyup="CongratsPuzzleTwoLocationChanged()" onchange="CongratsPuzzleTwoLocationChanged()"> <br> <br>
+        <a href="PuzzleThree.html">Puzzle 3 Location  </a> &nbsp; &nbsp; &nbsp;  <input type="text" id="CongratsPuzzleThreeLocation" size="60" onkeyup="CongratsPuzzleThreeLocationChanged()" onchange="CongratsPuzzleThreeLocationChanged()"> <br> <br>
+        <a href="PuzzleFour.html">Puzzle 4 Location  </a> &nbsp; &nbsp; &nbsp;  <input type="text" id="CongratsPuzzleFourLocation" size="60" onkeyup="CongratsPuzzleFourLocationChanged()" onchange="CongratsPuzzleFourLocationChanged()"> <br> <br>
+        <a href="PuzzleFive.html">Puzzle 5 Location  </a> &nbsp; &nbsp; &nbsp;  <input type="text" id="CongratsPuzzleFiveLocation" size="60" onkeyup="CongratsPuzzleFiveLocationChanged()" onchange="CongratsPuzzleFiveLocationChanged()"> <br> <br>
+        <a href="PuzzleSix.html">Puzzle 6 Location  </a> &nbsp; &nbsp; &nbsp;  <input type="text" id="CongratsPuzzleSixLocation" size="60" onkeyup="CongratsPuzzleSixLocationChanged()" onchange="CongratsPuzzleSixLocationChanged()"> <br> <br>
+        <a href="ActivityThree.html">Activity 3 Location</a> &nbsp; &nbsp;               <input type="text" id="CongratsActivityThreeLocation" size="60" onkeyup="CongratsActivityThreeLocationChanged()" onchange="CongratsActivityThreeLocationChanged()"> <br> <br>
+        <a href="PuzzleSeven.html">Puzzle 7 Location  </a> &nbsp; &nbsp; &nbsp;  <input type="text" id="CongratsPuzzleSevenLocation" size="60" onkeyup="CongratsPuzzleSevenLocationChanged()" onchange="CongratsPuzzleSevenLocationChanged()"> <br> <br>
+        <a href="PuzzleEight.html">Puzzle 8 Location  </a> &nbsp; &nbsp; &nbsp;  <input type="text" id="CongratsPuzzleEightLocation" size="60" onkeyup="CongratsPuzzleEightLocationChanged()" onchange="CongratsPuzzleEightLocationChanged()"> <br> <br>
+    </form>
+
+    
+
+
+    <!--START CODE FOR CONTINUE-->
+    <div class="continueButton" onclick="Continue()">
+        <div class="ContinueRectangle">
+            <button id="ContinueText">Continue</button>
+        </div>    
+    </div>
+    <!--END CODE FOR CONTINUE-->
+
+    <!--START CODE FOR PREVIOUS-->
+    <div class="previousButton" onclick="Previous()">
+        <div class="PreviousRectangle">
+            <button id="PreviousText">Previous</button>
+        </div>    
+    </div>
+    <!--END CODE FOR PREVIOUS-->
+
+<script>
+    function Previous() {
+        location.href = "PuzzleEight.html";
+    };
+
+    function Continue() {
+        location.href = "GameDayInstructions.html";
+    };
+</script>
+<script type="text/javascript" src="Scripting.js"></script>
+
+<script>
+    window.onload = setDefaultCongraulationsBoxes();
+</script>
+</body>
+</div>
+</html>

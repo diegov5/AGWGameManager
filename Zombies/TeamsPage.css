@@ -1,0 +1,551 @@
+/* Top Nav */
+div.topnav{
+    position: relative;
+    width: 1430px;
+    height: 75px;
+
+    background: #FFFFFF;
+}
+
+/* Rectangle */
+#rectangle{
+    position: absolute;
+    width: 1430px;
+    height: 75px;
+    left: -5px;
+    top: 0px;
+
+    background: #B83336;
+}
+
+/* Line */
+div.line{
+    position: absolute;
+    width: 1282px;
+    height: 0px;
+    left: 0px;
+    top: 75px;
+
+    border: 3px solid #BABABA;
+}
+
+/* Round Button - Next Step  */
+div.roundButton{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 1316px;
+    top: 20px;
+}
+
+
+/* Ellipse */
+#EllipseName{
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    border-radius: 50%;
+
+    background: #FFFFFF;
+}
+
+/* JO */
+#JO{
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 26%;
+    bottom: 24%;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 22px;
+    text-align: center;
+
+    color: #B83336;
+}
+
+/* AGW Flag Logo White */
+div.Flag{
+    position: absolute;
+    width: 604px;
+    height: 218px;
+    left: -42px;
+    top: -14px;
+}
+
+/* START CODE FOR Header 1 */
+h1{
+    position: absolute;
+    width: 213px;
+    height: 30px;
+    left: 210px;
+    top: 20px;
+    
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    font-size: 24px;
+    
+    color: #FFFFFF;
+}
+
+
+/* Vector */
+img{
+    position: absolute;
+    width: 200.79px;
+    height: auto;
+    left: 20.02px;
+    top: 15px;
+
+    /*background: #FFFFFF;*/
+}
+/* Group */
+div.group{
+    position: absolute;
+    width: 268.79px;
+    height: 180.8px;
+    left: 20.02px;
+    top: -14px;
+}
+
+
+
+/* Progress - 01 */
+div.progress1{
+    position: relative;
+    width: 1355px;
+    height: 100px;
+
+    background: #FFFFFF;
+}
+
+/* Welcome Round Button */
+div.welcomeRoundButton{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 45px;
+    top: 20px;
+}
+
+
+/* Ellipse */
+#EllipseRed{
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    border-radius: 50%;
+
+    background: #B83336;
+}
+
+/* 1 */
+#Number1{
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 26%;
+    bottom: 24%;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 22px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+/* Round Button - Next Step  */
+div.teamsRoundButton{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 321px;
+    top: 20px;
+}
+
+
+/* Ellipse */
+#Ellipse{
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    border-radius: 50%;
+
+    background: #BABABA;
+}
+
+/* 2 */
+#Number2{
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 26%;
+    bottom: 24%;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 22px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+/* Round Button - Next Step  */
+div.theGameButton{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 637px;
+    top: 20px;
+}
+
+/* 3 */
+#Number3{
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 26%;
+    bottom: 24%;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 22px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+/* Round Button - Next Step  */
+div.gameDayButton{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 949px;
+    top: 20px;
+}
+
+/* 4 */
+#Number4{
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 26%;
+    bottom: 24%;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 22px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+/* Welcome 1 */
+#WelcomeText{
+    position: absolute;
+    width: 87px;
+    height: 22px;
+    left: 109px;
+    top: 34px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    font-size: 18px;
+
+    color: #000000;
+}
+
+/* Teams 1 */
+#TeamText{
+    position: absolute;
+    width: 60px;
+    height: 22px;
+    left: 388px;
+    top: 34px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    font-size: 18px;
+
+    color: #000000;
+}
+
+/* The Game 1 */
+#TheGameText{
+    position: absolute;
+    width: 94px;
+    height: 22px;
+    left: 704px;
+    top: 34px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    font-size: 18px;
+
+    color: #000000;
+}
+
+/* Game Day 1 */
+#GameDayText{
+    position: absolute;
+    width: 96px;
+    height: 22px;
+    left: 1016px;
+    top: 34px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    font-size: 18px;
+
+    color: #000000;
+}
+
+/* Line */
+#LongLine{
+    position: absolute;
+    width: 1282px;
+    height: 0px;
+    left: 10px;
+    top: 83px;
+
+    border: 3px solid #BABABA;
+}
+
+/* Red Line */
+#RedHighlight{
+    position: absolute;
+    width: 301px;
+    height: 0px;
+    left: 328px;
+    top: 83px;
+
+    border: 3px solid #B83336;
+}
+
+/*CODE FOR STICKMAN */
+
+/* StickMan_01 */
+div.StickMan{
+    position: absolute;
+    width: 251px;
+    height: 280px;
+    left: 150px;
+    top: 351px;
+
+    background: #FFFFFF;
+}
+
+/* CODE FOR WELCOME TEXT */
+#Welcome {
+    position: absolute;
+    width: 153px;
+    height: 30px;
+    left: 80px;
+    top: 209px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    font-size: 24px;
+
+    color: #000000;
+}
+
+/* CODE FOR CONTINUE BUTTON */
+div.continueButton{
+    position: absolute;
+    width: 150px;
+    height: 50px;
+    left: 1201px;
+    top: 745px;
+}
+
+
+/* Rectangle */
+div.ContinueRectangle{
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+
+    background: #B83336;
+    border-radius: 5px;
+}
+
+/* Continue */
+#ContinueText{
+    position: absolute;
+    left: 20.67%;
+    right: 20.67%;
+    top: 24%;
+    bottom: 26%;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 20px;
+    background: #B83336;
+    color: #FFFFFF;
+}
+
+/*CODE FOR PREVIOUS BUTTON */
+
+/* Button */
+div.previousButton{
+    position: absolute;
+    width: 150px;
+    height: 50px;
+    left: 85px;
+    top: 745px;
+}
+
+
+/* Rectangle */
+div.PreviousRectangle{
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+
+    background: #B83336;
+    border-radius: 5px;
+}
+
+/* Previous */
+#PreviousText{
+    position: absolute;
+    left: 20.67%;
+    right: 20.67%;
+    top: 24%;
+    bottom: 26%;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 22px;
+    background: #B83336;
+    color: #FFFFFF;
+}
+
+button{
+    border-style: none;
+    outline-style: none;
+}
+
+/* CODE FOR TEXT BODY */
+/* Edit Box Title */
+#textBody{
+    position: absolute;
+    width: 980px;
+    height: 212px;
+    left: 82px;
+    top: 255px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+    font-size: 17px;
+
+    color: #000000;
+}
+
+mark.red {
+    color: #B83336;
+    background: none;
+}
+
+/* CODE FOR TEAM NAME */
+/* Edit Box Title */
+#TeamsText{
+    position: absolute;
+    width: 75px;
+    height: 12.31px;
+    left: 695px;
+    top: 349px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    font-size: 14px;
+    text-align: right;
+
+    color: #000000;
+}
+
+#TeamName{
+    position: absolute;
+    width: 104px;
+    height: 20.51px;
+    left: 675px;
+    top: 366.09px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    font-size: 24px;
+    text-align: right;
+
+    color: #000000;
+}
+
+/* CODE FOR NEW TEXT BOX BUTTON */
+div.NewBoxButton{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 695px;
+    top: 1303px;
+}
+
+#PlusButton{
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 22%;
+    bottom: 24%;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 25px;
+    text-align: center;
+
+    color: #FFFFFF;
+}

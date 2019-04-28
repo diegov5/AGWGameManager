@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link href="PuzzleOne.css" rel="stylesheet" type="text/css" >
+    <script src="Scripting.js"></script> 
+    <meta charset="utf-8"/>
+</head>
+
+<body>
+
+    <!--CODE FOR THE NAV BAR-->
+    <div class="topnav">
+
+        <element id="rectangle"></div>
+
+        <div class="roundButton">
+            <element id="EllipseName"></element>
+            <element id="JO">JO</element>
+        </div>
+       
+        <div class="group">
+            <div class="vector"><img src="AGWFlagLogoWhite.png" alt="flag logo"></div>
+        </div>
+
+        <h1>GAME MANAGER</h1>
+    </div>
+    <!--END CODE FOR THE NAV BAR-->
+
+
+    <!--CODE FOR PROGRESS BAR-->
+    <div class="progress1">
+        <div class="welcomeRoundButton">
+            <element id="Ellipse"></element>
+            <element id="Number1">1</element>
+        </div>
+        <div class="teamsRoundButton">
+            <element id="Ellipse"></element>
+            <element id="Number2">2</element>
+            
+        </div>
+        <div class="theGameButton">
+            <element id="EllipseRed"></element>
+            <element id="Number3">3</element>
+        </div>
+        <div class="gameDayButton">
+            <element id="Ellipse"></element>
+            <element id="Number4">4</element>
+        </div>
+        <element id="WelcomeText">Welcome</element>
+        <element id="TeamText">Teams</element>
+        <element id="TheGameText">The Game</element>
+        <element id="GameDayText">Game Day</element>
+        <element id="LongLine"></element>
+        <element id="RedHighlight"></element>
+    </div>
+    <!--END CODE FOR PROGRESS BAR-->
+
+    <!--START CODE FOR STICKMAN-->
+    <div class="StickMan">
+        <img src="StickMan_04.png" alt="stick man hands up">
+    </div>
+    <!--END CODE FOR STICKMAN-->
+
+    <!--START CODE FOR WELCOME-->
+    <element id="Welcome">Puzzle 1: The Safety Suit Instructions</element>
+    <!--END CODE FOR WELCOME-->
+
+    <!--START CODE FOR TEXT BODY-->
+    <element id="textBody">
+            <mark class="red">Puzzle 1</mark> is found buried in the <mark class="red">Safety Suit</mark> Instructions that you'll place in the pocket of each <mark class="red">Safety Suit</mark> before the game begins.
+            <br><br>
+            <mark class="red">Puzzle 1</mark> is a sentence that you write that tells the player where to walk to for <mark class="red">Puzzle 2</mark> 
+    </element>
+
+    <!--START CODE FOR SUBHEADER & BODY-->
+    <element id="subHeaderText">
+        Location
+    </element>
+    <element id="subheaderBody">
+            <mark class="red">Enter the location of Puzzle 1:</mark> <mark class="gray"><br>(Pro Tip: Puzzle 1 should take place at The Hospital Location)</mark>
+    </element>
+    <!--END CODE FOR SUBHEADER & BODY-->
+
+    <!--START CODE FOR INPUT TEXT AND TITLE-->
+    <element id="editBoxTitle">Puzzle 1 Location</element>
+    <form>
+        <input type="text" id="PuzzleOneLocation" size="60" onkeyup="PuzzleOneLocationChanged()" onchange="PuzzleOneLocationChanged()">
+    </form> 
+    <!--END CODE FOR INPUT TEXT AND TITLE-->
+
+    <!--START CODE FOR BOTTOM HEADER AND TEXT-->
+    <div class="bottomHeader">
+        <div class="bottomHeaderText">
+            Puzzle
+            <element id="bottomHeaderBody">
+                <mark class="red">Puzzle 1</mark> is a clue written in the <mark class="red">Safety Suit</mark>
+                 Instructions that you'll place in the pocket of each <mark class="red">Safety Suit</mark> before
+                  the game begins.  Your clue tells the player where to walk to for 
+                  <mark class="red">Puzzle 2</mark>.
+                <br><br><br>
+                <mark class="red">Enter the Puzzle 1 Clue: </mark>
+            </element>
+        </div>
+    </div>
+    <!--END CODE FOR BOTTOM HEADER AND TEXT-->
+
+    <div class="PuzzleInputTitle">
+        <label for="Puzzle1Clue">Puzzle 1 Clue</label>
+        <textarea type="text" name="Puzzle1Clue" id="Puzzle1Clue" cols= "50" rows= "4"> </textarea>
+    </div>
+    <element id="puzzleClueHint">
+            Your clue must mention the location of Puzzle 2.
+    </element>
+
+    <element id="puzzleTitle">
+        Puzzle 1 Preview
+    </element>
+
+    <element id="puzzleDescription"> 
+        Your clue will replace the sentance beginning with, "Once properly dressed..."
+        <br><br>
+        Note: You’ll print Puzzle 1 later.
+    </element>
+
+    <img src="Puzzle_One_Graphic.PNG" alt="Puzzle 1 Picture" id="PuzzleOneImage">
+
+    <!--START CODE FOR PROP LIST-->
+    <div class="PropList">
+        <element id="PropRectangle"></element>
+        <element id="PropTitle">Prop List</element>
+        <element id="PropLine"></element>
+        <element id="PropList">
+                (20) Puzzle 1 Safety Suit Note
+        </element>
+    </div>
+    <!--END CODE FOR PROP LIST-->
+
+
+    <element id="bottomText">
+        Hint
+        <br><br>
+        If players are unsure how to proceed in the game after they put on their <mark class="red">Safety Suit</mark>, 
+        the <mark class="red">Game Manager</mark> or <mark class="red">Nurse</mark> can remind the player to read their <mark class="red">Safety Suit</mark> instructions.  
+    </element>
+
+
+    <!--START CODE FOR CONTINUE-->
+    <div class="continueButton" onclick="Continue()">
+        <div class="ContinueRectangle">
+            <button id="ContinueText">Continue</button>
+        </div>    
+    </div>
+    <!--END CODE FOR CONTINUE-->
+
+    <!--START CODE FOR PREVIOUS-->
+    <div class="previousButton" onclick="Previous()">
+        <div class="PreviousRectangle">
+            <button id="PreviousText">Previous</button>
+        </div>    
+    </div>
+    <!--END CODE FOR PREVIOUS-->
+
+<script>
+    function Previous() {
+        location.href = "ActivityTwo.html";
+    };
+
+    function Continue() {
+        location.href = "PuzzleTwo.html";
+    };
+
+    window.onload = setDefaultPuzzleOne();
+</script>
+
+</body>
+</div>
+</html>

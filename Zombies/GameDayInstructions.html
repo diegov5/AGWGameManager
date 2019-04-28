@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link href="GameDayInstructions.css" rel="stylesheet" type="text/css" > 
+    <meta charset="utf-8"/>
+</head>
+
+<body>
+
+    <!--CODE FOR THE NAV BAR-->
+    <div class="topnav">
+
+        <element id="rectangle"></div>
+
+        <div class="roundButton">
+            <element id="EllipseName"></element>
+            <element id="JO">JO</element>
+        </div>
+       
+        <div class="group">
+            <div class="vector"><img src="AGWFlagLogoWhite.png" alt="flag logo"></div>
+        </div>
+
+        <h1>GAME MANAGER</h1>
+    </div>
+    <!--END CODE FOR THE NAV BAR-->
+
+
+    <!--CODE FOR PROGRESS BAR-->
+    <div class="progress1">
+        <div class="welcomeRoundButton">
+            <element id="Ellipse"></element>
+            <element id="Number1">1</element>
+        </div>
+        <div class="teamsRoundButton">
+            <element id="Ellipse"></element>
+            <element id="Number2">2</element>
+            
+        </div>
+        <div class="theGameButton">
+            <element id="Ellipse"></element>
+            <element id="Number3">3</element>
+        </div>
+        <div class="gameDayButton">
+            <element id="EllipseRed"></element>
+            <element id="Number4">4</element>
+        </div>
+        <element id="WelcomeText">Welcome</element>
+        <element id="TeamText">Teams</element>
+        <element id="TheGameText">The Game</element>
+        <element id="GameDayText">Game Day</element>
+        <element id="LongLine"></element>
+        <element id="RedHighlight"></element>
+    </div>
+    <!--END CODE FOR PROGRESS BAR-->
+
+    <!--START CODE FOR STICKMAN-->
+    <div class="StickMan">
+        <img src="StickMan_04.png" alt="stick man hands up">
+    </div>
+    <!--END CODE FOR STICKMAN-->
+
+    <!--START CODE FOR WELCOME-->
+    <element id="Welcome">Game Day Instructions</element>
+    <!--END CODE FOR WELCOME-->
+
+    <!--START CODE FOR TEXT BODY-->
+    <element id="textBody">
+        It’s Game Day - time to setup the game, get into costume and assemble your participants!
+    </element>
+
+    <!--START CODE FOR SUBHEADER & BODY-->
+    <element id="subheaderBody">
+        <b>Game Day and Time</b>
+        <br><br>
+        You’ve indicated that you’ll be playing your game on <b><date id="sDate">December 14th</date> at <time id="sTime" class="start">10:00</time> </b>
+            
+        <br><br>
+        Based on your game date and time, we’ve created this handy instruction list
+         to help you get ready for the game and set it up on game day.
+        <br><br><br><br>
+
+        <b><time id="time0">8:00AM</time> - Setup the Hospital</b>
+        <br><br>
+        The Hospital will take some time to set up so let’s get it ready early.  Bring all of the safety suit equipment and place it so the Nurse can easily distribute the equipment to the players when they visit the Hospital after the kickoff.
+        <br><br>
+        Place the Zombie makeup and shirts in a bag or box so that they are available in the Hospital but not visible to the players.
+        <br><br>
+        Hang your Hospital Sign on the door of your Hospital location.
+        <br><br>
+        If you haven’t done already, make sure the Puzzle 1 Safety Suit Instructions have been installed in the pockets of the Safety Suits.
+        <br><br><br><br>
+
+        <b><time id="time1">8:10AM</time> - Setup the Armory</b>
+        <br><br>
+        The Armory is a key location near the end of the game.  You’ll want to leave the nerf guns and bullets you wish to hand out to the surviving humans when they visit the Armory.
+        <br><br>
+        Hang your Armory Sign on the door of your Armory location.
+        <br><br><br><br>
+
+        <b><time id="time2">8:20AM</time> - Setup Puzzles 2 Thru 6</b>
+        <br><br>
+        You’ll need 20-30 minutes to set up Puzzles 2 thru 6.  Before you leave to install the puzzles, make sure you have all of the puzzles with you.
+         You can choose to set up each puzzle in the game order or by location - whichever is most convenient for you.
+        <br><br><br><br>
+        
+        <b><time id="time3">8:50AM</time> - Setup the Signal Flags</b>
+        <br><br>
+        Next, place the five signal flags in the Puzzle 7 location.  You can control the difficulty of this puzzle by choosing the distance and visibility of the signal flags. 
+        <br><br><br><br>
+
+        <b><time id="time4">9:00AM</time> - Setup the Extraction Point</b>
+        <br><br>
+        Place the Signal Flare at the location of the Extraction Point and end of the game.  Turn the Signal Flare light on.
+        <br><br><br><br>
+
+        <b><time id="time5">9:10AM</time> - Game Host and Nurse Costumes</b>
+        <br><br>
+        The game is now set up.  If you haven’t already, it’s time for you and the Nurse to put on their costumes.
+        <br><br><br><br>
+
+        <b><time id="time6">9:30AM</time> - Review</b>
+        <br><br>
+        It’s now thirty minutes before the game will begin.  This is a good time to review that everything is in place and ready to go.
+        <br><br><br><br>
+
+        <b><time id="time7" class="start">10:00AM</time> - Game On!</b>
+        <br><br>
+        Proceed to the Kickoff Location and greet the game’s participants.  When everyone is assembled and ready to play, it’s time for you to give your Bad News Speech to start the game.
+    </element>
+    <!--END CODE FOR SUBHEADER & BODY-->
+
+
+    <!--START CODE FOR CONTINUE-->
+    <div class="continueButton" onclick="Continue()">
+        <div class="ContinueRectangle">
+            <button id="ContinueText">Continue</button>
+        </div>    
+    </div>
+    <!--END CODE FOR CONTINUE-->
+
+    <!--START CODE FOR PREVIOUS-->
+    <div class="previousButton" onclick="Previous()">
+        <div class="PreviousRectangle">
+            <button id="PreviousText">Previous</button>
+        </div>    
+    </div>
+    <!--END CODE FOR PREVIOUS-->
+
+<script>
+    function Previous() {
+        location.href = "Congratulations.html";
+    };
+
+    function Continue() {
+        location.href = "DuringTheGame.html";
+    };
+</script>
+<script type="text/javascript" src="Scripting.js"></script>
+
+<script>
+    window.onload = setDefaultValues();
+</script>
+</body>
+</div>
+</html>
