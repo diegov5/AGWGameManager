@@ -18,9 +18,74 @@ div.topnav{
     background: #B83336;
 }
 
-img {
-    max-width: 100%;
-    max-height: 100%;
+/* CODE FOR PROP LIST */
+/* Prop List */
+div.PropList{
+    position: absolute;
+    width: 283px;
+    height: 108px;
+    left: 1075px;
+    top: 255px;
+}
+
+/* Rectangle */
+#PropRectangle{
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+
+    background: #E5E5E5;
+}
+
+/* Edit Box Title */
+#PropTitle{
+    position: absolute;
+    width: 63px;
+    height: 18px;
+    left: 111px;
+    top: 15px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    font-size: 14px;
+    text-align: center;
+
+    color: #000000;
+}
+
+
+/* Edit Box Title */
+#PropList{
+    position: absolute;
+    width: 174px;
+    height: 120px;
+    left: 55px;
+    top: 58px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    font-size: 14px;
+    text-align: center;
+
+    color: #000000;
+}
+
+#PropLine{
+/* Line */
+
+    position: absolute;
+    width: 232px;
+    height: 0px;
+    left: 26px;
+    top: 44px;
+
+    border: 1px solid #BABABA;
 }
 
 /* Line */
@@ -349,7 +414,7 @@ div.gameDayButton{
     position: absolute;
     width: 301px;
     height: 0px;
-    left: 640px;
+    left: 325px;
     top: 83px;
 
     border: 3px solid #B83336;
@@ -357,19 +422,19 @@ div.gameDayButton{
 
 /*CODE FOR STICKMAN */
 
-/* StickMan_04 */
+/* StickMan_01 */
 div.StickMan{
     position: absolute;
-    width: 97.47px;
-    height: 161.54px;
-    left: 878px;
-    top: 255px;
+    width: 173px;
+    height: 194px;
+    left: 1120px;
+    top: 245px;
 }
 
 /* CODE FOR WELCOME TEXT */
 #Welcome {
     position: absolute;
-    width: 523px;
+    width: 203px;
     height: 30px;
     left: 80px;
     top: 209px;
@@ -387,7 +452,7 @@ div.StickMan{
 /* Edit Box Title */
 #textBody{
     position: absolute;
-    width: 750px;
+    width: 980px;
     height: 212px;
     left: 82px;
     top: 255px;
@@ -429,7 +494,7 @@ div.continueButton{
     width: 150px;
     height: 50px;
     left: 1201px;
-    top: 1500px;
+    top: 725px;
 }
 
 
@@ -470,7 +535,7 @@ div.previousButton{
     width: 150px;
     height: 50px;
     left: 85px;
-    top: 1500px;
+    top: 725px;
 }
 
 
@@ -516,7 +581,7 @@ button{
     width: 123px;
     height: 30px;
     left: 82px;
-    top: 467px;
+    top: 530px;
     font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
@@ -531,7 +596,7 @@ button{
     width: 1280px;
     height: 41px;
     left: 82px;
-    top: 504px;
+    top: 604px;
 
     font-family: Montserrat;
     font-style: normal;
@@ -598,203 +663,3 @@ form{
     box-sizing: border-box;
 }
 
-mark.red {
-    color: #B83336;
-    background: none;
-}
-
-mark.gray{
-    color: #737373;
-    background: none;
-}
-
-/* CODE FOR ACTIVITY LOCATION */
-/* Header 1.2 */
-div.bottomHeader{
-    position: absolute;
-    width: 123px;
-    height: 30px;
-    left: 80px;
-    top: 620px;
-}
-
-/* Header 1 */
-div.bottomHeaderText{
-    position: absolute;
-    left: 0%;
-    right: 43.9%;
-    top: 0%;
-    bottom: 26.67%;
-
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    font-size: 18px;
-
-    color: #000000;
-}
-
-#bottomHeaderBody{
-    position: absolute;
-    width: 1280px;
-    height: 41px;
-    top: 20px;
-
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 22px;
-    font-size: 16px;
-
-    color: #000000;
-}
-
-/* CODE FOR PROP LIST */
-/* Prop List */
-div.PropList{
-    position: absolute;
-    width: 283px;
-    height: 150px;
-    left: 1075px;
-    top: 255px;
-}
-
-
-/* Rectangle */
-#PropRectangle{
-    position: absolute;
-    left: 0%;
-    right: 0%;
-    top: 0%;
-    bottom: 0%;
-
-    background: #E5E5E5;
-}
-
-/* Edit Box Title */
-#PropTitle{
-    position: absolute;
-    width: 63px;
-    height: 18px;
-    left: 111px;
-    top: 15px;
-
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    font-size: 14px;
-    text-align: center;
-
-    color: #000000;
-}
-
-
-/* Edit Box Title */
-#PropList{
-    position: absolute;
-    width: 174px;
-    height: 120px;
-    left: 55px;
-    top: 58px;
-
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    font-size: 14px;
-    text-align: center;
-
-    color: #000000;
-}
-
-#PropLine{
-/* Line */
-
-    position: absolute;
-    width: 232px;
-    height: 0px;
-    left: 26px;
-    top: 44px;
-
-    border: 1px solid #BABABA;
-}
-
-/* PUZZLE INPUT BOX */
-div.PuzzleInputTitle{
-    position: absolute;
-    left: 18.09%;
-    top: 750px;
-
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    font-size: 18px;
-    text-align: right;
-
-    color: #000000;
-}
-#puzzleClueHint{
-    position: absolute;
-    width: 177px;
-    height: 108px;
-    left: 800px;
-    top: 770px;
-
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 22px;
-    font-size: 14px;
-
-    color: #737373;
-}
-
-#puzzleTitle{
-    position: absolute;
-    left: 16.50%;
-    top: 950px;
-    bottom: 39.18%;
-
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    font-size: 18px;
-    text-align: right;
-
-    color: #000000;
-}  
-
-#puzzleDescription{
-    position: absolute;
-    width: 177px;
-    height: 108px;
-    left: 800px;
-    top: 950px;
-
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 22px;
-    font-size: 14px;
-
-    color: #737373;
-}
-
-#bottomText{
-    position: absolute;
-    left: 85px;
-    top: 1250px;
-    font-size: 18px;
-}
-
-#PuzzleOneImage{
-    position: absolute;
-    width: 406px;
-    height: 338px;
-    left: 375px;
-    top: 900px;
-}

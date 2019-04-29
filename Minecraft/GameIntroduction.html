@@ -3,7 +3,7 @@
 <html>
 
 <head>
-    <link href="TheKickoff.css" rel="stylesheet" type="text/css" > 
+    <link href="GameIntroduction.css" rel="stylesheet" type="text/css" > 
     <meta charset="utf-8"/>
 </head>
 
@@ -56,49 +56,55 @@
     </div>
     <!--END CODE FOR PROGRESS BAR-->
 
-    <!--START CODE FOR STICKMAN-->
+    <!--START CODE FOR STICKMAN
     <div class="StickMan">
-        <img src="AlexAndSteve.png" alt="stick man hands up">
+        <img src="StickMan_02.png" alt="stick man hands up">
     </div>
-    <!--END CODE FOR STICKMAN-->
+    END CODE FOR STICKMAN-->
 
     <!--START CODE FOR WELCOME-->
-    <element id="Welcome"><b>Host Introduction</b></element>
+    <element id="Welcome"><b>Game Introduction</b></element>
     <!--END CODE FOR WELCOME-->
 
     <!--START CODE FOR TEXT BODY-->
     <element id="textBody">
-        Every game has to start somewhere and you will need to decide where everyone gathers to begin at The "Kickoff".  You will need to gather all of the gamers at the Kickoff location to begin the game.
+        For the Game Introduction, the Game Host will outline the goal of the Adventure Game, and rally up the heros to the cause!
         <br><br>
         <b>Suggested Script for the Game Host:</b>
-        <br>
-        *Host runs into the group of kids, breathing heavily, distraught, yet relieved to see others*
-        <br>
-        AHH I just respawned!! I was so close to fulfilling my destiny, killing and defeating the evil Ender dragon, but when I got to the last tower to destroy he swooped in from behind me and I lost all of my prized possessions, my enchanted diamond sword, my golden carrots, my collection of emeralds, and every single Ender eye, ALL GONE.  :(
-        <br>
-        Hey! You guys look like you could be some pretty skilled crafters, is there any way you could help little old me, I’m too scared to go on this quest alone again, to go get my treasure and defeat the Ender Dragon once and for all? 
-        <br>
-        What do you say ?
-        <br>
-        *Hopefully kids say yes and agree to go along with the test* 
         <br><br>
+        Yes yes yes! Thank you all- it means so much to get some help!, and heck, what do you know, maybe I’ll share some of my life treasures if we are to succeed and defeat that malicious dragon. 
+        <br>
+        Problem is - We have a lot of work to do, and I mean a lot….
+        <br>
+        To get to the dragon, we’ll have to track down a portal that will transport us to the other realm, the End. 
+        <br>
+        However, to unlock the portal we need to find twelve ender eyes. These eyes are scattered all across this realm. 
+        <br>
+        This will be a tough journey, but with our courage and might, we just might be able to pull this off. 
+        <br><br>
+        At this point, the Game Host will also provide one map to each participant of the game, and explain the different biomes as follows:
+        <br><br>
+        Oh! I almost forgot, I’ve saved a bunch of extra maps over my lifetime, here, why don’t you all take one so you can take a good look of all the different biomes we have in this realm! 
+        <br>
+        *Points out each biome to the kids* 
+        <br>
+        Here we have the desert biome, this is the swamp biome, oh, and here’s the woods… 
+        It’s crucial we gather these eyes so we can travel to the End, so let’s get a move on everybody!!! 
+        <br>
+        *host begins to start running, but then stops, remembers something else*
+
     </element>
 
-    <!--START CODE FOR SUBHEADER & BODY-->
-    <element id="subHeaderText">
-        Location
-    </element>
-    <element id="subheaderBody">
-        Enter a description of the location of The Kickoff:
-    </element>
-    <!--END CODE FOR SUBHEADER & BODY-->
-
-    <!--START CODE FOR INPUT TEXT AND TITLE-->
-    <element id="editBoxTitle">Kickoff Location</element>
-    <form>
-        <input type="text" id="kickOffLocation" size="60" onkeyup="kickOffFormChanged()" onchange="kickOffFormChanged()">
-    </form> 
-
+    <!--START CODE FOR PROP LIST-->
+    <div class="PropList">
+        <element id="PropRectangle"></element>
+        <element id="PropTitle">Prop List</element>
+        <element id="PropLine"></element>
+        <element id="PropList">
+            1 Map per Participant <br> <br>
+        </element>
+    </div>
+    <!--END CODE FOR PROP LIST-->
 
     <!--START CODE FOR CONTINUE-->
     <div class="continueButton" onclick="Continue()">
@@ -120,11 +126,11 @@
 
 <script>
     function Previous() {
-        location.href = "GameDate.html";
+        location.href = "TheKickoff.html";
     };
 
     function Continue() {
-        location.href = "GameIntroduction.html";
+        location.href = "PuzzleOne.html";
     };
     window.onload = setDefaultKickoff();
 </script>
