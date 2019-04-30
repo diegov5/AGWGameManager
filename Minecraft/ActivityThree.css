@@ -396,35 +396,13 @@ div.EndPortalActive{
     color: #000000;
 }
 
-/* CODE FOR BUTTON */
-div.continueButton{
-    position: absolute;
-    width: 150px;
-    height: 60px;
-    left: 1180px;
-    top: 200px;
-}
-
-
-/* Rectangle */
-div.ContinueRectagle{
-    position: absolute;
-    left: 0%;
-    right: 0%;
-    top: 0%;
-    bottom: 0%;
-
-    background: #B83336;
-    border-radius: 5px;
-}
-
 /* CODE FOR CONTINUE BUTTON */
 div.continueButton{
     position: absolute;
     width: 150px;
     height: 50px;
     left: 1201px;
-    top: 1325px;
+    top: 600px;
 }
 
 
@@ -465,7 +443,7 @@ div.previousButton{
     width: 150px;
     height: 50px;
     left: 85px;
-    top: 1325px;
+    top: 600px;
 }
 
 
