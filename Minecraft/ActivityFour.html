@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link href="ActivityFour.css" rel="stylesheet" type="text/css" >
+    <script src="Scripting.js"></script> 
+    <meta charset="utf-8"/>
+</head>
+
+<body>
+
+    <!--CODE FOR THE NAV BAR-->
+    <div class="topnav">
+
+        <element id="rectangle"></div>
+
+        <div class="roundButton">
+            <element id="EllipseName"></element>
+            <element id="JO">JO</element>
+        </div>
+       
+        <div class="group">
+            <div class="vector"><img src="AGWFlagLogoWhite.png" alt="flag logo"></div>
+        </div>
+
+        <h1>GAME MANAGER</h1>
+    </div>
+    <!--END CODE FOR THE NAV BAR-->
+
+
+    <!--CODE FOR PROGRESS BAR-->
+    <div class="progress1">
+        <div class="welcomeRoundButton">
+            <element id="Ellipse"></element>
+            <element id="Number1">1</element>
+        </div>
+        <div class="teamsRoundButton">
+            <element id="Ellipse"></element>
+            <element id="Number2">2</element>
+            
+        </div>
+        <div class="theGameButton">
+            <element id="EllipseRed"></element>
+            <element id="Number3">3</element>
+        </div>
+        <div class="gameDayButton">
+            <element id="Ellipse"></element>
+            <element id="Number4">4</element>
+        </div>
+        <element id="WelcomeText">Welcome</element>
+        <element id="TeamText">Teams</element>
+        <element id="TheGameText">The Game</element>
+        <element id="GameDayText">Game Day</element>
+        <element id="LongLine"></element>
+        <element id="RedHighlight"></element>
+    </div>
+    <!--END CODE FOR PROGRESS BAR-->
+
+    <!--START CODE FOR ENDER DRAGON-->
+    <div class="ObsidianPillar">
+        <img src="Obsidian_Pillar.png" alt="obsidian pillar">
+    </div>
+    <!--END CODE FOR ENDER DRAGON-->
+
+    <!--START CODE FOR WELCOME-->
+    <element id="Welcome">Activity 4: Obsidian Pillars</element>
+    <!--END CODE FOR WELCOME-->
+
+    <!--START CODE FOR TEXT BODY-->
+    <element id="textBody">
+        <b>Suggested Script for the Game Host:</b>
+        <br>
+        <i>
+            Ok wow- that travel felt a little longer, but we’re here! We can take our Masks off now!! Ah hah! - There it is, that greedy, diamond stealing dragon, do you all see those obsidian pillars that surround it? 
+            <br><br>
+            We’ll have absolutely no chance of defeating the dragon, because each of those pillars has a healing property that regains the dragon’s health.
+            <br><br>
+            We are going to need every single one of you to take on this challenge and shoot down a pillar, so that we can approach and defeat the Ender dragon once and for all! 
+            
+        <br><br>
+        *At <mark class="red">The End</mark>, the <mark class="red">Ender Dragon</mark> is protected by the <mark class="red">Obsidian Pillars</mark>.  Players take turns knocking down each tower with the <mark class="red">Bow and Arrow</mark>.   Pillars can be placed at close or far locations to decrease or increase difﬁculty.*
+        </i>
+        <br>
+        <br>
+        All kids take turns shooting down the pillar
+    </element>
+
+    <!--START CODE FOR SUBHEADER & BODY-->
+    <element id="subHeaderText">
+        Location
+    </element>
+    <element id="subheaderBody">
+            <mark class="red"> Enter the location of The End: </mark><!-- <mark class="gray"><br>(Pro Tip: the Armory should be close to the Kickoff and the Hospital)</mark>-->
+    </element>
+    <!--END CODE FOR SUBHEADER & BODY-->
+
+    <!--START CODE FOR INPUT TEXT AND TITLE-->
+    <element id="editBoxTitle">Activity 4 Location</element>
+    <form>
+        <input type="text" id="ActivityFourLocation" size="60"onkeyup="ActivityFourLocationChanged()" onchange="ActivityFourLocationChanged()">
+    </form> 
+    <!--END CODE FOR INPUT TEXT AND TITLE-->
+
+    <!--START CODE FOR BOTTOM HEADER AND TEXT-->
+    <!--
+    <div class="bottomHeader">
+        <div class="bottomHeaderText">
+            Activity
+            <element id="bottomHeaderBody">
+                    The remaining humans return to the Armory to gather weapons and create their strategy for securing the five 
+                    Signal Flags and reaching the Extraction Point. You will update the group on their situation and what they need 
+                    to escape ZombieWorld
+                    <br><br>
+                    <mark class="italics">
+                    "It's clear that we now have no choice but to leave this place. Everyone should grab at 
+                    least one gun and some ammunition. The local Army chapter has a helicopter that can pick up all of us and fly to 
+                    safety but we have to have Signal Flags and be at the Extaction Point. The Signal Flags are located nearby 
+                    (explain). Take some time to come up with your strategy to work together and when I think the coast is clear, 
+                    I'll return and we'll begin making our way to the Signal Flags."
+                    </mark>
+                    <br><br>
+                    Over at the Hospital, the Nurse will be instructing the Zombies to:
+                    <br><br>
+                    <mark class="italics">
+                    "The humans will be attempting to escape by reaching an Extraction Point that is marked with a Signal Flare light.  
+                    Before they get to the Extraction Point, they must gather five Signal Flags that can be used to flag down an 
+                    Army Helicopter. The Extraction Point and Signal Flags are located nearby (explain).  
+                    As the Zombie Horde, you will now position yourselves out around the Signal Flags and Extraction Point with the 
+                    goal of turning each surviving human into a Zombie. Should each surviving human become Zombie, then the Zombie 
+                    Horde will be declared the victors of the game.  If one or more surviving humans reach the Extraction Point with 
+                    all five Signal Flags, then they will be declared the victors. Remember that if you are struck with a Nerf Bullet, 
+                    you will be stunned and frozen for 5 seconds. After you count 5 Mississippi, you can resume your pursuit of any human."
+                    </mark>
+                    <br><br>
+                    After all of the Zombies have been dressed and made their way to the Puzzle 7 area, you will be able to return to the Armory and allow the humans to begin their escape.
+                    <br><br><br>
+                    <span class="bigger">Hint</span>:
+                    <br>
+                    1.  Stay together and work together repel the Zombie horde.
+                    <br>
+                    2. Bullets are valuable... try to conserve them.
+                    <br>
+                    <mark class="red">3. A bullet hit will stun a Zombie for five seconds... it won't kill them but it will give you time to escape</mark>
+            </element>
+        </div>
+    </div>-->
+    <!--END CODE FOR BOTTOM HEADER AND TEXT-->
+
+    <!--START CODE FOR PROP LIST-->
+    <div class="PropList">
+        <element id="PropRectangle"></element>
+        <element id="PropTitle">Prop List</element>
+        <element id="PropLine"></element>
+        <element id="PropList">
+                Ender Dragon <br><br>
+
+                Obsidian Pillars (one per player) <br><br>
+
+                Bow and Arrow
+
+        </element>
+    </div>
+    <!--END CODE FOR PROP LIST-->
+
+    <!--START CODE FOR CONTINUE-->
+    <div class="continueButton" onclick="Continue()">
+        <div class="ContinueRectangle">
+            <button id="ContinueText">Continue</button>
+        </div>    
+    </div>
+    <!--END CODE FOR CONTINUE-->
+
+    <!--START CODE FOR PREVIOUS-->
+    <div class="previousButton" onclick="Previous()">
+        <div class="PreviousRectangle">
+            <button id="PreviousText">Previous</button>
+        </div>    
+    </div>
+    <!--END CODE FOR PREVIOUS-->
+
+<script>
+    function Previous() {
+        location.href = "ActivityThree.html";
+    };
+
+    function Continue() {
+        location.href = "ActivityFive.html";
+    };
+
+    window.onload = setDefaultActivityFour();
+</script>
+
+</body>
+</div>
+</html>
