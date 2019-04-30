@@ -49,7 +49,7 @@
             <element id="Number4">4</element>
         </div>
         <element id="WelcomeText">Welcome</element>
-        <element id="TeamText">Teams</element>
+        <element id="TeamText">Introductions</element>
         <element id="TheGameText">The Game</element>
         <element id="GameDayText">Game Day</element>
         <element id="LongLine"></element>
@@ -59,7 +59,7 @@
 
     <!--START CODE FOR STICKMAN-->
     <div class="StickMan">
-        <img src="StickMan_04.png" alt="stick man hands up">
+        <img src="WoodsBiome.jpg" alt="stick man hands up">
     </div>
     <!--END CODE FOR STICKMAN-->
 
@@ -72,59 +72,22 @@
             The host introduces the players to <mark class="red"> Item Cards </mark> and that they will be needed to add to the 
             group’s inventory to successfully solve the quest.  The host also explains that sometimes Item Cards have 
             riddles on the back that help us on the quest.  The group reads and solves the ﬁrst riddle to locate the <mark class="red">The Woods</mark>. 
+            <br><br>
+            <b>Suggested Script for the Game Host:</b>
+            <br>
+            <i>
+            Oh shoot, hold up, I guess I have a little bit leftover to my name… some item cards! These can be used to craft other 
+            items that might be come in handy to assist us, maybe one of us these cards has a clue to help us find our first set of eyes? 
+            </i>
+            <br><br>
+            In order to plan ahead, here is the clue that will be shown in the <mark class="red">Woods Riddle on Flint Item Card</mark> puzzle:
+            <br><br>
+            <b>1st Clue (Forest Biome + craftsmen table scavenger hunt):</b>
+            <br>
+            We are something with a bark, but ain’t go not bite. 
+            With lotta sun and rain, we can grow to a great height. Here you can find scattered pieces to make a 
+            crafting table that will make you able to build and advance in this quest. 
     </element>
-
-    <!--START CODE FOR SUBHEADER & BODY-->
-    <element id="subHeaderText">
-        Location
-    </element>
-    <element id="subheaderBody">
-            <mark class="red">Enter the location of Puzzle 1:</mark> <mark class="gray"><br>(Pro Tip: Puzzle 1 should take place at The Hospital Location)</mark>
-    </element>
-    <!--END CODE FOR SUBHEADER & BODY-->
-
-    <!--START CODE FOR INPUT TEXT AND TITLE-->
-    <element id="editBoxTitle">Puzzle 1 Location</element>
-    <form>
-        <input type="text" id="PuzzleOneLocation" size="60" onkeyup="PuzzleOneLocationChanged()" onchange="PuzzleOneLocationChanged()">
-    </form> 
-    <!--END CODE FOR INPUT TEXT AND TITLE-->
-
-    <!--START CODE FOR BOTTOM HEADER AND TEXT-->
-    <div class="bottomHeader">
-        <div class="bottomHeaderText">
-            Puzzle
-            <element id="bottomHeaderBody">
-                <mark class="red">Puzzle 1</mark> is a clue written in the <mark class="red">Safety Suit</mark>
-                 Instructions that you'll place in the pocket of each <mark class="red">Safety Suit</mark> before
-                  the game begins.  Your clue tells the player where to walk to for 
-                  <mark class="red">Puzzle 2</mark>.
-                <br><br><br>
-                <mark class="red">Enter the Puzzle 1 Clue: </mark>
-            </element>
-        </div>
-    </div>
-    <!--END CODE FOR BOTTOM HEADER AND TEXT-->
-
-    <div class="PuzzleInputTitle">
-        <label for="Puzzle1Clue">Puzzle 1 Clue</label>
-        <textarea type="text" name="Puzzle1Clue" id="Puzzle1Clue" cols= "50" rows= "4"> </textarea>
-    </div>
-    <element id="puzzleClueHint">
-            Your clue must mention the location of Puzzle 2.
-    </element>
-
-    <element id="puzzleTitle">
-        Puzzle 1 Preview
-    </element>
-
-    <element id="puzzleDescription"> 
-        Your clue will replace the sentance beginning with, "Once properly dressed..."
-        <br><br>
-        Note: You’ll print Puzzle 1 later.
-    </element>
-
-    <img src="Puzzle_One_Graphic.PNG" alt="Puzzle 1 Picture" id="PuzzleOneImage">
 
     <!--START CODE FOR PROP LIST-->
     <div class="PropList">
@@ -139,15 +102,6 @@
         </element>
     </div>
     <!--END CODE FOR PROP LIST-->
-
-
-    <element id="bottomText">
-        Hint
-        <br><br>
-        If players are unsure how to proceed in the game after they put on their <mark class="red">Safety Suit</mark>, 
-        the <mark class="red">Game Manager</mark> or <mark class="red">Nurse</mark> can remind the player to read their <mark class="red">Safety Suit</mark> instructions.  
-    </element>
-
 
     <!--START CODE FOR CONTINUE-->
     <div class="continueButton" onclick="Continue()">
@@ -171,7 +125,7 @@
     };
 
     function Continue() {
-        location.href = "PuzzleTwo.html";
+        location.href = "ActivityOne.html";
     };
 
     window.onload = setDefaultPuzzleOne();

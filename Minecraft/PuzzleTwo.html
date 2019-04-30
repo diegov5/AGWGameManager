@@ -7,7 +7,7 @@
     <script src="Scripting.js"></script> 
     <meta charset="utf-8"/>
 </head>
-
+ 
 <body>
 
     <!--CODE FOR THE NAV BAR-->
@@ -49,7 +49,7 @@
             <element id="Number4">4</element>
         </div>
         <element id="WelcomeText">Welcome</element>
-        <element id="TeamText">Teams</element>
+        <element id="TeamText">Introductions</element>
         <element id="TheGameText">The Game</element>
         <element id="GameDayText">Game Day</element>
         <element id="LongLine"></element>
@@ -59,99 +59,32 @@
 
     <!--START CODE FOR STICKMAN-->
     <div class="StickMan">
-        <img src="StickMan_04.png" alt="stick man hands up">
+        <img src="Eye_of_Ender.png" alt="eye of ender">
     </div>
     <!--END CODE FOR STICKMAN-->
 
     <!--START CODE FOR WELCOME-->
-    <element id="Welcome">Puzzle 2: The Bin and the Birds</element>
+    <element id="Welcome">Puzzle 2: Swamp Riddle</element>
     <!--END CODE FOR WELCOME-->
 
     <!--START CODE FOR TEXT BODY-->
     <element id="textBody">
-        At the location of Puzzle 2, players will find three things that will impact the game:
+        After all 4 Eye of Ender Cards are located, the group reads and solves the 
+        first riddle to locate the <mark class="red">The Swamp</mark>. 
         <br><br>
-        1) A <mark class="red">Gun</mark> and <mark class="red">Bullet</mark> from the <mark class="red">Armory</mark> will be placed and can be picked up by any player.
-        <br><br>    
-        2) A <mark class="red">Hazardous Medical Waste Bin</mark> will be placed somewhere.  If a player touches or picks up this, the Game Master can select that player to be examined by the <mark class="red">Zombie Virus Detector App</mark>.
-        <br><br>    
-        3) A <mark class="red">Bird Poster</mark> left behind by the <mark class="red">Scientist</mark> contains the important clue to the location of <mark class="red">Puzzle 3</mark>.    
-    </element>
-
-    <!--START CODE FOR SUBHEADER & BODY-->
-    <element id="subHeaderText">
-        Location
-    </element>
-    <element id="subheaderBody">
-            <mark class="red">Enter the location of Puzzle 2:</mark>
-    </element>
-    <!--END CODE FOR SUBHEADER & BODY-->
-
-    <!--START CODE FOR INPUT TEXT AND TITLE-->
-    <element id="editBoxTitle">Puzzle 2 Location</element>
-    <form>
-        <input type="text" id="PuzzleTwoLocation" size="60" onkeyup="PuzzleTwoLocationChanged()" onchange="PuzzleTwoLocationChanged()">
-    </form> 
-    <!--END CODE FOR INPUT TEXT AND TITLE-->
-
-    <!--START CODE FOR BOTTOM HEADER AND TEXT-->
-    <div class="bottomHeader">
-        <div class="bottomHeaderText">
-            Puzzle
-            <element id="bottomHeaderBody">
-                    The <mark class="red">Bird Poster</mark> contains illustrations of over 25 common North American birds.  The <mark class="red">Scientist</mark> discovered that one of the birds 
-                    was carrying the <mark class="red">Zombie Virus</mark> and during his studies, he cut out the illustration of that bird to hang on his wall at the lab.  
-                    The missing bird in the poster will lead players to the location of <mark class="red">Puzzle 3</mark> when players read the  note left about that bird in the 
-                    Bird Journal.  You'll hang the <mark class="red">Bird Poster</mark> somewhere at the Puzzle 2 Location.
-                    <br><br><br><br><br>
-                    <mark class="red">Select the Bird:</mark>
-            </element>
-        </div>
-    </div>
-    <element id="birdBoxTitle">
-        The Name of the Bird Carrying the Virus
-    </element>
-    
-    <input type="text" id="BirdName" size="60">
-
-    <element id="BirdHint">The bird’s name must appear on the <mark class="red">Bird Poster</mark>.</element>
-     
-    <element id="PuzzleInstructions">
-        Next, you need to edit the <mark class="red">Bird Journal</mark> to write the clue for the location of 
-        Puzzle 3 in the Notes field of the bird you selected above. 
-        <br><br><br>
-        <mark class="red">Remote the Bird from the Poster:</mark>
+        <b>Suggested Script for the Game Host:</b>
+        <br>
+        <i>
+        Do you notice anything about this box?
         <br><br>
-        Use a knife or pair of scissors to carefully cut out the bird carrying the virus from the <mark class="red">Bird Poster</mark>.
-        <br><br><br>
-        <mark class="red">Edit the Bird Journal:</mark>
-    </element>
-    <!--END CODE FOR BOTTOM HEADER AND TEXT-->
-
-    <element id="PuzzleThreeLocationTitle">
-        Location: 
+        *At this point, there is attention drawn to the box that has a clue to location of Ender Card:* 
         <br><br>
-        Species:
-        <br><br>
-    </element>
-    <element id="ExtraNotes">Notes: &nbsp; &nbsp; These birds continue to add in an odd manner.</element>
-    <input type="text" id="Puzzle3Location" size="60">
-
-    <img src="Puzzle_Two_Graphics.PNG" alt="puzzle 2 preview" id="PuzzleTwoGraphics">
-
-    <element id="HintText">
-        Hint
-        <br><br>
-        The missing bird in the <mark class="red">Bird Poster</mark> is an indication that it was most interesting to the Scientist.  
-        The <mark class="red">Bird Journal</mark> may show where the Scientist studied that bird. The missing bird in the Bird Poster is an 
-        indication that it was most interesting to the Scientist.  The <mark class="red">Bird Journal</mark> may show where the Scientist 
-        studied that bird.
-    </element> 
-
-    <element id="PuzzleDescription">
-        Your clue will be placed in the fourth bird note.
-        <br><br>
-        Note: You'll print Puzzle 2 later.
+        </i>
+        <b>2nd Clue (1st set of eyes hunt):</b>
+        <br>
+        When wanting someone’s attention, this is what 
+        you might want to catch. And if you’re a pirate at sea it might be covered by a patch. 
+        Find these first four items here and you will continue on with your journey.
     </element>
 
     <!--START CODE FOR PROP LIST-->
@@ -160,13 +93,15 @@
         <element id="PropTitle">Prop List</element>
         <element id="PropLine"></element>
         <element id="PropList">
-                (1) Gun
+                (4) Eye of Ender Cards
                 <br><br>
-                (1) Bullet
+                (1) Feather Card
                 <br><br>
-                (1) Hazardous Medical Waste Bin
+                (2) Stick Cards
                 <br><br>
-                (1) Bird Poster
+                (1) Bonus Item Cards
+                <br><br>
+                Swamp Riddle on Eye of Ender Card
         </element>
     </div>
     <!--END CODE FOR PROP LIST-->
@@ -193,11 +128,11 @@
 
 <script>
     function Previous() {
-        location.href = "PuzzleOne.html";
+        location.href = "ActivityOne.html";
     };
 
     function Continue() {
-        location.href = "PuzzleThree.html";
+        location.href = "ActivityTwo.html";
     };
 
     window.onload = setDefaultPuzzleTwo();

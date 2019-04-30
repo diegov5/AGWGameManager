@@ -8,7 +8,7 @@
     <meta charset="utf-8"/>
 </head>
 
-<body>
+<body> 
 
     <!--CODE FOR THE NAV BAR-->
     <div class="topnav">
@@ -49,7 +49,7 @@
             <element id="Number4">4</element>
         </div>
         <element id="WelcomeText">Welcome</element>
-        <element id="TeamText">Teams</element>
+        <element id="TeamText">Introductions</element>
         <element id="TheGameText">The Game</element>
         <element id="GameDayText">Game Day</element>
         <element id="LongLine"></element>
@@ -59,20 +59,30 @@
 
     <!--START CODE FOR STICKMAN-->
     <div class="StickMan">
-        <img src="StickMan_04.png" alt="stick man hands up">
+        <img src="Slime.png" alt="stick man hands up">
     </div>
     <!--END CODE FOR STICKMAN-->
 
     <!--START CODE FOR WELCOME-->
-    <element id="Welcome">Activity 2: The Hospital</element>
+    <element id="Welcome">Activity 2: Slime Scavenger Hunt</element>
     <!--END CODE FOR WELCOME-->
 
     <!--START CODE FOR TEXT BODY-->
     <element id="textBody">
-            After the <mark class="red"> Best Zombie Hunter Contest</mark>, you'll deliver your <mark class="red">"Bad News" 
-            Speech</mark> where you reveal that the Zombie Outbreak virus has reached your refuge and to make matters worse,
-             there was a break-in at <mark class="red">The Armory</mark> where you had stored <mark class="red">Zombie Guns</mark> and <mark class="red">Experimental Vaccines</mark>.
-                Next, it's time to introduce the players to the <mark class="red">Hospital</mark> and to the <mark class="red">Nurse</mark> that works there (optional supporting character). 
+        <b>Suggested Script for the Game Host:</b>
+        <br>
+        <i>
+        Oh My GlOwStOne!! Are you all thinkin what I’m thinkin? Somewhere in this forest there are four, special, and celestial, ender eyes 
+        <br><br>
+        *At this point, players should know that 4 eyes are needed, the following clue will tell them where*
+        </i>
+        <br>
+        <b>3rd Clue(swamp biome + slime scavenger hunt):</b>
+        I am made up of both water and leaves, marshy, green, and a little serene. Come lads and you will see, 
+        where lily pads lie afloat, it might be hard to steer a boat. 
+        To discover the second set of eyes, you must take a chance with these rhymes, combat a slime - just in time. 
+        <br><br>
+        Players put on their blindfold and take turns looking for items in the <mark class="red">Slime</mark>.
     </element>
 
     <!--START CODE FOR SUBHEADER & BODY-->
@@ -80,7 +90,7 @@
         Location
     </element>
     <element id="subheaderBody">
-            <mark class="red"> Enter the location of the Hospital: </mark> <mark class="gray"><br>(Pro Tip: the Hospital should be close to the Kickoff and the Armory)</mark>
+            <mark class="red"> Enter the location of the Swamp Spot: </mark> <mark class="gray"><br>(Pro Tip: the Hospital should be nearby the Woods Spot)</mark>
     </element>
     <!--END CODE FOR SUBHEADER & BODY-->
 
@@ -91,35 +101,24 @@
     </form> 
     <!--END CODE FOR INPUT TEXT AND TITLE-->
 
-    <!--START CODE FOR BOTTOM HEADER AND TEXT-->
-    <div class="bottomHeader">
-        <div class="bottomHeaderText">
-            Activity
-            <element id="bottomHeaderBody">The players enter the <mark class="red">Hospital</mark> where they receive their <mark class="red">Safety Suit</mark>.  <mark class="red">The Nurse</mark> instructs the players to pick up all of their gear and how to put it on.</element>
-        </div>
-       
-    </div>
-    <!--END CODE FOR BOTTOM HEADER AND TEXT-->
-
     <!--START CODE FOR PROP LIST-->
     <div class="PropList">
         <element id="PropRectangle"></element>
         <element id="PropTitle">Prop List</element>
         <element id="PropLine"></element>
         <element id="PropList">
-                Protective Clothing <br><br>
+                Slime + Slime Bucket + Slime Mat <br><br>
 
-                (1) Hospital Sign <br><br>
+                (4) Eye of Ender Cards <br><br>
                 
-                (1) Hospital Costume <br><br>
+                (1) Feather Card <br><br>
                 
-                (1) The End is Near Sign <br><br>
+                (2) Stick Cards <br><br>
                 
-                (3) Zombie Makeup <br><br>
+                Bonus Cards if more than 7 Players <br><br>
                 
-                (20) Zombie Shirt <br><br>
-                
-                Mirror (Optional)
+                1 Blindfold per Player
+
         </element>
     </div>
     <!--END CODE FOR PROP LIST-->
@@ -142,11 +141,11 @@
 
 <script>
     function Previous() {
-        location.href = "ActivityOne.html";
+        location.href = "PuzzleTwo.html";
     };
 
     function Continue() {
-        location.href = "PuzzleOne.html";
+        location.href = "PuzzleThree.html";
     };
 
     window.onload = setDefaultActivityTwo();

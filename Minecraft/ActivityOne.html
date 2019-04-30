@@ -49,7 +49,7 @@
             <element id="Number4">4</element>
         </div>
         <element id="WelcomeText">Welcome</element>
-        <element id="TeamText">Teams</element>
+        <element id="TeamText">Introductions</element>
         <element id="TheGameText">The Game</element>
         <element id="GameDayText">Game Day</element>
         <element id="LongLine"></element>
@@ -59,27 +59,51 @@
 
     <!--START CODE FOR STICKMAN-->
     <div class="StickMan">
-        <img src="StickMan_02.png" alt="stick man hands up">
+        <img src="Crafting_Table.png" alt="stick man hands up">
     </div>
     <!--END CODE FOR STICKMAN-->
 
     <!--START CODE FOR WELCOME-->
-    <element id="Welcome">Activity 1: Best Zombie Hunter Contest</element>
+    <element id="Welcome">Activity 1: Crafting Table Scavenger Hunt</element>
     <!--END CODE FOR WELCOME-->
 
     <!--START CODE FOR TEXT BODY-->
     <element id="textBody">
-            Your players have put some creativity into their character and costume so let's reward them with an advantage in the game!
+            A <mark class="red">Crafting Table</mark> lets use build things needed to solve the adventure. The Woods Biome contains 4 Wood Pieces that can be used to make the <mark class="red">Crafting Table</mark>. 
+            When all 4 pieces are found, the group should assemble the table.  Once the table is made a volunteer from the group must agree to carry it during the adventure. 
             <br><br>
-            The first activity is a contest for best character based on player backstory's and costumes.  The winner will receive an Experimental Vaccine that can be used once and should let them survive one zombie attack.
+            <b>Suggested Script for the Game Host:</b>
+            <br>
+            <i>
+            Well, what does everyone think? 
+            <br>
+            Haha I’m stumped, get it, cuz we’re in the forest? 
+            <br><br> 
+            *if none of the kids understand what is going on*
+            <br>
+            It says here you can find scattered pieces to build a craftsmen table, that’s pretty important, I bet if you look around this area we’ll discover the wood pieces needed to build it! Go on get, I’m still exhausted by my defeat so I’ll wait right here, and once you gather all four pieces, we’ll brainstorm what do do next! 
+            <br><br>
+            *kids find all four pieces and gather back with the host*
+            <br>        
+            Wow that was fast! I remember my days as a younger, more novice crafter, ah those were the good days… Well anyways, how do you think we’ll build this? 
+            <br><br>
+            *kids and Host construct the craftsmen table*
+            <br>        
+            Nice! We did it… who wants to be caretaker of this here, special, craftsmen table, it’s an important job...who here thinks that can take the responsibility? 
+            <br><br>
+            *kid volunteers
+            <br>       
+            Thank you, I know you won’t let us down!
+            </i>
+                    
     </element>
 
     <!--START CODE FOR SUBHEADER & BODY-->
     <element id="subHeaderText">
-        Location
+        Location (Woods Spot)
     </element>
     <element id="subheaderBody">
-            <mark class="red"> Enter a description of the location of The Best Zombie Hunter Contest: </mark> <mark class="gray">(Pro Tip: the first Activity should happen at The Kickoff Location) </mark>
+            <mark class="red"> Enter a description of the location of the Woods Spot: </mark> <mark class="gray">(Pro Tip: the first Activity nearby the Introduction Location) </mark>
     </element>
     <!--END CODE FOR SUBHEADER & BODY-->
 
@@ -90,27 +114,13 @@
     </form> 
     <!--END CODE FOR INPUT TEXT AND TITLE-->
 
-    <!--START CODE FOR BOTTOM HEADER AND TEXT-->
-    <div class="bottomHeader">
-        <div class="bottomHeaderText">
-            Activity
-            <element id="bottomHeaderBody">Hold a Best Zombie Hunter Contest with the players.  The player with the most votes receives an Experimental Vaccine to be used once to prevent the Zombie virus from spreading
-                    after a Zombie Attack. </element>
-        </div>
-       
-    </div>
-    <!--END CODE FOR BOTTOM HEADER AND TEXT-->
-
     <!--START CODE FOR PROP LIST-->
     <div class="PropList">
         <element id="PropRectangle"></element>
         <element id="PropTitle">Prop List</element>
         <element id="PropLine"></element>
         <element id="PropList">
-            (1) Voting Pad <br> <br>
-            (1) Voting Pencil <br> <br>
-            (1) Experimental Vaccine <br> <br>
-            (20) Bird Journal <br> <br>
+            (4) Wood Crafting Table Pieces
         </element>
     </div>
     <!--END CODE FOR PROP LIST-->
@@ -133,11 +143,11 @@
 
 <script>
     function Previous() {
-        location.href = "GameIntroduction.html";
+        location.href = "PuzzleOne.html";
     };
 
     function Continue() {
-        location.href = "ActivityTwo.html";
+        location.href = "PuzzleTwo.html";
     };
     window.onload = setDefaultActivityOne();
 </script>
