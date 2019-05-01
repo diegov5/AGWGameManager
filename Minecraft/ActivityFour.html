@@ -3,7 +3,7 @@
 <html>
 
 <head>
-    <link href="ActivityThree.css" rel="stylesheet" type="text/css" >
+    <link href="ActivityFour.css" rel="stylesheet" type="text/css" >
     <script src="Scripting.js"></script> 
     <meta charset="utf-8"/>
 </head>
@@ -57,14 +57,14 @@
     </div>
     <!--END CODE FOR PROGRESS BAR-->
 
-    <!--START CODE FOR ACTIVE END PORTAL-->
-    <div class="EndPortalActive">
-        <img src="End_Portal_Active.png" alt="active end portal">
+    <!--START CODE FOR ENDER DRAGON-->
+    <div class="ObsidianPillar">
+        <img src="Obsidian_Pillar.png" alt="obsidian pillar">
     </div>
-    <!--END CODE FOR ACTIVE END PORTAL-->
+    <!--END CODE FOR ENDER DRAGON-->
 
     <!--START CODE FOR WELCOME-->
-    <element id="Welcome">Activity 3: The End Walk</element>
+    <element id="Welcome">Activity 4: Obsidian Pillars</element>
     <!--END CODE FOR WELCOME-->
 
     <!--START CODE FOR TEXT BODY-->
@@ -72,11 +72,18 @@
         <b>Suggested Script for the Game Host:</b>
         <br>
         <i>
-            Wow everyone, we did it! Well, we still have to defeat the dragon, but this INCREDIBLE, I mean I wouldn’t have been able to collect the eyes again alone….. Ok sorry I know I’m babbling, let’s do this, let’s defeat that wretched dragon and get some diamond… first , we’ll need to put these masks on, and link arms, so that we don’t get blinded and lose each other on the way to the other dimension. Is everyone ready? Let’s do this crafters!
+            Ok wow- that travel felt a little longer, but we’re here! We can take our Masks off now!! Ah hah! - There it is, that greedy, diamond stealing dragon, do you all see those obsidian pillars that surround it? 
             <br><br>
+            We’ll have absolutely no chance of defeating the dragon, because each of those pillars has a healing property that regains the dragon’s health.
+            <br><br>
+            We are going to need every single one of you to take on this challenge and shoot down a pillar, so that we can approach and defeat the Ender dragon once and for all! 
+            
+        <br><br>
+        *At <mark class="red">The End</mark>, the <mark class="red">Ender Dragon</mark> is protected by the <mark class="red">Obsidian Pillars</mark>.  Players take turns knocking down each tower with the <mark class="red">Bow and Arrow</mark>.   Pillars can be placed at close or far locations to decrease or increase difﬁculty.*
         </i>
-
-        All kids don masks and link arms with host who leads them to The End
+        <br>
+        <br>
+        All kids take turns shooting down the pillar
     </element>
 
     <!--START CODE FOR SUBHEADER & BODY-->
@@ -84,14 +91,14 @@
         Location
     </element>
     <element id="subheaderBody">
-            <mark class="red"> Enter the location of the End Portal: </mark> <mark class="gray"><!--<br>(Pro Tip: the Armory should be close to the Kickoff and the Hospital)</mark>-->
+            <mark class="red"> Enter the location of The End: </mark><!-- <mark class="gray"><br>(Pro Tip: the Armory should be close to the Kickoff and the Hospital)</mark>-->
     </element>
     <!--END CODE FOR SUBHEADER & BODY-->
 
     <!--START CODE FOR INPUT TEXT AND TITLE-->
-    <element id="editBoxTitle">Activity 3 Location</element>
+    <element id="editBoxTitle">Activity 4 Location</element>
     <form>
-        <input type="text" id="ActivityThreeLocation" size="60"onkeyup="ActivityThreeLocationChanged()" onchange="ActivityThreeLocationChanged()">
+        <input type="text" id="ActivityFourLocation" size="60"onkeyup="ActivityFourLocationChanged()" onchange="ActivityFourLocationChanged()">
     </form> 
     <!--END CODE FOR INPUT TEXT AND TITLE-->
 
@@ -101,7 +108,12 @@
         <element id="PropTitle">Prop List</element>
         <element id="PropLine"></element>
         <element id="PropList">
-                Blindfolds
+                Ender Dragon <br><br>
+
+                Obsidian Pillars (one per player) <br><br>
+
+                Bow and Arrow
+
         </element>
     </div>
     <!--END CODE FOR PROP LIST-->
@@ -124,14 +136,14 @@
 
 <script>
     function Previous() {
-        location.href = "PuzzleSeven.html";
+        location.href = "ActivityThree.html";
     };
 
     function Continue() {
-        location.href = "ActivityFour.html";
+        location.href = "ActivityFive.html";
     };
 
-    window.onload = setDefaultActivityThree();
+    window.onload = setDefaultActivityFour();
 </script>
 
 </body>

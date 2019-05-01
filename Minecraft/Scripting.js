@@ -20,6 +20,9 @@ var DigitTwo;
 var DigitThree;
 var PuzzleFiveLocationClue;
 
+var ActivityFiveLocation;
+var ActivityFourLocation;
+
 //Start send Email
 function sendMail(){
     kickOffLocation = sessionStorage.getItem("kickOffLocation");
@@ -37,6 +40,9 @@ function sendMail(){
     ActivityThreeLocation = sessionStorage.getItem("ActivityThreeLocation");
     PuzzleSevenLocation = sessionStorage.getItem("PuzzleSevenLocation");
     PuzzleEightLocation = sessionStorage.getItem("PuzzleEightLocation");
+
+    ActivityFiveLocation = sessionStorage.getItem("ActivityFiveLocation");
+    ActivityFourLocation = sessionStorage.getItem("ActivityFourLocation");
 
     var emailTo = "ThomasMcDonald1998@Gmail.com";
     var emailCC = "Diegov0824@hotmail.com";
@@ -192,6 +198,38 @@ function setDefaultActivityThree(){
 }
 
 // END SCRIPTING FOR ACTIVITY THREE PAGE
+
+// START SCRIPTING FOR ACTIVITY FIVE PAGE
+
+function ActivityFourLocationChanged(){
+    sessionStorage.setItem("ActivityFourLocation", document.getElementById("ActivityFourLocation").value);
+    ActivityFourLocation = sessionStorage.getItem("ActivityFourLocation");
+}
+
+function setDefaultActivityFive(){
+    ActivityFourLocation = sessionStorage.getItem("ActivityFourLocation");
+    if (ActivityFourLocation != null) {
+        document.getElementById("ActivityFourLocation").defaultValue = ActivityFourLocation;
+    }
+}
+
+// END SCRIPTING FOR ACTIVITY FIVE PAGE
+
+// START SCRIPTING FOR ACTIVITY FIVE PAGE
+
+function ActivityFiveLocationChanged(){
+    sessionStorage.setItem("ActivityFiveLocation", document.getElementById("ActivityFiveLocation").value);
+    ActivityFiveLocation = sessionStorage.getItem("ActivityFiveLocation");
+}
+
+function setDefaultActivityFive(){
+    ActivityFiveLocation = sessionStorage.getItem("ActivityFiveLocation");
+    if (ActivityFiveLocation != null) {
+        document.getElementById("ActivityFiveLocation").defaultValue = ActivityFiveLocation;
+    }
+}
+
+// END SCRIPTING FOR ACTIVITY FIVE PAGE
 
 // START SCRIPTING FOR PUZZLE ONE
 
@@ -387,6 +425,9 @@ function setDefaultCongraulationsBoxes(){
     PuzzleSevenLocation = sessionStorage.getItem("PuzzleSevenLocation");
     PuzzleEightLocation = sessionStorage.getItem("PuzzleEightLocation");
 
+    ActivityFiveLocation = sessionStorage.getItem("ActivityFiveLocation");
+    ActivityFourLocation = sessionStorage.getItem("ActivityFourLocation");
+    
     document.getElementById("CongratskickOffLocation").defaultValue = kickOffLocation;
     document.getElementById("CongratsActivityOneLocation").defaultValue = activityOneLocation;
     document.getElementById("CongratsActivityTwoLocation").defaultValue = activityTwoLocation;
@@ -399,6 +440,9 @@ function setDefaultCongraulationsBoxes(){
     document.getElementById("CongratsActivityThreeLocation").defaultValue = ActivityThreeLocation;
     document.getElementById("CongratsPuzzleSevenLocation").defaultValue = PuzzleSevenLocation;
     document.getElementById("CongratsPuzzleEightLocation").defaultValue = PuzzleEightLocation;
+
+    document.getElementById("CongratsActivityFiveLocation").defaultValue = ActivityFiveLocation;
+    document.getElementById("CongratsActivityFourLocation").defaultValue = ActivityFourLocation;
 }
 // END SCRIPTING FOR CONGRATULATIONS PAGE
 
@@ -439,6 +483,26 @@ function CongratsActivityThreeLocationChanged(){
 
 
 // END SCRIPTING FOR ACTIVITY THREE PAGE
+
+// START SCRIPTING FOR ACTIVITY FIVE PAGE
+
+function CongratsActivityFourLocationChanged(){
+    sessionStorage.setItem("ActivityFourLocation", document.getElementById("CongratsActivityFourLocation").value);
+    ActivityFourLocation = sessionStorage.getItem("ActivityFourLocation");
+}
+
+
+// END SCRIPTING FOR ACTIVITY FIVE PAGE
+
+// START SCRIPTING FOR ACTIVITY FIVE PAGE
+
+function CongratsActivityFiveLocationChanged(){
+    sessionStorage.setItem("ActivityFiveLocation", document.getElementById("CongratsActivityFiveLocation").value);
+    ActivityFiveLocation = sessionStorage.getItem("ActivityFiveLocation");
+}
+
+
+// END SCRIPTING FOR ACTIVITY FIVE PAGE
 
 // START SCRIPTING FOR PUZZLE ONE
 

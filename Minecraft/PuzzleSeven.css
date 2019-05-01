@@ -355,15 +355,15 @@ img {
     max-height: 100%;
 }
 
-/*CODE FOR STICKMAN */
+/*CODE FOR END PORTAL FRAME */
 
-/* StickMan_04 */
-div.StickMan{
+/* End_Portal_Frame */
+div.EndPortalFrame{
     position: absolute;
-    width: 97.47px;
+    width: 125px;
     height: 161.54px;
-    left: 878px;
-    top: 255px;
+    left: 850px;
+    top: 220px;
 }
 
 /* CODE FOR WELCOME TEXT */
@@ -665,7 +665,7 @@ img {
 div.PropList{
     position: absolute;
     width: 283px;
-    height: 162px;
+    height: 120px;
     left: 1075px;
     top: 205px;
 }

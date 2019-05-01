@@ -350,15 +350,15 @@ div.gameDayButton{
     border: 3px solid #B83336;
 }
 
-/*CODE FOR END PORTAL ACTIVE */
+/*CODE FOR STICKMAN */
 
-/* End_Portal_Active */
-div.EndPortalActive{
+/* Ender_Dragon */
+div.EnderDragon{
     position: absolute;
-    width: 140px;
+    width: 200px;
     height: 161.54px;
-    left: 850px;
-    top: 230px;
+    left: 820px;
+    top: 255px;
 }
 
 /* CODE FOR WELCOME TEXT */
@@ -402,7 +402,7 @@ div.continueButton{
     width: 150px;
     height: 50px;
     left: 1201px;
-    top: 600px;
+    top: 650px;
 }
 
 
@@ -443,7 +443,7 @@ div.previousButton{
     width: 150px;
     height: 50px;
     left: 85px;
-    top: 600px;
+    top: 650px;
 }
 
 
@@ -489,7 +489,7 @@ button{
     width: 123px;
     height: 30px;
     left: 82px;
-    top: 450px;
+    top: 467px;
     font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
@@ -504,7 +504,7 @@ button{
     width: 1280px;
     height: 41px;
     left: 82px;
-    top: 480px;
+    top: 504px;
 
     font-family: Montserrat;
     font-style: normal;
@@ -524,7 +524,7 @@ button{
     width: 470px;
     height: 26px;
     left: 82px;
-    top: 510px;
+    top: 533px;
     bottom: 15.38%;
 
     font-family: Montserrat;
@@ -542,7 +542,7 @@ form{
     width: 870px;
     height: 26px;
     left: 200px;
-    top: 510px;
+    top: 533px;
     bottom: 15.38%;
 
     font-family: Montserrat;
@@ -638,7 +638,7 @@ img {
 div.PropList{
     position: absolute;
     width: 283px;
-    height: 90px;
+    height: 180px;
     left: 1075px;
     top: 255px;
 }
